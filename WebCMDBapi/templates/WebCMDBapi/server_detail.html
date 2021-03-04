@@ -1,0 +1,13 @@
+{% load rest_framework %}
+<html>
+	<body>
+		<h1> Server - {{ server.hostname }}</h1>
+		<form action="{% url 'WebCMDBapi:server_detail' pk=server.pk %}" method="POST">
+			{% csrf_token %}
+			{% render_form serializer template_pack='rest_framework/vertical' %}
+			<input type="submit" value="Save">
+		</form>
+		<br>
+		<a href="{% url 'WebCMDBapi:computer_detail_json' pk=computer.pk %}?format=json">json link</a>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<h1> Computers </h1>
+		<ul>
+			{% for computer in computers %}
+			<li>
+				<a href="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}">ID: {{ computer.id }}</a>
+				<p>Hostname: {{ computer.hostname }}</p>
+				<p>Location: {{ computer.location }}</p>
+			</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

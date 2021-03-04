@@ -80,7 +80,7 @@ class Computer(models.Model):
 		choices=DESKTOP_LAPTOP_NAS_CHOICES,
 		default=DESKTOP,
 	)
-	os = models.CharField(max_length=100)
+	os = models.CharField(max_length=100, blank=True)
 	physical_virtual = models.CharField(
 		'Physical/Virtual',
 		max_length=15,
@@ -102,7 +102,7 @@ class Computer(models.Model):
 		max_length=15,
 		default=ACTIVE,
 	)
-	rack = models.CharField(max_length=15)
+	rack = models.CharField(max_length=15, blank=True)
 	scitech_access = models.BooleanField(null=True)
 	power_up_priority = models.CharField(
 		max_length=1,

@@ -1,0 +1,17 @@
+{% extends 'WebCMDBapi/base.html' %}
+{% load rest_framework %}
+{% load static %}
+{% block content %}
+
+<form id="search" action="{% url 'WebCMDBapi:computer_search_generic' %}" method="GET">
+	<input type="text" id="your_input"/>
+	<input type="hidden" name="search" id="your_input_hidden"/>
+	<input type="submit" value="Save" onclick="get_search_query()"/>
+</form>
+<script>
+	function get_search_query() {
+		var query = document.getElementById('your_input').value;
+		document.getElementById("your_input_hidden").value = query;
+	}
+</script>
+{% endblock content %}
