@@ -13,5 +13,4 @@ urlpatterns = [
 	path('api/computer_detail/<uuid:pk>/', views.ComputerDetailAPIView.as_view(), name='computer_detail_json'),
 	path('api/server_detail/<uuid:pk>/', views.ServerDetailAPIView.as_view(), name='server_detail_json'),
 	path('search/generic/computer/', views.ComputerSearchGeneric.as_view(), name='computer_search_generic'),
-	path('add/computer/', views.ComputerAdd.as_view(), name='computer_add'),
 ]

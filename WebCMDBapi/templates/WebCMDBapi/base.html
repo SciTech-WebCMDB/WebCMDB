@@ -21,7 +21,13 @@
 						<button type="submit" onclick="get_search_query()"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
-				<a href="{% url 'WebCMDBapi:computer_add' %}">Add computer</a>
+				<div class='webcmdb-search-container'>
+					<form action="/computer_detail/00000000-0000-0000-0000-000000000000" method="GET">
+						<input type="hidden" value="None"/>
+						<button type="submit">Add computer</button>
+					</form>
+				</div>
+
 		</div>
 		<script>
 			function get_search_query() {

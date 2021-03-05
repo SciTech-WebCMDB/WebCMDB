@@ -1,6 +1,5 @@
 html {
-	font-family: 'Times New Roman', serif;
-	background #F5F5F5;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .webcmdb-index h1, h3, a {
@@ -10,6 +9,7 @@ html {
 .webcmdb-nav {
 	overflow: hidden;
 	background-color: #e9e9e9;
+	padding-bottom: 8px;
 }
 
 .webcmdb-nav a {
