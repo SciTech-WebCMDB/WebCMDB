@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from rest_framework import generics, filters
 from rest_framework.views import APIView
-from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
+from rest_framework.decorators import api_view, renderer_classes
 
 from .serializers import ComputerSerializer, ServerSerializer
 from .models import Computer, Server
@@ -48,31 +49,18 @@ class ServerAPIView(generics.ListAPIView):
 		return Response({'servers':queryset})
 
 #----------------------------------------------------------------------------
-# Returning JSON for whatever purpose you have #
-
-class ComupterDetailAPIView_JSON(APIView):
-	def get(self, request, pk):
-		computer = get_object_or_404(Computer, pk=pk)
-		serializer = ComputerSerializer(computer).data
-		return Response({'serializer':serializer})
-
-class ServerDetailAPIView_JSON(APIView):
-	def get(self, request, pk):
-		server = get_object_or_404(Server, pk=pk)
-		serializer = ComputerSerializer(server).data
-		return Response({'serializer':serializer})
-
-#----------------------------------------------------------------------------
 # Rendering HTML
 
 class ComputerDetailAPIView(APIView):
-	renderer_classes = [TemplateHTMLRenderer]
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
 	template_name = 'WebCMDBapi/computer_detail.html'
 	model = Computer
 
 	def get(self, request, pk):
 		computer = get_object_or_404(Computer, pk=pk)
 		serializer = ComputerSerializer(computer)
+		if self.request.accepted_renderer.format == 'json':
+			return Response(serializer.data)
 		return Response({'serializer': serializer, 'computer': computer})
 
 	def post(self, request, pk):
@@ -83,6 +71,7 @@ class ComputerDetailAPIView(APIView):
 		serializer.save()
 		return redirect('WebCMDBapi:computers')
 
+
 class ServerDetailAPIView(APIView):
 	renderer_classes = [TemplateHTMLRenderer]
 	template_name = 'WebCMDBapi/server_detail.html'
@@ -91,6 +80,8 @@ class ServerDetailAPIView(APIView):
 	def get(self, request, pk):
 		server = get_object_or_404(Server, pk=pk)
 		serializer = ComputerSerializer(server)
+		if self.request.accepted_renderer.format == 'json':
+			return Response(serializer.data)
 		return Response({'serializer': serializer, 'server': server})
 
 	def post(self, request, pk):
