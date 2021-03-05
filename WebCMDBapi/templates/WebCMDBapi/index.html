@@ -3,16 +3,5 @@
 {% load static %}
 {% block content %}
 
-<form id="search" action="{% url 'WebCMDBapi:computer_search_generic' %}" method="GET">
-	<input type="text" id="your_input"/>
-	<input type="hidden" name="search" id="your_input_hidden"/>
-	<input type="submit" value="Save" onclick="get_search_query()"/>
-</form>
-<a href="{% url 'WebCMDBapi:computer_add' %}">Add computer</a>
-<script>
-	function get_search_query() {
-		var query = document.getElementById('your_input').value;
-		document.getElementById("your_input_hidden").value = query;
-	}
-</script>
+<h2>Hi, this is the index page</h2>
 {% endblock content %}
