@@ -1,6 +1,6 @@
 <html>
 	<body>
-		<h1> Computers </h1>
+		<h1> Computers </h1><a id="a_json" href="" onclick="get_json()">json</a>
 		<ul>
 			{% for computer in computers %}
 			<li>
@@ -10,5 +10,10 @@
 			</li>
 			{% endfor %}
 		</ul>
+		<script type="text/javascript">
+			function get_json() {
+				document.getElementById("a_json").href = window.location.href + "&format=json"
+			}
+		</script>
 	</body>
 </html>

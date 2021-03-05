@@ -17,19 +17,21 @@ class ComputerSearchGeneric(generics.ListAPIView):
 	# cdrf.co/3.1/rest_framework.generics/ListAPIView.html
 	model = Computer
 	queryset = Computer.objects.all()
-	renderer_classes = [TemplateHTMLRenderer]
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
 	template_name = 'WebCMDBapi/computers.html'
 	filter_backends = [filters.SearchFilter]
 	search_fields = ['hostname', 'location', 'ipv4']
 
 	def list(self, request):
+		if self.request.accepted_renderer.format == 'json':
+			return Response((ComputerSerializer(self.filter_queryset(self.get_queryset()), many=True)).data)
 		return Response({'computers':self.filter_queryset(self.get_queryset())})
 
 #----------------------------------------------------------------------------
 # Show all computers/servers
 
 class ComputerAPIView(generics.ListAPIView):
-	renderer_classes = [TemplateHTMLRenderer]
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
 	template_name = 'WebCMDBapi/computers.html'
 	model = Computer
 
