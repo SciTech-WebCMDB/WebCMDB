@@ -8,6 +8,8 @@ from rest_framework.decorators import api_view, renderer_classes
 from .serializers import ComputerSerializer, ServerSerializer
 from .models import Computer, Server
 
+import uuid
+
 # Create your views here.
 
 def index(request):
@@ -76,20 +78,30 @@ class ComputerDetailAPIView(APIView):
 	model = Computer
 
 	def get(self, request, pk):
-		computer = get_object_or_404(Computer, pk=pk)
-		serializer = ComputerSerializer(computer)
-		if self.request.accepted_renderer.format == 'json':
-			return Response(serializer.data)
-		return Response({'serializer': serializer, 'computer': computer})
+		if pk != uuid.UUID('12345678123456781234567812345678'):
+			computer = get_object_or_404(Computer, pk=pk)
+			serializer = ComputerSerializer(computer)
+			if self.request.accepted_renderer.format == 'json':
+				return Response(serializer.data)
+			return Response({'serializer': serializer, 'computer': computer})
+		else:
+			serializer = ComputerSerializer()
+			return Response({'serializer': serializer})
 
 	def post(self, request, pk):
-		computer = get_object_or_404(Computer, pk=pk)
-		serializer = ComputerSerializer(computer, data=request.data)
-		if not serializer.is_valid():
-			return Response({'serializer': serializer, 'computer': computer})
-		serializer.save()
-		return redirect('WebCMDBapi:computers')
-
+		if pk != uuid.UUID('12345678123456781234567812345678'):
+			computer = get_object_or_404(Computer, pk=pk)
+			serializer = ComputerSerializer(computer, data=request.data)
+			if not serializer.is_valid():
+				return Response({'serializer': serializer, 'computer': computer})
+			serializer.save()
+			return redirect('WebCMDBapi:computers')
+		else:
+			serializer = ComputerSerializer(data=request.data)
+			if serializer.is_valid():
+				computer = serializer.save()
+				return redirect('WebCMDBapi:computer_detail', pk=computer.pk)
+			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ServerDetailAPIView(APIView):
 	renderer_classes = [TemplateHTMLRenderer]
