@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from rest_framework import generics, filters
+from rest_framework import generics, filters, status
 from rest_framework.views import APIView
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
@@ -26,6 +26,23 @@ class ComputerSearchGeneric(generics.ListAPIView):
 		if self.request.accepted_renderer.format == 'json':
 			return Response((ComputerSerializer(self.filter_queryset(self.get_queryset()), many=True)).data)
 		return Response({'computers':self.filter_queryset(self.get_queryset())})
+
+class ComputerAdd(APIView):
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
+	template_name = 'WebCMDBapi/computer_detail.html'
+	model = Computer
+
+	def get(self, request):
+		serializer = ComputerSerializer()
+		return Response({'serializer': serializer})
+
+	def post(self, request):
+		serializer = ComputerSerializer(data=request.data)
+		if serializer.is_valid():
+			computer = serializer.save()
+			return redirect('WebCMDBapi:computer_detail', pk=computer.pk)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 #----------------------------------------------------------------------------
 # Show all computers/servers

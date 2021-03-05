@@ -3,13 +3,21 @@
 {% load static %}
 {% block content %}
 
+{% if computer %}
 <h1> Computer - {{ computer.hostname }}</h1>
 <form action="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}" method="POST">
+{% else %}
+<h1> Add a computer </h1>
+<form action="" method="POST">
+{% endif %}
 	{% csrf_token %}
 	{% render_form serializer template_pack='rest_framework/horizontal' %}
 	<input type="submit" value="Save">
 </form>
 <br>
+
+{% if computer %}
 <a href="{% url 'WebCMDBapi:computer_detail_json' pk=computer.pk %}?format=json">json link</a>
+{% endif %}
 
 {% endblock content %}

@@ -8,6 +8,7 @@
 	<input type="hidden" name="search" id="your_input_hidden"/>
 	<input type="submit" value="Save" onclick="get_search_query()"/>
 </form>
+<a href="{% url 'WebCMDBapi:computer_add' %}">Add computer</a>
 <script>
 	function get_search_query() {
 		var query = document.getElementById('your_input').value;
