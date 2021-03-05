@@ -29,23 +29,6 @@ class ComputerSearchGeneric(generics.ListAPIView):
 			return Response((ComputerSerializer(self.filter_queryset(self.get_queryset()), many=True)).data)
 		return Response({'computers':self.filter_queryset(self.get_queryset())})
 
-class ComputerAdd(APIView):
-	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
-	template_name = 'WebCMDBapi/computer_detail.html'
-	model = Computer
-
-	def get(self, request):
-		serializer = ComputerSerializer()
-		return Response({'serializer': serializer})
-
-	def post(self, request):
-		serializer = ComputerSerializer(data=request.data)
-		if serializer.is_valid():
-			computer = serializer.save()
-			return redirect('WebCMDBapi:computer_detail', pk=computer.pk)
-		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
 #----------------------------------------------------------------------------
 # Show all computers/servers
 
@@ -78,7 +61,7 @@ class ComputerDetailAPIView(APIView):
 	model = Computer
 
 	def get(self, request, pk):
-		if pk != uuid.UUID('12345678123456781234567812345678'):
+		if pk != uuid.UUID('00000000000000000000000000000000'):
 			computer = get_object_or_404(Computer, pk=pk)
 			serializer = ComputerSerializer(computer)
 			if self.request.accepted_renderer.format == 'json':
@@ -89,7 +72,7 @@ class ComputerDetailAPIView(APIView):
 			return Response({'serializer': serializer})
 
 	def post(self, request, pk):
-		if pk != uuid.UUID('12345678123456781234567812345678'):
+		if pk != uuid.UUID('00000000000000000000000000000000'):
 			computer = get_object_or_404(Computer, pk=pk)
 			serializer = ComputerSerializer(computer, data=request.data)
 			if not serializer.is_valid():
