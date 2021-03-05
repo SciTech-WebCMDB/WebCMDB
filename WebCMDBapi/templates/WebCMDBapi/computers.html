@@ -1,19 +1,20 @@
-<html>
-	<body>
-		<h1> Computers </h1><a id="a_json" href="" onclick="get_json()">json</a>
-		<ul>
-			{% for computer in computers %}
-			<li>
-				<a href="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}">ID: {{ computer.id }}</a>
-				<p>Hostname: {{ computer.hostname }}</p>
-				<p>Location: {{ computer.location }}</p>
-			</li>
-			{% endfor %}
-		</ul>
-		<script type="text/javascript">
-			function get_json() {
-				document.getElementById("a_json").href = window.location.href + "&format=json"
-			}
-		</script>
-	</body>
-</html>
+{% extends 'WebCMDBapi/base.html' %}
+{% load rest_framework %}
+{% load static %}
+{% block content %}
+<h1> Computers </h1><a id="a_json" href="" onclick="get_json()">json</a>
+<ul>
+	{% for computer in computers %}
+	<li>
+		<a href="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}">ID: {{ computer.id }}</a>
+		<p>Hostname: {{ computer.hostname }}</p>
+		<p>Location: {{ computer.location }}</p>
+	</li>
+	{% endfor %}
+</ul>
+<script type="text/javascript">
+	function get_json() {
+		document.getElementById("a_json").href = window.location.href + "&format=json"
+	}
+</script>
+{% endblock %}

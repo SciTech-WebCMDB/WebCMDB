@@ -4,9 +4,31 @@
 	<head>
 		<title>WebCMDB</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+		<link rel="stylesheet" href="{% static 'css/form.css' %}"/>
 	</head>
 	<body>
+		<div class='webcmdb-index' id='webcmdb-index'>
+			<h1><a href="{% url 'WebCMDBapi:index' %}">SciTech WebCMDB</a></h1>
+			<h3>...deployment eta: &infin;</h3>
+		</div>
+		<div class='webcmdb-nav' id='webcmdb-nav'>
+				<div class='webcmdb-search-container'>
+					<form id="search" action="{% url 'WebCMDBapi:computer_search_generic' %}" method="GET">
+						<input type="text" id="your_input"/>
+						<input type="hidden" name="search" id="your_input_hidden"/>
+						<button type="submit" onclick="get_search_query()"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				<a href="{% url 'WebCMDBapi:computer_add' %}">Add computer</a>
+		</div>
+		<script>
+			function get_search_query() {
+				var query = document.getElementById('your_input').value;
+				document.getElementById("your_input_hidden").value = query;
+			}
+		</script>
 		{% block content %}
 		{% endblock content %}
 	</body>
