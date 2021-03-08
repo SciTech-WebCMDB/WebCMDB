@@ -1,13 +1,20 @@
-<html>
-	<body>
-		<h1> Servers </h1>
-		<ul>
-			{% for server in servers %}
-			<li>
-				<p>ID: {{ server.id }}</p>
-				<p>Hostname: {{ server.hostname }}</p>
-			</li>
-			{% endfor %}}
-		</ul>
-	</body>
-</html>
+{% extends 'WebCMDBapi/base.html' %}
+{% load rest_framework %}
+{% load static %}
+{% block content %}
+<h1> Servers </h1><a id="a_json" href="" onclick="get_json()">json</a>
+<ul>
+	{% for server in servers %}
+	<li>
+		<a href="{% url 'WebCMDBapi:server_detail' pk=server.pk %}">ID: {{ server.id }}</a>
+		<p>Hostname: {{ server.servername }}</p>
+		<p>Location: {{ server.location }}</p>
+	</li>
+	{% endfor %}
+</ul>
+<script type="text/javascript">
+	function get_json() {
+		document.getElementById("a_json").href = window.location.href + "&format=json"
+	}
+</script>
+{% endblock %}

@@ -87,21 +87,32 @@ class ComputerDetailAPIView(APIView):
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class ServerDetailAPIView(APIView):
-	renderer_classes = [TemplateHTMLRenderer]
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
 	template_name = 'WebCMDBapi/server_detail.html'
 	model = Server
 
 	def get(self, request, pk):
-		server = get_object_or_404(Server, pk=pk)
-		serializer = ComputerSerializer(server)
-		if self.request.accepted_renderer.format == 'json':
-			return Response(serializer.data)
-		return Response({'serializer': serializer, 'server': server})
+		if pk != uuid.UUID('00000000000000000000000000000000'):
+			server = get_object_or_404(Server, pk=pk)
+			serializer = ServerSerializer(server)
+			if self.request.accepted_renderer.format == 'json':
+				return Response(serializer.data)
+			return Response({'serializer': serializer, 'server': server})
+		else:
+			serializer = ServerSerializer()
+			return Response({'serializer': serializer})
 
 	def post(self, request, pk):
-		server = get_object_or_404(Server, pk=pk)
-		serializer = ComputerSerializer(server, data=request.data)
-		if not serializer.is_valid():
-			return Response({'serializer': serializer, 'server': server})
-		serializer.save()
-		return redirect('WebCMDBapi:servers')
+		if pk != uuid.UUID('00000000000000000000000000000000'):
+			server = get_object_or_404(Server, pk=pk)
+			serializer = ComputerSerializer(server, data=request.data)
+			if not serializer.is_valid():
+				return Response({'serializer': serializer, 'server': server})
+			serializer.save()
+			return redirect('WebCMDBapi:servers')
+		else:
+			serializer = ServerSerializer(data=request.data)
+			if serializer.is_valid():
+				server = serializer.save()
+				return redirect('WebCMDBapi:server_detail', pk=server.pk)
+			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
