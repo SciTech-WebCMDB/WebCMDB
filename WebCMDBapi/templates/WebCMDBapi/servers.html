@@ -14,7 +14,7 @@
 </ul>
 <script type="text/javascript">
 	function get_json() {
-		document.getElementById("a_json").href = window.location.href + "&format=json"
+		document.getElementById("a_json").href = '/api' + window.location.pathname + window.location.search
 	}
 </script>
 {% endblock %}
