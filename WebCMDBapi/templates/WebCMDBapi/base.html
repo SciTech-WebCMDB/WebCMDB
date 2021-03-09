@@ -14,32 +14,52 @@
 			<h3>...deployment eta: &infin;</h3>
 		</div>
 		<div class='webcmdb-nav' id='webcmdb-nav'>
-				<div class='webcmdb-search-container'>
-					<form id="search" action="{% url 'WebCMDBapi:computer_search_generic' %}" method="GET">
-						<input type="text" id="your_input"/>
-						<input type="hidden" name="search" id="your_input_hidden"/>
-						<button type="submit" onclick="get_search_query()"><i class="fa fa-search"></i></button>
-					</form>
-				</div>
-				<div class='webcmdb-search-container'>
-					<form action="/computer_detail/00000000-0000-0000-0000-000000000000" method="GET">
-						<input type="hidden" value="None"/>
-						<button type="submit">Add computer</button>
-					</form>
-				</div>
-				<div class='webcmdb-search-container'>
-					<form action="/server_detail/00000000-0000-0000-0000-000000000000" method="GET">
-						<input type="hidden" value="None"/>
-						<button type="submit">Add server</button>
-					</form>
-				</div>
-
-
+			<div class="webcmdb-search-options">
+				<select id="machine">
+					<option value="All">All</option>
+					<option value="Computer">Computer</option>
+					<option value="Server">Server</option>
+				</select>
+			</div>
+			<div class='webcmdb-search-container'>
+				<form id="search" action="" method="GET">
+					<input type="text" id="your_input"/>
+					<input type="hidden" name="search" id="your_input_hidden"/>
+					<input type="hidden" name="format" id="your_format_hidden">
+					<button type="submit" onclick="get_search_query()"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+			<div class='webcmdb-search-container'>
+				<form action="/computer_detail/00000000-0000-0000-0000-000000000000" method="GET">
+					<input type="hidden" value="None"/>
+					<button type="submit">Add computer</button>
+				</form>
+			</div>
+			<div class='webcmdb-search-container'>
+				<form action="/server_detail/00000000-0000-0000-0000-000000000000" method="GET">
+					<input type="hidden" value="None"/>
+					<button type="submit">Add server</button>
+				</form>
+			</div>
 		</div>
 		<script>
 			function get_search_query() {
+				var search_select = document.getElementById('machine');
+				var machine = search_select.value;
+				var form = document.getElementById('search');
 				var query = document.getElementById('your_input').value;
 				document.getElementById("your_input_hidden").value = query;
+				switch(machine) {
+					case "Computer":
+						form.action = "{% url 'WebCMDBapi:computer_search_generic' %}";
+						break;
+					case "Server":
+						form.action = "{% url 'WebCMDBapi:server_search_generic' %}";
+						break;
+					case "All":
+						form.action = "{% url 'WebCMDBapi:all_search_generic' %}";
+						document.getElementById("your_format_hidden").value = "json"
+				}
 			}
 		</script>
 		{% block content %}

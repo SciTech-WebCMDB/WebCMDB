@@ -1,0 +1,3 @@
+{{ object.servername }}
+{{ object.ipv4 }}
+{{ object.location }}
