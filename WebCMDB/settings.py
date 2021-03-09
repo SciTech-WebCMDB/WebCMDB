@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'haystack',
     'rest_framework',
-    'fontawesome-free'
+    'fontawesome-free',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,13 @@ SITE_ROOT = os.path.normpath(os.path.dirname(__file__))
 STATICFILES_DIRS = (
     os.path.join(SITE_ROOT, '..', 'static'),
 )
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    }
+}
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+HAYSTACK_LIMIT_TO_REGISTERED_MODELS = False

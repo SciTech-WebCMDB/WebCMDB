@@ -5,15 +5,54 @@ from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, renderer_classes
 
-from .serializers import ComputerSerializer, ServerSerializer
+from .serializers import ComputerSerializer, ServerSerializer, SearchSerializer
 from .models import Computer, Server
 
-import uuid
+from drf_haystack.generics import HaystackGenericAPIView
+from haystack.query import SearchQuerySet
+from django.core import serializers
+
+import uuid, re
 
 # Create your views here.
 
 def index(request):
 	return render(request, 'WebCMDBapi/index.html')
+
+class AllSearchGeneric(HaystackGenericAPIView):
+	# source: DRF Haystack documentation
+	# My old Eenna/WebCMDB
+	# Add this to fix Query doesnt look up for 2 modes: HAYSTACK_LIMIT_TO_REGISTERED_MODELS = False
+	serializer_class = ServerSerializer
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
+
+	def get_queryset(self, *args, **kwargs):
+		queryset = SearchQuerySet().all().filter(content=self.request.GET.get('search'))
+		return queryset
+
+	def get(self, request):
+		query_param = self.request.GET.get('search')
+		queryset = self.get_queryset() 
+
+		content = []
+		for x in queryset:
+			if str(x.object._meta) == 'WebCMDBapi.computer':
+				content.append(ComputerSerializer(instance=x.object).data)
+			elif str(x.object._meta) == 'WebCMDBapi.server':
+				content.append(ServerSerializer(instance=x.object).data)
+
+		# Regex for UUID, need len >= 6
+		# TODO: auto redirect to the detail page?
+		uuid_pattern = re.compile("[0-9a-fA-F-.\d]+")
+		if len(query_param) >= 6 and uuid_pattern.search("query_param"):
+			if Computer.objects.filter(id__contains=query_param).exists():
+				content.extend(list(ComputerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
+			if Server.objects.filter(id__contains=query_param).exists():
+				content.extend(list(ServerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
+
+		if self.request.accepted_renderer.format == 'json':
+			return Response(content)
+		#return HTML here
 
 class ComputerSearchGeneric(generics.ListAPIView):
 	# cdrf.co/3.1/rest_framework.generics/ListAPIView.html
@@ -25,9 +64,25 @@ class ComputerSearchGeneric(generics.ListAPIView):
 	search_fields = ['hostname', 'location', 'ipv4']
 
 	def list(self, request):
+		queryset = self.filter_queryset(self.get_queryset())
 		if self.request.accepted_renderer.format == 'json':
-			return Response((ComputerSerializer(self.filter_queryset(self.get_queryset()), many=True)).data)
-		return Response({'computers':self.filter_queryset(self.get_queryset())})
+			return Response((ComputerSerializer(queryset, many=True)).data)
+		return Response({'computers':queryset})
+
+class ServerSearchGeneric(generics.ListAPIView):
+	# cdrf.co/3.1/rest_framework.generics/ListAPIView.html
+	model = Server
+	queryset = Server.objects.all()
+	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
+	template_name = 'WebCMDBapi/servers.html'
+	filter_backends = [filters.SearchFilter]
+	search_fields = ['servername', 'location', 'ipv4']
+
+	def list(self, request):
+		queryset = self.filter_queryset(self.get_queryset())
+		if self.request.accepted_renderer.format == 'json':
+			return Response((ServerSerializer(queryset, many=True)).data)
+		return Response({'servers':queryset})
 
 #----------------------------------------------------------------------------
 # Show all computers/servers
@@ -105,7 +160,7 @@ class ServerDetailAPIView(APIView):
 	def post(self, request, pk):
 		if pk != uuid.UUID('00000000000000000000000000000000'):
 			server = get_object_or_404(Server, pk=pk)
-			serializer = ComputerSerializer(server, data=request.data)
+			serializer = ServerSerializer(server, data=request.data)
 			if not serializer.is_valid():
 				return Response({'serializer': serializer, 'server': server})
 			serializer.save()

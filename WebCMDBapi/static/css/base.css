@@ -47,7 +47,7 @@ html {
 	float: right;
 	padding: 6px 10px;
 	margin-top: 8px;
-	margin-right: 16px;
+	margin-right: 5px;
 	background: #ddd;
 	font-size: 17px;
 	border: none;
@@ -55,6 +55,14 @@ html {
 
 .webcmdb-nav .webcmdb-search-container button:hover {
 	background: #ccc;
+}
+
+.webcmdb-search-options {
+	float: right;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: 16px;
+	font-size: 17px;
 }
 
 @media screen and (max-width: : 600px) {
