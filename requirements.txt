@@ -1,3 +1,6 @@
 Django==3.1.7
 djangorestframework==3.12.2
 fontawesome-free==5.15.2
+django-haystack==3.0
+drf-haystack==1.8.9
+Whoosh==2.7.4
