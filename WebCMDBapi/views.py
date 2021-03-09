@@ -23,6 +23,7 @@ def index(request):
 class AllSearchGeneric(HaystackGenericAPIView):
 	# source: DRF Haystack documentation
 	# My old Eenna/WebCMDB
+	# Add this to fix Query doesnt look up for 2 modes: HAYSTACK_LIMIT_TO_REGISTERED_MODELS = False
 	serializer_class = ServerSerializer
 	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
 
