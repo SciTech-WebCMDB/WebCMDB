@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from django.http import JsonResponse
 from rest_framework import generics, filters, status
 from rest_framework.views import APIView
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
@@ -13,7 +12,7 @@ from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
 from django.core import serializers
 
-import uuid
+import uuid, re
 
 # Create your views here.
 
@@ -32,14 +31,26 @@ class AllSearchGeneric(HaystackGenericAPIView):
 		return queryset
 
 	def get(self, request):
+		query_param = self.request.GET.get('search')
+		queryset = self.get_queryset() 
+
+		content = []
+		for x in queryset:
+			if str(x.object._meta) == 'WebCMDBapi.computer':
+				content.append(ComputerSerializer(instance=x.object).data)
+			elif str(x.object._meta) == 'WebCMDBapi.server':
+				content.append(ServerSerializer(instance=x.object).data)
+
+		# Regex for UUID, need len >= 6
+		# TODO: auto redirect to the detail page?
+		uuid_pattern = re.compile("[0-9a-fA-F-.\d]+")
+		if len(query_param) >= 6 and uuid_pattern.search("query_param"):
+			if Computer.objects.filter(id__contains=query_param).exists():
+				content.extend(list(ComputerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
+			if Server.objects.filter(id__contains=query_param).exists():
+				content.extend(list(ServerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
+
 		if self.request.accepted_renderer.format == 'json':
-			content = []
-			for x in self.get_queryset():
-				if str(x.object._meta) == 'WebCMDBapi.computer':
-					content.append(ComputerSerializer(instance=x.object).data)
-				elif str(x.object._meta) == 'WebCMDBapi.server':
-					content.append(ServerSerializer(instance=x.object).data)
-			print(content)
 			return Response(content)
 		#return HTML here
 

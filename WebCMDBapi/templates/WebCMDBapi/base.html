@@ -49,16 +49,20 @@
 				var form = document.getElementById('search');
 				var query = document.getElementById('your_input').value;
 				document.getElementById("your_input_hidden").value = query;
+				var format = document.getElementById("your_format_hidden")
 				switch(machine) {
 					case "Computer":
 						form.action = "{% url 'WebCMDBapi:computer_search_generic' %}";
+						format.value = ""
 						break;
 					case "Server":
 						form.action = "{% url 'WebCMDBapi:server_search_generic' %}";
+						format.value = ""
 						break;
 					case "All":
 						form.action = "{% url 'WebCMDBapi:all_search_generic' %}";
-						document.getElementById("your_format_hidden").value = "json"
+						format.value = "json"
+						break;
 				}
 			}
 		</script>
