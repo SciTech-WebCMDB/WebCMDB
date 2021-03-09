@@ -17,7 +17,7 @@
 <br>
 
 {% if computer %}
-<a href="{% url 'WebCMDBapi:computer_detail_json' pk=computer.pk %}?format=json">json link</a>
+<a href="{% url 'WebCMDBapi:computer_detail_json' pk=computer.pk %}">json link</a>
 {% endif %}
 
 {% endblock content %}

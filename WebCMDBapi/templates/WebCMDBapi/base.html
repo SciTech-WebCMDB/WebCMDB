@@ -25,7 +25,6 @@
 				<form id="search" action="" method="GET">
 					<input type="text" id="your_input"/>
 					<input type="hidden" name="search" id="your_input_hidden"/>
-					<input type="hidden" name="format" id="your_format_hidden">
 					<button type="submit" onclick="get_search_query()"><i class="fa fa-search"></i></button>
 				</form>
 			</div>
@@ -49,19 +48,15 @@
 				var form = document.getElementById('search');
 				var query = document.getElementById('your_input').value;
 				document.getElementById("your_input_hidden").value = query;
-				var format = document.getElementById("your_format_hidden")
 				switch(machine) {
 					case "Computer":
 						form.action = "{% url 'WebCMDBapi:computer_search_generic' %}";
-						format.value = ""
 						break;
 					case "Server":
 						form.action = "{% url 'WebCMDBapi:server_search_generic' %}";
-						format.value = ""
 						break;
 					case "All":
-						form.action = "{% url 'WebCMDBapi:all_search_generic' %}";
-						format.value = "json"
+						form.action = "{% url 'WebCMDBapi:all_search_generic_api' %}";
 						break;
 				}
 			}

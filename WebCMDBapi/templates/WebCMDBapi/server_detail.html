@@ -17,7 +17,7 @@
 <br>
 
 {% if server %}
-<a href="{% url 'WebCMDBapi:server_detail_json' pk=server.pk %}?format=json">json link</a>
+<a href="{% url 'WebCMDBapi:server_detail_json' pk=server.pk %}">json link</a>
 {% endif %}
 
 {% endblock content %}

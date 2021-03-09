@@ -10,7 +10,8 @@ from .models import Computer, Server
 
 from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
-from django.core import serializers
+from django.http import JsonResponse
+
 
 import uuid, re
 
@@ -33,6 +34,7 @@ class AllSearchGeneric(HaystackGenericAPIView):
 	def get(self, request):
 		query_param = self.request.GET.get('search')
 		queryset = self.get_queryset() 
+		print(queryset)
 
 		content = []
 		for x in queryset:
@@ -50,8 +52,8 @@ class AllSearchGeneric(HaystackGenericAPIView):
 			if Server.objects.filter(id__contains=query_param).exists():
 				content.extend(list(ServerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
 
-		if self.request.accepted_renderer.format == 'json':
-			return Response(content)
+		if self.request.path_info.startswith('/api/'):
+			return JsonResponse(content, safe=False)
 		#return HTML here
 
 class ComputerSearchGeneric(generics.ListAPIView):
@@ -65,8 +67,8 @@ class ComputerSearchGeneric(generics.ListAPIView):
 
 	def list(self, request):
 		queryset = self.filter_queryset(self.get_queryset())
-		if self.request.accepted_renderer.format == 'json':
-			return Response((ComputerSerializer(queryset, many=True)).data)
+		if self.request.path_info.startswith('/api/'):
+			return JsonResponse((ComputerSerializer(queryset, many=True)).data, safe=False)
 		return Response({'computers':queryset})
 
 class ServerSearchGeneric(generics.ListAPIView):
@@ -80,8 +82,8 @@ class ServerSearchGeneric(generics.ListAPIView):
 
 	def list(self, request):
 		queryset = self.filter_queryset(self.get_queryset())
-		if self.request.accepted_renderer.format == 'json':
-			return Response((ServerSerializer(queryset, many=True)).data)
+		if self.request.path_info.startswith('/api/'):
+			return JsonResponse((ServerSerializer(queryset, many=True)).data, safe=False)
 		return Response({'servers':queryset})
 
 #----------------------------------------------------------------------------
@@ -108,7 +110,7 @@ class ServerAPIView(generics.ListAPIView):
 		return Response({'servers':queryset})
 
 #----------------------------------------------------------------------------
-# Rendering HTML
+# Computer/Server Detail
 
 class ComputerDetailAPIView(APIView):
 	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
@@ -119,8 +121,8 @@ class ComputerDetailAPIView(APIView):
 		if pk != uuid.UUID('00000000000000000000000000000000'):
 			computer = get_object_or_404(Computer, pk=pk)
 			serializer = ComputerSerializer(computer)
-			if self.request.accepted_renderer.format == 'json':
-				return Response(serializer.data)
+			if self.request.path_info.startswith('/api/'):
+				return JsonResponse(serializer.data)
 			return Response({'serializer': serializer, 'computer': computer})
 		else:
 			serializer = ComputerSerializer()
@@ -150,8 +152,8 @@ class ServerDetailAPIView(APIView):
 		if pk != uuid.UUID('00000000000000000000000000000000'):
 			server = get_object_or_404(Server, pk=pk)
 			serializer = ServerSerializer(server)
-			if self.request.accepted_renderer.format == 'json':
-				return Response(serializer.data)
+			if self.request.path_info.startswith('/api/'):
+				return JsonResponse(serializer.data)
 			return Response({'serializer': serializer, 'server': server})
 		else:
 			serializer = ServerSerializer()
