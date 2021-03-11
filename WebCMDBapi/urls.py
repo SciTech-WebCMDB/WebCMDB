@@ -18,5 +18,9 @@ urlpatterns = [
 	path('api/search/generic/all/', views.AllSearchGeneric.as_view(), name='all_search_generic_api'),
 	path('api/search/generic/computer/', views.ComputerSearchGeneric.as_view(), name='computer_search_generic_api'),
 	path('api/search/generic/server/', views.ServerSearchGeneric.as_view(), name='server_search_generic_api'),
+	path('api/computer_detail/<uuid:pk>/delete/', views.delete, name='computer_delete_api'),
+	path('api/server_detail/<uuid:pk>/delete/', views.delete, name='server_delete_api'),
+	path('computer_detail/<uuid:pk>/delete/', views.delete, name='computer_delete'),
+	path('server_detail/<uuid:pk>/delete/', views.delete, name='server_delete'),
 
 ]

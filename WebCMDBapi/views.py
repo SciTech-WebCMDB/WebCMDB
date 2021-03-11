@@ -173,3 +173,14 @@ class ServerDetailAPIView(APIView):
 				server = serializer.save()
 				return redirect('WebCMDBapi:server_detail', pk=server.pk)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET', 'DELETE'])
+def delete(request, pk):
+	if 'computer' in request.path_info:
+		computer = get_object_or_404(Computer, pk=pk)
+		computer.delete()
+		return Response(status=status.HTTP_204_NO_CONTENT)
+	elif 'server' in request.path_info:
+		server = get_object_or_404(Server, pk=pk)
+		server.delete()
+		return Response(status=status.HTTP_204_NO_CONTENT)

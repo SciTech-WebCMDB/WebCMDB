@@ -17,6 +17,7 @@
 <br>
 
 {% if computer %}
+<a href="{% url 'WebCMDBapi:computer_delete_api' pk=computer.pk %}" onclick="alert('ARE YOU SURE?')"><b>DELETE</b></a>
 <a href="{% url 'WebCMDBapi:computer_detail_json' pk=computer.pk %}">json link</a>
 {% endif %}
 

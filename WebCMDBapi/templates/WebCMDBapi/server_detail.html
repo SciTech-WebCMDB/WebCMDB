@@ -17,6 +17,7 @@
 <br>
 
 {% if server %}
+<a href="{% url 'WebCMDBapi:server_delete_api' pk=server.pk %}" onclick="alert('ARE YOU SURE?')"><b>DELETE</b></a>
 <a href="{% url 'WebCMDBapi:server_detail_json' pk=server.pk %}">json link</a>
 {% endif %}
 
