@@ -81,12 +81,13 @@ class Computer(models.Model):
 		default=DESKTOP,
 	)
 	os = models.CharField(max_length=100, blank=True)
-	physical_virtual = models.CharField(
-		'Physical/Virtual',
-		max_length=15,
-		choices=PHYSICAL_VIRTUAL_CHOICE,
-		default=PHYSICAL,
-	)
+	# physical_virtual = models.CharField(
+	# 	'Physical/Virtual',
+	# 	max_length=15,
+	# 	choices=PHYSICAL_VIRTUAL_CHOICE,
+	# 	default=PHYSICAL,
+	# )
+	physical_virtual = models.CharField(max_length=100, blank=True)
 	owner = models.CharField(max_length=100, blank=True)
 	administrator = models.CharField(max_length=100, blank=True)
 	uofa_tag_number = models.CharField(max_length=15, blank=True)
@@ -111,7 +112,7 @@ class Computer(models.Model):
 	)
 	support_team = models.CharField(max_length=100, blank=True)
 	department = models.CharField(max_length=100, blank=True)
-	comment = models.TextField(blank=True)
+	comments = models.TextField(blank=True)
 	latest_information_update_date = models.DateTimeField(auto_now=True)
 	date_added_to_database = models.DateTimeField(auto_now_add=True)
 
