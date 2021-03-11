@@ -187,6 +187,8 @@ def delete(request, pk):
 		return Response(status=status.HTTP_204_NO_CONTENT)
 
 def import_csv_computer(request):
+	# You try to get the machine, if exists, update
+	# Else create.
 	template = 'upload.html'
 	if request.method == 'GET':
 		return render(request, template, {})
@@ -194,24 +196,26 @@ def import_csv_computer(request):
 		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
 		data = csv.reader(csv_file)
 		for row in data:
-			computer, created = Computer.objects.get_or_create(
+			computer, created = Computer.objects.update_or_create(
 				hostname = str(row[0]),
-				location = str(row[1]),
-				ipv4 = str(row[2]),
-				ipv6 = str(row[3]),
-				os = str(row[4]),
-				physical_virtual = str(row[5]),
-				owner = str(row[6]),
-				administrator = str(row[7]),
-				uofa_tag_number = str(row[8]),
-				make_model = str(row[9]),
-				cpu = str(row[10]),
-				ram = str(row[11]),
-				storage = str(row[12]),
-				gpu = str(row[13]),
-				serial_number = str(row[14]),
-				department = str(row[20]),
-				comments = str(row[21]),
 			)
+			computer.location = str(row[1])
+			computer.ipv4 = str(row[2])
+			computer.ipv6 = str(row[3])
+			computer.os = str(row[4])
+			computer.physical_virtual = str(row[5])
+			computer.owner = str(row[6])
+			computer.administrator = str(row[7])
+			computer.uofa_tag_number = str(row[8])
+			computer.make_model = str(row[9])
+			computer.cpu = str(row[10])
+			computer.ram = str(row[11])
+			computer.storage = str(row[12])
+			computer.gpu = str(row[13])
+			computer.serial_number = str(row[14])
+			computer.status = str(row[15]).upper(),
+			computer.department = str(row[20])
+			computer.comments = str(row[21])
+		
 			computer.save()
 		return redirect('WebCMDBapi:computers')
