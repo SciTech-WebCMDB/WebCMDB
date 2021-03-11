@@ -5,7 +5,7 @@
 
 {% if computer %}
 <h1> Computer - {{ computer.hostname }}</h1>
-<form action="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}" method="POST">
+<form class="form-horizontal" action="{% url 'WebCMDBapi:computer_detail' pk=computer.pk %}" method="POST">
 {% else %}
 <h1> Add a computer </h1>
 <form action="" method="POST">

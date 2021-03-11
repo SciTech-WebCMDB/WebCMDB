@@ -22,5 +22,6 @@ urlpatterns = [
 	path('api/server_detail/<uuid:pk>/delete/', views.delete, name='server_delete_api'),
 	path('computer_detail/<uuid:pk>/delete/', views.delete, name='computer_delete'),
 	path('server_detail/<uuid:pk>/delete/', views.delete, name='server_delete'),
+	path('upload/', views.import_csv_computer, name='upload'),
 
 ]

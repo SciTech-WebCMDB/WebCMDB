@@ -1,8 +1,12 @@
 /*This is for the computer detail form*/
+.col-sm-2 {
+	margin-left: -100px;
+}
+
 .col-sm-10 {
 	padding: 5px;
 }
 
 .form-control {
-	width: 10%;
+	width: 20%;
 }

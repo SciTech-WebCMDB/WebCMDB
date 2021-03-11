@@ -13,7 +13,8 @@ from haystack.query import SearchQuerySet
 from django.http import JsonResponse
 
 
-import uuid, re
+import uuid, re, csv
+from io import TextIOWrapper
 
 # Create your views here.
 
@@ -184,3 +185,33 @@ def delete(request, pk):
 		server = get_object_or_404(Server, pk=pk)
 		server.delete()
 		return Response(status=status.HTTP_204_NO_CONTENT)
+
+def import_csv_computer(request):
+	template = 'upload.html'
+	if request.method == 'GET':
+		return render(request, template, {})
+	elif request.method == 'POST':
+		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
+		data = csv.reader(csv_file)
+		for row in data:
+			computer, created = Computer.objects.get_or_create(
+				hostname = str(row[0]),
+				location = str(row[1]),
+				ipv4 = str(row[2]),
+				ipv6 = str(row[3]),
+				os = str(row[4]),
+				physical_virtual = str(row[5]),
+				owner = str(row[6]),
+				administrator = str(row[7]),
+				uofa_tag_number = str(row[8]),
+				make_model = str(row[9]),
+				cpu = str(row[10]),
+				ram = str(row[11]),
+				storage = str(row[12]),
+				gpu = str(row[13]),
+				serial_number = str(row[14]),
+				department = str(row[20]),
+				comments = str(row[21]),
+			)
+			computer.save()
+		return redirect('WebCMDBapi:computers')
