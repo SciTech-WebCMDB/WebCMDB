@@ -70,16 +70,17 @@ class Computer(models.Model):
 	]
 
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-	hostname = models.CharField(max_length=100) #unique = True?
+	hostname = models.CharField(max_length=100, blank=True) #unique = True?
 	location = models.CharField(max_length=100, blank=True)
 	ipv4 = models.GenericIPAddressField(protocol='IPv4', blank=True, null=True)
 	ipv6 = models.GenericIPAddressField(protocol='IPv6', blank=True, null=True)
-	desktop_laptop_nas = models.CharField(
-		'Desktop/Laptop/NAS',
-		max_length=15,
-		choices=DESKTOP_LAPTOP_NAS_CHOICES,
-		default=DESKTOP,
-	)
+	# desktop_laptop_nas = models.CharField(
+	# 	'Desktop/Laptop/NAS',
+	# 	max_length=15,
+	# 	choices=DESKTOP_LAPTOP_NAS_CHOICES,
+	# 	default=DESKTOP,
+	# )
+	desktop_laptop_nas = models.CharField(max_length=100, blank=True)
 	os = models.CharField(max_length=100, blank=True)
 	# physical_virtual = models.CharField(
 	# 	'Physical/Virtual',
