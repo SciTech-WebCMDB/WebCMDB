@@ -7,14 +7,18 @@ from rest_framework.decorators import api_view, renderer_classes
 
 from .serializers import ComputerSerializer, ServerSerializer, SearchSerializer
 from .models import Computer, Server
+from .tasks import import_csv_computer_task
 
 from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
 from django.http import JsonResponse
 
-
 import uuid, re, csv
 from io import TextIOWrapper
+from django.core.management import call_command
+
+# from celery import shared_task
+# from celery_progress.backend import ProgressRecorder
 
 # Create your views here.
 
@@ -186,73 +190,80 @@ def delete(request, pk):
 		server.delete()
 		return Response(status=status.HTTP_204_NO_CONTENT)
 
-def import_csv_computer(request):
-	# You try to get the machine, if exists, update
-	# Else create.
-	# AKA Overwrite
-	template = 'upload.html'
+def upload(request):
+	template = "upload.html"
 	if request.method == 'GET':
 		return render(request, template, {})
-	elif request.method == 'POST':
-		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
-		data = csv.reader(csv_file)
-		for row in data:
-			if str(row[0]) == '':
-				# I do not deal with empty hostname computer right now.
-				pass
 
-				# computer = Computer(
-				# 	hostname = str(row[0]),
-				# 	location = str(row[1]),
-				# 	ipv4 = str(row[2]),
-				# 	ipv6 = str(row[3]),
-				# 	os = str(row[4]),
-				# 	physical_virtual = str(row[5]),
-				# 	owner = str(row[6]),
-				# 	administrator = str(row[7]),
-				# 	uofa_tag_number = str(row[8]),
-				# 	make_model = str(row[9]),
-				# 	cpu = str(row[10]),
-				# 	ram = str(row[11]),
-				# 	storage = str(row[12]),
-				# 	gpu = str(row[13]),
-				# 	serial_number = str(row[14]),
-				# 	status = str(row[15]).upper(),
-				# 	rack = str(row[16]),
-				# 	scitech_access = str(row[17]),
-				# 	power_up_priority = str(row[18]),
-				# 	support_team = str(row[19]),
-				# 	department = str(row[20]),
-				# 	comments = str(row[21]),
-				# )
-				# computer.save()
-			else:
-				computer, created = Computer.objects.get_or_create(
-					hostname = str(row[0]),
-				)
-				if 'overwrite' in request.POST:
-					computer.location = str(row[1])
-					computer.ipv4 = str(row[2])
-					computer.ipv6 = str(row[3])
-					computer.os = str(row[4])
-					computer.physical_virtual = str(row[5])
-					computer.owner = str(row[6])
-					computer.administrator = str(row[7])
-					computer.uofa_tag_number = str(row[8])
-					computer.make_model = str(row[9])
-					computer.cpu = str(row[10])
-					computer.ram = str(row[11])
-					computer.storage = str(row[12])
-					computer.gpu = str(row[13])
-					computer.serial_number = str(row[14])
-					computer.status = str(row[15]).upper()
-					computer.rack = str(row[16]),
-					computer.scitech_access = str(row[17])
-					computer.power_up_priority = str(row[18])
-					computer.support_team = str(row[19])
-					computer.department = str(row[20])
-					computer.comments = str(row[21])
+def import_csv_computer(request):
+	if request.method == 'POST':
+		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
+		data = list(csv.reader(csv_file))
+		if 'overwrite' in request.POST:
+			data.append(True)
+		else:
+			data.append(False)
+		result = import_csv_computer_task.delay(data)
+		call_command('update_index')
+		return render(request, 'WebCMDBapi/display_progress.html', context={'task_id': result.task_id})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-------------------------------------------------------------------------------------------#
+#                         THIS DOESNT USE CELERY - FOR BACKUP ONLY                          #
+#-------------------------------------------------------------------------------------------#
+# def import_csv_computer(request):
+# 	# You try to get the machine, if exists, update
+# 	# Else create.
+# 	# AKA Overwrite
+# 	template = 'upload.html'
+# 	if request.method == 'GET':
+# 		return render(request, template, {})
+# 	elif request.method == 'POST':
+# 		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
+# 		data = csv.reader(csv_file)
+# 		for row in data:
+# 			if str(row[0]) == '':
+# 				# I do not deal with empty hostname computer right now.
+# 				pass
+# 			else:
+# 				computer, created = Computer.objects.get_or_create(
+# 					hostname = str(row[0]),
+# 				)
+# 				if 'overwrite' in request.POST:
+# 					computer.location = str(row[1])
+# 					computer.ipv4 = str(row[2])
+# 					computer.ipv6 = str(row[3])
+# 					computer.os = str(row[4])
+# 					computer.physical_virtual = str(row[5])
+# 					computer.owner = str(row[6])
+# 					computer.administrator = str(row[7])
+# 					computer.uofa_tag_number = str(row[8])
+# 					computer.make_model = str(row[9])
+# 					computer.cpu = str(row[10])
+# 					computer.ram = str(row[11])
+# 					computer.storage = str(row[12])
+# 					computer.gpu = str(row[13])
+# 					computer.serial_number = str(row[14])
+# 					computer.status = str(row[15]).upper()
+# 					computer.rack = str(row[16]),
+# 					computer.scitech_access = str(row[17])
+# 					computer.power_up_priority = str(row[18])
+# 					computer.support_team = str(row[19])
+# 					computer.department = str(row[20])
+# 					computer.comments = str(row[21])
 			
-				computer.save()
-		return redirect('WebCMDBapi:computers')
+# 				computer.save()
+# 		return redirect('WebCMDBapi:computers')
 
