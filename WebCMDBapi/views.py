@@ -140,11 +140,13 @@ class ComputerDetailAPIView(APIView):
 			if not serializer.is_valid():
 				return Response({'serializer': serializer, 'computer': computer})
 			serializer.save()
+			call_command('update_index', '--remove')
 			return redirect('WebCMDBapi:computers')
 		else:
 			serializer = ComputerSerializer(data=request.data)
 			if serializer.is_valid():
 				computer = serializer.save()
+				call_command('update_index', '--remove')
 				return redirect('WebCMDBapi:computer_detail', pk=computer.pk)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -171,11 +173,13 @@ class ServerDetailAPIView(APIView):
 			if not serializer.is_valid():
 				return Response({'serializer': serializer, 'server': server})
 			serializer.save()
+			call_command('update_index', '--remove')
 			return redirect('WebCMDBapi:servers')
 		else:
 			serializer = ServerSerializer(data=request.data)
 			if serializer.is_valid():
 				server = serializer.save()
+				call_command('update_index', '--remove')
 				return redirect('WebCMDBapi:server_detail', pk=server.pk)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -184,10 +188,12 @@ def delete(request, pk):
 	if 'computer' in request.path_info:
 		computer = get_object_or_404(Computer, pk=pk)
 		computer.delete()
+		call_command('update_index', '--remove')
 		return Response(status=status.HTTP_204_NO_CONTENT)
 	elif 'server' in request.path_info:
 		server = get_object_or_404(Server, pk=pk)
 		server.delete()
+		call_command('update_index', '--remove')
 		return Response(status=status.HTTP_204_NO_CONTENT)
 
 def upload(request):
@@ -200,11 +206,10 @@ def import_csv_computer(request):
 		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
 		data = list(csv.reader(csv_file))
 		if 'overwrite' in request.POST:
-			data.append(True)
+			overwrite = True
 		else:
-			data.append(False)
-		result = import_csv_computer_task.delay(data)
-		call_command('update_index')
+			overwrite = False
+		result = import_csv_computer_task.delay(data, overwrite)
 		return render(request, 'WebCMDBapi/display_progress.html', context={'task_id': result.task_id})
 
 
