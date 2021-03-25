@@ -4,3 +4,6 @@ fontawesome-free==5.15.2
 django-haystack==3.0
 drf-haystack==1.8.9
 Whoosh==2.7.4
+celery==5.0.5
+django-celery-results==2.0.1
+celery-progress==0.1.0
