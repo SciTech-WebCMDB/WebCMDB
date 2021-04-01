@@ -1,0 +1,30 @@
+{% extends 'WebCMDBapi/base.html' %}
+{% load rest_framework %}
+{% load static %}
+{% block content %}
+<h1> Search Result </h1><a id="a_json" href="" onclick="get_json()">json</a>
+<ul>
+	{% for machine in machines %}
+		{% if "Computer" in machine.object %}
+		<li>
+			<a href="{% url 'WebCMDBapi:computer_detail' pk=machine.object.pk %}">ID: {{ machine.object.id }}</a>
+			<p>Type: Computer</p>
+			<p>Hostname: {{ machine.object.hostname }}</p>
+			<p>Location: {{ machine.object.location }}</p>
+		</li>
+		{% elif "Server" in machine.object %}
+		<li>
+			<a href="{% url 'WebCMDBapi:server_detail' pk=server.object.pk %}">ID: {{ server.object.id }}</a>
+			<p>Type: Server</p>
+			<p>Hostname: {{ machine.object.hostname }}</p>
+			<p>Location: {{ machine.object.location }}</p>
+		</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+<script type="text/javascript">
+	function get_json() {
+		document.getElementById("a_json").href = '/api' + window.location.pathname + window.location.search
+	}
+</script>
+{% endblock %}

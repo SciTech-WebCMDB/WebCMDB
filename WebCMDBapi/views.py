@@ -31,6 +31,7 @@ class AllSearchGeneric(HaystackGenericAPIView):
 	# Add this to fix Query doesnt look up for 2 modes: HAYSTACK_LIMIT_TO_REGISTERED_MODELS = False
 	serializer_class = ServerSerializer
 	renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
+	template_name = 'WebCMDBapi/search_generic.html'
 
 	def get_queryset(self, *args, **kwargs):
 		queryset = SearchQuerySet().all().filter(content=self.request.GET.get('search'))
@@ -39,10 +40,12 @@ class AllSearchGeneric(HaystackGenericAPIView):
 	def get(self, request):
 		query_param = self.request.GET.get('search')
 		queryset = self.get_queryset() 
-		print(queryset)
 
 		content = []
+		if queryset == None:
+			return Response({"message": "no machine found."}, status=status.HTTP_404_NOTFOUND)
 		for x in queryset:
+			print(str(x.object))
 			if str(x.object._meta) == 'WebCMDBapi.computer':
 				content.append(ComputerSerializer(instance=x.object).data)
 			elif str(x.object._meta) == 'WebCMDBapi.server':
@@ -59,7 +62,9 @@ class AllSearchGeneric(HaystackGenericAPIView):
 
 		if self.request.path_info.startswith('/api/'):
 			return JsonResponse(content, safe=False)
-		#return HTML here
+		else:
+			return Response({'machines': queryset})
+		#return HTML render here
 
 class ComputerSearchGeneric(generics.ListAPIView):
 	# cdrf.co/3.1/rest_framework.generics/ListAPIView.html

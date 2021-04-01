@@ -1,7 +1,7 @@
 from haystack import indexes
 from .models import Computer, Server
 
-class ComputerIndex(indexes.SearchIndex, indexes.Indexable):
+class ComputerIndex(indexes.SearchIndex, indexes.Indexable,):
 	text = indexes.NgramField(document=True, use_template=True)
 	hostname = indexes.CharField(model_attr='hostname')
 	ipv4 = indexes.CharField(model_attr='ipv4', null=True)

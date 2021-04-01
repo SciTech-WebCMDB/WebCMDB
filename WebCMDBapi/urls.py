@@ -15,6 +15,7 @@ urlpatterns = [
 	path('api/server_detail/<uuid:pk>/', views.ServerDetailAPIView.as_view(), name='server_detail_json'),
 	path('search/generic/computer/', views.ComputerSearchGeneric.as_view(), name='computer_search_generic'),
 	path('search/generic/server/', views.ServerSearchGeneric.as_view(), name='server_search_generic'),
+	path('search/generic/all/', views.AllSearchGeneric.as_view(), name='all_search_generic'),
 	path('api/search/generic/all/', views.AllSearchGeneric.as_view(), name='all_search_generic_api'),
 	path('api/search/generic/computer/', views.ComputerSearchGeneric.as_view(), name='computer_search_generic_api'),
 	path('api/search/generic/server/', views.ServerSearchGeneric.as_view(), name='server_search_generic_api'),
