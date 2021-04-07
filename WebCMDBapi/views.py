@@ -39,31 +39,54 @@ class AllSearchGeneric(HaystackGenericAPIView):
 
 	def get(self, request):
 		query_param = self.request.GET.get('search')
-		queryset = self.get_queryset() 
-
-		content = []
-		if queryset == None:
-			return Response({"message": "no machine found."}, status=status.HTTP_404_NOTFOUND)
-		for x in queryset:
-			print(str(x.object))
-			if str(x.object._meta) == 'WebCMDBapi.computer':
-				content.append(ComputerSerializer(instance=x.object).data)
-			elif str(x.object._meta) == 'WebCMDBapi.server':
-				content.append(ServerSerializer(instance=x.object).data)
+		queryset = list(self.get_queryset())
 
 		# Regex for UUID, need len >= 6
 		# TODO: auto redirect to the detail page?
 		uuid_pattern = re.compile("[0-9a-fA-F-.\d]+")
+		uuid_list = []
 		if len(query_param) >= 6 and uuid_pattern.search("query_param"):
-			if Computer.objects.filter(id__contains=query_param).exists():
-				content.extend(list(ComputerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
-			if Server.objects.filter(id__contains=query_param).exists():
-				content.extend(list(ServerSerializer(Computer.objects.filter(id__contains=query_param), many=True).data))
+			computer_queryset = Computer.objects.filter(id__contains=query_param)
+			if computer_queryset.count() > 0:
+				for computer in computer_queryset:
+					computer_id = str(computer.id)
+					uuid_list.append({'type': 'computer', 'id': computer_id, 'url': f"/computer_detail/{computer_id}/"})
+			server_queryset = Server.objects.filter(id__contains=query_param)			
+			if server_queryset.count() > 0:
+				for server in server_queryset:
+					uuid_list.append({'type': 'server', 'id': str(server.id)})
 
+		if len(uuid_list) == 1 and len(queryset) == 0:
+			return redirect(uuid_list[0]['url'])
+		elif len(uuid_list) == 0 and len(queryset) == 1:
+			machine = queryset[0]
+			if machine.model_name == "computer":
+				return redirect(f"/computer_detail/{str(machine.object.id)}/")
+			elif machine.model_name == "server":
+				return redirect(f"/server_detail/{str(machine.object.id)}/")
+		elif len(uuid_list) == 0 and len(queryset) == 0:
+			return Response({"message": "no machine found."}, status=status.HTTP_404_NOT_FOUND)
+	
 		if self.request.path_info.startswith('/api/'):
+			content = []
+			for x in queryset:
+				if x.model_name == "computer":
+					content.append(
+						{
+							"type": "computer",
+							"detail": ComputerSerializer(instance=x.object).data,
+						}
+					)
+				elif x.model_name == "server":
+					content.append(
+						{
+							"type": "server",
+							"detail": ServerSerializer(instance=x.object).data,
+						}
+					)
 			return JsonResponse(content, safe=False)
 		else:
-			return Response({'machines': queryset})
+			return Response({'machines': queryset, 'uuid_list': uuid_list})
 		#return HTML render here
 
 class ComputerSearchGeneric(generics.ListAPIView):

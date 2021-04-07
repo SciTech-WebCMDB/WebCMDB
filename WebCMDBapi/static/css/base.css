@@ -1,5 +1,10 @@
 html {
 	font-family: "Times New Roman", Times, serif;
+	background-color: #FAF0E6;
+}
+
+body {
+	background-color: #FAF0E6;
 }
 
 .webcmdb-index h1, h3, a {

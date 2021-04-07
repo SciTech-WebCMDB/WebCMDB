@@ -2,21 +2,33 @@
 {% load rest_framework %}
 {% load static %}
 {% block content %}
-<h1> Search Result </h1><a id="a_json" href="" onclick="get_json()">json</a>
+<h1> Search Result </h1><a id="a_json" href="" onclick="get_json()">json</a><br>
+
+{% if uuid_list %}
+<button onclick="myFunction()">Show UUID Lists</button>
+<div id="myDIV">
+  {% for uuid in uuid_list %}
+	{% if uuid.type == "computer" %}
+		<a href="{{ uuid.url }}">ID: {{uuid.id}}</a>
+	{% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
 <ul>
 	{% for machine in machines %}
-		{% if "Computer" in machine.object %}
+		{% if machine.model_name == "computer" %}
 		<li>
 			<a href="{% url 'WebCMDBapi:computer_detail' pk=machine.object.pk %}">ID: {{ machine.object.id }}</a>
-			<p>Type: Computer</p>
-			<p>Hostname: {{ machine.object.hostname }}</p>
+			<p><i>Type: Computer</i></p>
+			<p><b>Hostname: {{ machine.object.hostname }}</b></p>
 			<p>Location: {{ machine.object.location }}</p>
 		</li>
-		{% elif "Server" in machine.object %}
+		{% elif machine.model_name == "server" %}
 		<li>
 			<a href="{% url 'WebCMDBapi:server_detail' pk=server.object.pk %}">ID: {{ server.object.id }}</a>
 			<p>Type: Server</p>
-			<p>Hostname: {{ machine.object.hostname }}</p>
+			<p>Hostname: {{ machine.object.servername }}</p>
 			<p>Location: {{ machine.object.location }}</p>
 		</li>
 		{% endif %}
@@ -25,6 +37,14 @@
 <script type="text/javascript">
 	function get_json() {
 		document.getElementById("a_json").href = '/api' + window.location.pathname + window.location.search
+	}
+	function myFunction() {
+		var x = document.getElementById("myDIV");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
 	}
 </script>
 {% endblock %}
