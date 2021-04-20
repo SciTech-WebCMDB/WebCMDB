@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd WebCMDBapi/bash
 rm -rf machines
 git clone git@github.com:SciTech-WebCMDB/machines.git
 cd machines
