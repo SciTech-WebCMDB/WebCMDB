@@ -258,10 +258,11 @@ def diff(request):
 				)
 				result = {"status": "Success", "output":str(output)}
 			else:
-				diff = {"status":"Failed"}
+				diff = {"status":"Failed", "summary": "Failed"}
 				result = {"status": "Failed", "output":str(output)}
 
 		except Exception as e:
+				diff = {"status":"Failed", "summary": "Failed"}
 				result =  {"status": "failed", "output":str(e)}
 
 		json_data = {
