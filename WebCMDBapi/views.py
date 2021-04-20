@@ -13,7 +13,7 @@ from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
 from django.http import JsonResponse, HttpResponse
 
-import uuid, re, csv, os
+import uuid, re, csv, os, requests
 from io import TextIOWrapper
 from subprocess import Popen, PIPE, STDOUT
 from csv_diff import load_csv, compare
@@ -310,7 +310,8 @@ def database_to_csv():
 				temp[2] = ""
 			csv_writer.writerow(temp)
 
-
+def update_database(request):
+	pass #TODO
 
 #-------------------------------------------------------------------------------------------#
 #                         THIS DOESNT USE CELERY - FOR BACKUP ONLY                          #

@@ -7,6 +7,7 @@
 		<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="{% static 'css/base.css' %}"/>
 		<link rel="stylesheet" href="{% static 'css/form.css' %}"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class='webcmdb-index' id='webcmdb-index'>
@@ -47,7 +48,85 @@
 				</form>
 			</div>
 		</div>
+		<div id='webcmdb-git-tracker'>
+			<h3 id='git-loading'>Checking authoritative machines.csv ...</h3>
+			<div id='git-diff-show'></div>
+		</div>
+
 		<script>
+			$(document).ready(function() {
+				var diffAPI = "http://localhost:8000/api/diff";
+				$.getJSON( diffAPI, function ( data ) {
+					if (data.summary == "No changes detected"){
+						$("#webcmdb-git-tracker").html("<h3 style='color:green;'>"+data.summary+"</h3>");
+					} else {
+						$("#webcmdb-git-tracker").html("<h3 style='color:red;'>"+data.summary+"</h3>");
+						$("#webcmdb-git-tracker").append(`
+							<div class='center'>
+								<button id="button-diff" class="btn btn-info" onclick="toggleDiff()">Show Diff</button>
+								<a href="{% url 'WebCMDBapi:update_database' %}"><button class="btn btn-danger" onclick="return confirm('This will overwrite the current database. Are you sure?')">Update</button></a>
+							</div>
+							<div id='git-diff-show'>
+								<table id='git-diff-table' style='width:75%; margin-top: 10px; margin-left:auto; margin-right:auto'>
+									<tr>
+										<th>ID</th>
+										<th>Machine UUID</th>
+										<th>Attribute</th>
+										<th>WebCMDB</th>
+										<th>git</th>
+									</tr>
+								</table>
+							</div>
+						`);
+						var changed = data.diff.changed;
+						console.log(changed)
+						for (var i = 0;  i < changed.length; i++) {
+							var changes = changed[i].changes;
+							var mod2 = i % 2;
+							if (mod2 == 0) {
+								for (let attr in changes) {
+									$("#git-diff-table").append(`
+										<tr style='background-color: LightGray'>
+											<th>${i}</th>
+											<th>${changed[i].key}</th>
+											<th>${attr}</th>
+											<th style='background-color: LightGreen'>${changes[attr][0]}</th>
+											<th style='background-color: LightCoral'>${changes[attr][1]}</th>	
+										</tr>
+									`);
+								};
+							} else {
+								for (let attr in changes) {
+									$("#git-diff-table").append(`
+										<tr>
+											<th>${i}</th>
+											<th>${changed[i].key}</th>
+											<th>${attr}</th>
+											<th style='background-color: LightGreen'>${changes[attr][0]}</th>
+											<th style='background-color: LightCoral'>${changes[attr][1]}</th>	
+										</tr>
+									`);
+								};
+							};
+						};
+					};
+					$("#git-diff-show").hide();
+					$("#git-loading").hide();
+				});
+			});
+
+			function toggleDiff() {
+				var x = document.getElementById("git-diff-show");
+				var b = document.getElementById("button-diff");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+					b.innerText = "Hide Diff";
+				} else {
+					b.innerText = "Show Diff";
+					x.style.display = "none";
+				}
+			}; 
+
 			function get_search_query() {
 				var search_select = document.getElementById('machine');
 				var machine = search_select.value;

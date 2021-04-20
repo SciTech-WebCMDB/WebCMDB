@@ -7,6 +7,27 @@ body {
 	background-color: #FAF0E6;
 }
 
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.center .btn {
+	margin-left: 10px
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+
 .webcmdb-index h1, h3, a {
 	text-align: center;
 }

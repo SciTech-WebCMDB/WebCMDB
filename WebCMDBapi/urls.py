@@ -26,4 +26,5 @@ urlpatterns = [
 	path('upload/', views.upload, name='upload'),
 	path('progress/', views.import_csv_computer, name='import_csv_computer'),
 	path('api/diff', views.diff, name='diff'),
+	path('update_database/', views.update_database, name='update_database'),
 ]
