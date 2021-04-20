@@ -11,10 +11,13 @@ from .tasks import import_csv_computer_task
 
 from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 
-import uuid, re, csv
+import uuid, re, csv, os
 from io import TextIOWrapper
+from subprocess import Popen, PIPE, STDOUT
+from csv_diff import load_csv, compare
+
 from django.core.management import call_command
 
 # from celery import shared_task
@@ -232,7 +235,7 @@ def upload(request):
 def import_csv_computer(request):
 	if request.method == 'POST':
 		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
-		data = list(csv.reader(csv_file))
+		data = list(csv.reader(csv_file, delimiter="|"))
 		if 'overwrite' in request.POST:
 			overwrite = True
 		else:
@@ -240,16 +243,71 @@ def import_csv_computer(request):
 		result = import_csv_computer_task.delay(data, overwrite)
 		return render(request, 'WebCMDBapi/display_progress.html', context={'task_id': result.task_id})
 
+def diff(request):
+	if request.method == "GET":
+		command = ["bash", "WebCMDBapi/bash/gitfetch.sh"]
+		try:
+			process = Popen(command, stdout=PIPE, stderr=STDOUT)
+			output = process.stdout.read()
+			exitstatus = process.poll()
+			if (exitstatus==0):
+				database_to_csv()
+				diff = compare(
+					load_csv(open("WebCMDBapi/data/machines/machines.csv"), key="21 UUID"),
+					load_csv(open("WebCMDBapi/bash/machines/machines_tri.csv"), key="21 UUID")
+				)
+				result = {"status": "Success", "output":str(output)}
+			else:
+				diff = {"status":"Failed"}
+				result = {"status": "Failed", "output":str(output)}
 
+		except Exception as e:
+				result =  {"status": "failed", "output":str(e)}
 
+		json_data = {
+			"script": {
+				"status": result["status"],
+				"ouput": result["output"],
+			},
+			"summary": diff["summary"],
+			"diff": diff,
+		}
 
+		return JsonResponse(json_data, safe=False)
 
-
-
-
-
-
-
+def database_to_csv():
+	machines = Computer.objects.all()
+	with open('WebCMDBapi/data/machines.csv', 'w') as csv_file:
+		csv_writer = csv.writer(csv_file, delimiter="|")
+		csv_writer.writerow(['1 NAME', '2 ROOM', '3 IP', '4 OS', '5 OS version', '6 CATEGORY', '7 OWNER', '8 AUTHORITY', '9 BARCODE', '10 DESCRIPTION', '11 SPARE1', '12 SERIAL NUMBER', '13 HOSTID', '14 HOST STATUS', '15 INVENTORY STATUS', '16 FIREWALL', '17 TRUSTLEVEL', '18 RACKINFO', '19 POWER UP', '20 SUPPORT TEAM', '21 UUID', '22 COMMENTS'])
+		for machine in machines:
+			temp = [
+				str(machine.hostname),
+				str(machine.location),
+				str(machine.ipv4),
+				str(machine.os),
+				str(machine.os_version),
+				str(machine.physical_virtual),
+				str(machine.owner),
+				str(machine.administrator),
+				str(machine.uofa_tag_number),
+				str(machine.make_model),
+				'',
+				str(machine.serial_number),
+				str(machine.host_id),
+				str(machine.host_status),
+				str(machine.status).lower(),
+				str(machine.firewall),
+				str(machine.trustlevel),
+				str(machine.rack),
+				str(machine.power_up_priority),
+				str(machine.support_team),
+				str(machine.id),
+				str(machine.comments)
+			]
+			if temp[2] == 'None':
+				temp[2] = ""
+			csv_writer.writerow(temp)
 
 
 

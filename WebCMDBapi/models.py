@@ -71,7 +71,7 @@ class Computer(models.Model):
 
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	hostname = models.CharField(max_length=100, blank=True) #unique = True?
-	location = models.CharField(max_length=100, blank=True)
+	location = models.CharField(max_length=100, blank=True, null=True)
 	ipv4 = models.GenericIPAddressField(protocol='IPv4', blank=True, null=True)
 	ipv6 = models.GenericIPAddressField(protocol='IPv6', blank=True, null=True)
 	# desktop_laptop_nas = models.CharField(
@@ -80,40 +80,45 @@ class Computer(models.Model):
 	# 	choices=DESKTOP_LAPTOP_NAS_CHOICES,
 	# 	default=DESKTOP,
 	# )
-	desktop_laptop_nas = models.CharField(max_length=100, blank=True)
-	os = models.CharField(max_length=100, blank=True)
+	desktop_laptop_nas = models.CharField(max_length=100, blank=True, null=True)
+	os = models.CharField(max_length=100, blank=True, null=True)
+	os_version = models.CharField(max_length=100, blank=True, null=True)
 	# physical_virtual = models.CharField(
 	# 	'Physical/Virtual',
 	# 	max_length=15,
 	# 	choices=PHYSICAL_VIRTUAL_CHOICE,
 	# 	default=PHYSICAL,
 	# )
-	physical_virtual = models.CharField(max_length=100, blank=True)
-	owner = models.CharField(max_length=100, blank=True)
-	administrator = models.CharField(max_length=100, blank=True)
-	uofa_tag_number = models.CharField(max_length=15, blank=True)
-	make_model = models.CharField(max_length=100, blank=True)
-	cpu = models.CharField(max_length=100, blank=True)
-	ram = models.CharField(max_length=15, blank=True)
-	storage = models.CharField(max_length=15, blank=True)
-	gpu = models.CharField(max_length=100, blank=True)
-	serial_number = models.CharField(max_length=15, blank=True)
+	physical_virtual = models.CharField(max_length=100, blank=True, null=True)
+	owner = models.CharField(max_length=100, blank=True, null=True)
+	administrator = models.CharField(max_length=100, blank=True, null=True)
+	uofa_tag_number = models.CharField(max_length=15, blank=True, null=True)
+	make_model = models.CharField(max_length=100, blank=True, null=True)
+	cpu = models.CharField(max_length=100, blank=True, null=True)
+	ram = models.CharField(max_length=15, blank=True, null=True)
+	storage = models.CharField(max_length=15, blank=True, null=True)
+	gpu = models.CharField(max_length=100, blank=True, null=True)
+	serial_number = models.CharField(max_length=50, blank=True, null=True)
 	status = models.CharField(
 		'Status',
 		choices=STATUS_CHOICE,
 		max_length=15,
 		default=ACTIVE,
 	)
-	rack = models.CharField(max_length=15, blank=True)
+	host_id = models.CharField(max_length=50, blank=True, null=True)
+	host_status = models.CharField(max_length=50, blank=True, null=True)
+	firewall = models.CharField(max_length=50, blank=True, null=True)
+	trustlevel = models.CharField(max_length=50, blank=True, null=True)
+	rack = models.CharField(max_length=15, blank=True, null=True)
 	scitech_access = models.BooleanField(null=True)
 	power_up_priority = models.CharField(
 		max_length=1,
 		choices=POWER_UP_PRIORITY_CHOICE,
 		default=UNKNOWN_PRIORITY,
 	)
-	support_team = models.CharField(max_length=100, blank=True)
-	department = models.CharField(max_length=100, blank=True)
-	comments = models.TextField(blank=True)
+	support_team = models.CharField(max_length=100, blank=True, null=True)
+	department = models.CharField(max_length=100, blank=True, null=True)
+	comments = models.TextField(blank=True, null=True)
 	latest_information_update_date = models.DateTimeField(auto_now=True)
 	date_added_to_database = models.DateTimeField(auto_now_add=True)
 

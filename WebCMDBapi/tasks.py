@@ -12,62 +12,58 @@ def import_csv_computer_task(self, data, overwrite):
 	total_work = len(data)
 	log = ''
 	for i, row in enumerate(data):
-		if str(row[0]) == '': # DO NOT DEAL WITH EMPTY HOSTNAME
-			empty += 1
-		else:
+		if i != 0:
 			try:
 				if overwrite:
 					computer, created = Computer.objects.update_or_create(
-							hostname = str(row[0]),
+							id = str(row[20]),
 							defaults = {
+								'hostname': str(row[0]),
 								'location': str(row[1]),
 								'ipv4': str(row[2]),
-								'ipv6' :str(row[3]),
-								'os' :str(row[4]),
+								'os' :str(row[3]),
+								'os_version': str(row[4]),
 								'physical_virtual' :str(row[5]),
 								'owner': str(row[6]),
 								'administrator' :str(row[7]),
 								'uofa_tag_number' :str(row[8]),
 								'make_model' :str(row[9]),
-								'cpu': str(row[10]),
-								'ram' :str(row[11]),
-								'storage' :str(row[12]),
-								'gpu': str(row[13]),
-								'serial_number': str(row[14]),
-								'status': str(row[15]).upper(),
-								'rack': str(row[16]),
-								'scitech_access': str(row[17]),
+								'serial_number': str(row[11]),
+								'host_id': str(row[12]),
+								'host_status': str(row[13]),
+								'status': str(row[14]).upper(),
+								'firewall': str(row[15]),
+								'trustlevel': str(row[16]),
+								'rack': str(row[17]),
 								'power_up_priority': str(row[18]),
 								'support_team': str(row[19]),
-								'department' :str(row[20]),
 								'comments' :str(row[21]),
 							},
 						)
 					result += 1
 				else:
 					computer, created = Computer.objects.get_or_create(
-							hostname = str(row[0]),
+							id = str(row[20]),
 							defaults = {
+								'hostname': str(row[0]),
 								'location': str(row[1]),
 								'ipv4': str(row[2]),
-								'ipv6' :str(row[3]),
-								'os' :str(row[4]),
+								'os' :str(row[3]),
+								'os_version': str(row[4]),
 								'physical_virtual' :str(row[5]),
 								'owner': str(row[6]),
 								'administrator' :str(row[7]),
 								'uofa_tag_number' :str(row[8]),
 								'make_model' :str(row[9]),
-								'cpu': str(row[10]),
-								'ram' :str(row[11]),
-								'storage' :str(row[12]),
-								'gpu': str(row[13]),
-								'serial_number': str(row[14]),
-								'status': str(row[15]).upper(),
-								'rack': str(row[16]),
-								'scitech_access': str(row[17]),
+								'serial_number': str(row[11]),
+								'host_id': str(row[12]),
+								'host_status': str(row[13]),
+								'status': str(row[14]).upper(),
+								'firewall': str(row[15]),
+								'trustlevel': str(row[16]),
+								'rack': str(row[17]),
 								'power_up_priority': str(row[18]),
 								'support_team': str(row[19]),
-								'department' :str(row[20]),
 								'comments' :str(row[21]),
 							},
 						)
@@ -82,4 +78,4 @@ def import_csv_computer_task(self, data, overwrite):
 		call_command('rebuild_index', '--noinput')
 	else:
 		call_command('update_index', '--remove')
-	return f'{result}/{total_work} added; {empty} empty hostname entries; {total_work-result-empty} errors'
+	return f'{result}/{total_work-1} added; {empty} empty hostname entries; {total_work-1-result-empty} errors'

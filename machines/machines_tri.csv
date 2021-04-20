@@ -1,0 +1,1199 @@
+1 NAME|2 ROOM|3 IP|4 OS|5 OS version|6 CATEGORY|7 OWNER|8 AUTHORITY|9 BARCODE|10 DESCRIPTION|11 SPARE1|12 SERIAL NUMBER|13 HOSTID|14 HOST STATUS|15 INVENTORY STATUS|16 FIREWALL|17 TRUSTLEVEL|18 RACKINFO|19 POWER UP|20 SUPPORT TEAM|21 UUID|22 COMMENTS
+3bng7x2|CSC265|129.128.159.245|dual-boot|Win10 Ubuntu 18||yang|yang||XPS 8930 i7-8700 32GB||7234862870||NOP|active|OK|||5||0bac65f7-c311-4c93-bc01-9e3fc12e9c0c|
+586239-cs|ATH413||Windows|8.1 Enterprise|laptop|yang|yang|586239|Core i7 4500U @ 1.8 GHz, 8 GB, 1 TB||QB08009497||CLEAN|active|OK|||5||55989164-a114-4fbe-894e-9555e4f3a57f|On UWS
+604047-cs|CSC247||Windows|7 Enterprise|laptop|ackerl|ackerl|604047|ThinkPad T410i, Core i3 M370 @ 2.4 GHz, 4 GB, 250 GB||R8-B2F4M||CLEAN|active|OK|||5||18d4a46c-4ff5-4a7b-b2c9-beb9f8996b48|On UWS
+abyssus|CSC351|129.128.184.23|Linux|Ubuntu 14.04|regular||athess||||||NOP|active||||5||5bcd3f17-f85c-4d68-b899-baba1cc065cd|
+acme|CSC205||Linux|Ubuntu 14.04|regular||hasell,zaiane|543298|Q9400/2.66-8192||1FS5WK1||NOP|active||||5||0d7a06cc-62c6-4304-80ab-23494cac630f|On NAT
+adair-crk|CSC217|129.128.184.8|Linux|Ubuntu 16.04|regular|hayward|hayward|604055|i7-6700/GTX1080,32GB RAM, 1 TB HDD||106516329701||NOP|active||||5||b3dbb0da-6b32-4e43-a628-a3b80d8a0e65|
+admin-fw1-inside|admin-fw1|129.128.16.252|OpenBSD|4.5|alias|dept|tst||||||CLEAN|active||T||5||2151bbc7-02a8-4d43-bcec-b6a0fb0fe69e|internal interface
+admin-fw1|CSC231|129.128.22.241|OpenBSD|4.5|regular|dept|tst||Dell PE 850 P4 80547/2.66GHz-512||F0YQN91||CLEAN|retired||T|B|5||8dbc11aa-348a-4936-9830-37d8a78cd52e|TST managed server
+admin-fw2-inside|admin-fw2|129.128.16.253|OpenBSD|4.5|alias|dept|tst||||||CLEAN|active||T||5||aa494ca9-22c9-4d89-8955-48343691522e|internal interface
+admin-fw2|CSC231|129.128.22.242|OpenBSD|4.5|regular|dept|tst||Dell PE 850 P4 80547/2.66GHz-512||B0YQN91||CLEAN|retired||T|B|5||e49f0275-cd6d-4773-a09c-8a01c29be144|TST managed server
+admin-fw|CSC231|129.128.22.240|||public carp||tst||Dell PE 850 P4 80547/2.66GHz-512||floating||NA|floater||||5||79c149af-84f0-467c-8dfb-a82ce01f8d87|
+ahs3|CSC205|129.128.184.33|Linux||regular|ackerl|jiaji,jharder1||||||NOP|active||||5||c19e413a-729b-4f96-8d5f-3525a485294c|same machine as aicml3
+aicml2|CSC205|129.128.184.32|Linux|Ubuntu|regular||hasell,zaiane||||||NOP|active||||5||b2f25721-7386-4af1-9b1d-67d41586aa72|On WW
+aicml10|CSC205|129.128.184.97|Linux|Ubuntu|regular||hasell|||||||active||||5||35f069b7-0787-4c9c-8d66-9e4e614f1a3e|On WW
+aicml-med|CSC205|129.128.184.29|Linux|Ubuntu|regular||hasell,zaiane|505406|Core2/6600/2.4-2048||14027046P3||NOP|active||||5||6d460cb3-786a-4a83-9abf-27a7e3b02e25|On WW
+aicml-poker|CSC211||Linux|Ubuntu|regular||hasell,zaiane||AMD/MP2400-2048||ACS04006||NOP|retired||||5||a0fba621-7a0e-466d-9e95-f3d678db24e3|Surplussed -TASK0193966
+amii-prn|CSC247|129.128.23.177|||printer|roik|zaiane||HP MFP M426fdn||||CLEAN|active|OK|||5||2335c343-91ec-4e5a-a8f7-c21d6031367a|
+amii-prn2|CSC247|129.128.23.14|||printer|roik|zaiane||Brother HL-5470DW||||CLEAN|active|OK|||5||973a3790-0f07-4220-9d99-b09f30ee701a|
+aicml-srv|CSC247|129.128.184.30|||regular||hasell,zaiane|586258|i7-4771/3.50GHz-16384||14197553P||NOP|active||||5||49988b17-bb87-4af8-a406-79c00c595317|New Server #1093010
+airdrie|ATH206|129.128.23.32|Windows|7|regular||hasell,zaiane|543290|Q9400/2.66-8192||2FS5WK1||CLEAN|active|OK|||5||015f1568-7524-4333-9eec-e864e6d240a7|
+akasu-lk|ATH441||MacOS|10.8|regular|mn|dept|586224|iMac 21.5 A1418||C02JXRCXDNCR||CLEAN|active|OK|||5||137b3ead-dcfa-438e-9bf8-37e097a77589|On NAT
+akenside|CSC247|129.128.16.176|Windows|XP Pro 5.1.2600|regular|balaski|zaiane|461635|AMD/XP3200-2048||ACS04496||CLEAN|active|OK|||5||439e6b0e-a2d8-4dce-8d81-40372f34e4bd|Admin-Zone
+akuinu-riv|CSC205||Windows|7|regular|ackerl|zaiane||AMD/PN/710x3-8192||ACS06970||CLEAN|active||||5||12a7ab85-f869-4b67-96e1-95d96b580910|Not Tagged/On NAT
+alcurve|ATH342||MacOS|10.8|regular|mn|dept|586225|iMac 21.5 A1418||C02JXD3QDNCR||CLEAN|active|OK|||5||be8ba6d5-9f19-4aee-a60c-b4d12b0d72f5|On NAT
+alder-flats|CSC205|129.128.23.173|||regular||zaiane|473419|E6550-2048||C7L1TF1|||spare||||5||0a525485-e194-49ec-ba49-2d19ea3b8fb0|Disk wiped, awaiting retasking
+algar-lake|CCIS1083|129.128.16.196|MacOS|10.8|regular|dept|dept|586226|iMac 21.5 A1418||C02JXRFLDNCR||CLEAN|active|OK|||5||072c3ac8-9566-40fd-ada1-7e419b7c0f01|Used by Carol Smith in the Fac Sci office (approved by the Chair).
+alhambra|ATH241|129.128.16.160|Windows|XP Pro|regular||dept,dchoi|527279|Dell OptiPlex 755:Core2/2.66-2048||ACS03576||CLEAN|active||||5||6c1cb62b-50f5-49ed-88fb-9bdb9ff26d68|
+alix|ATH220|129.128.16.197|MacOS|10.8|regular|dept|dept|586227|iMac 21.5 A1418||C02JXFX2DNCR||CLEAN|spare|OK|||5||15882fa1-a057-4d35-80c2-f51cf59c3d8f|
+alliance|ATH252B|129.128.16.161|Windows|XP Pro|regular||dept,jsheppar|527273|Dell OptiPlex 755:Core2/2.66-2048||ACS03577||CLEAN|active||||5||2cd82749-a6b6-4332-8dad-1f053184c4c8|RDP
+alpen|CSC315|129.128.22.56||||||||||||spare||||||3de7b87c-e1df-4c11-a8bc-f54781ce9347|
+alsike|ATH304||MacOS|10.8|regular|mn|dept|586228|iMac 21.5 A1418||C02JXRE8DNCR||CLEAN|active|OK|||5||1c00c880-5591-4469-be23-f2e28218078c|On NAT
+altario|ATH233|129.128.16.162|Windows|XP Pro|regular||dept,britta|527277|Dell OptiPlex 755||||CLEAN|active||||5||9a40cca8-a5a9-44f3-871c-73ff68ecce2b|
+amadou|ATH252A|129.128.16.172|Windows|XP Pro|regular||dept||Dell OptiPlex 755:Core2/2.66-2048||ACS03580||CLEAN|active||||5||62481170-c84c-4a1e-a1c9-18400bca1af9|
+amber-rv|CSC205|129.128.23.182|Linux|Ubuntu 14.04|regular||hasell,zaiane|543288|Q9400/2.66-8192||6FS5WK1||CLEAN|spare||||5||ae1d16f1-8f0d-43de-8093-8337b8ccdc2c|Not currently in service.
+amelia|Off Campus||MacOS|10.8|regular|dept|sunrose|586220|iMac 21.5 A1418||C02JXREBDNCR||CLEAN|active|OK|||5||01477cec-6663-482e-ab36-3740b2742470|Used by Sunrose Ko at her home (approved by the Chair).
+amii-laptop01|CSC247||Windows|10 Education|laptop|zaiane|zaiane||Core i7 6700HQ @ 2.6 GHz, 8 GB, 1 TB||PF0GQRFZ||CLEAN|active|OK|||5||22c02544-42b9-47b3-9f54-67a07dafbd97|Lenovo Ideapad Y700. On UWS.
+amii-laptop02|CSC247||Windows|10 Pro|laptop|zaiane|zaiane|604048|Core i7 6600U @ 2.6 GHz, 16 GB, 500 GB||196319660254||CLEAN|active|OK|||5||201217e9-93cc-408a-9b86-9d3a65f186f4|Microsoft Surface Book
+amii1|CSC205|129.128.184.31|Linux|Ubuntu 16.04|regular||zaiane|704915|Dell OptiPlex 7050||F482HH2||NOP|active||||5||94c62e94-00de-454c-83a0-4bb0dd795881|
+amiidemo|CSC205|129.128.184.131|Linux|Ubuntu 16.04|regular||zaiane||||||NOP|active||||5||676db487-d3f7-4d50-84e0-bbb29dfa3b4e|
+amisk|GSB175|129.128.243.77|Linux|openSUSE 13.1|regular|dept|tst|537335|Dell PE R300||FMTZ3J1||CLEAN|active||T|F14|5|SA1|ecf18ade-55d7-4c6b-a41c-820846fbfad3|TST managed server
+ammi40|ATH405||Windows|10|regular|||707571|Memory Express, Core i7, 7th gen||14273782S|||active||||5||135c66d2-0cd6-489a-a381-056aac677b39|Belongs to AMMI. Purchased March 2017.
+ammi-emily|CSC363?|129.128.25.86|||regular||pierreb||Q9400/2.66GHz-4096||GS1000B09415009||NOP|missing||||5||b318c8ee-826b-453f-90bb-de218fb7ec3f|behind Walter's firewall?
+ammi-fw|CSC329|129.128.184.4|OpenBSD|4.5|regular|pierreb|pierreb|586203|Poweredge R320||CNSWFX1||NOP|active|OK|||5||73707167-f98a-419b-abc0-b6840dbbddc9|Subnet 184
+ammi-tr-ag|CSC363?|129.128.25.196|||regular||pierreb|474201|Q9400/3GHz-2048||37452||NOP|missing||||5||a47e5158-1080-445f-937e-7eaceab8431f|behind Walter's firewall?
+amundson|CSC205|129.128.184.72|Linux|Ubuntu 14.04|regular||greiner||Cooler Master Custom PC||RC371KKN31151400274||NOP|spare||||5||d7cccbf9-bcbf-4e5b-9ee8-4c62f1b52e50|Needs U of A tag and proper room number.
+ana|ATH430|129.128.184.140|Linux|Ubuntu 14.04|regular||mn,yannis|no-tag|E8400/3.0GHz-4096||5NTPWH1||NOP|active|OK|||5||dda11c07-004d-4430-abb4-a964aa6f3c19|Subnet 184
+ana0|CSC245|129.128.184.1|Linux|NOP|regular|zaiane|zaiane|586184|||||NOP|active|OK|||5||eeeb59d8-5e5e-4041-91a6-c47f571a5b55|Wild West
+ana1|CSC245|129.128.184.2|Linux|NOP|regular||zaiane|549754|Dell OptiPlex 990||5134JS1||NOP|active||||5||5b5c3671-0460-4007-a31b-143800175cb8|
+andrew|ATH315|129.128.23.213|MacOS|10.5.8|regular||sutton,balaski|493097|iMac/1.83GHz-1024||W86330D3WRQ||CLEAN|active|OK|||5||537b85a4-c1eb-4404-9722-d437019f15c0|Not using our IDs.
+anton-lake|CSC205|129.128.23.208|Linux|Scientific 4.4 (Beryllium)|regular||hasell,zaiane|456682|AMD/XP3000-2048||ACS04178||DIRTY|missing||||5||87705f05-1e49-411f-9572-cdf143236205|
+anzac|CSC301||MacOS|10.13|regular|dept|dept|586221|iMac 21.5 A1418||C02JXRD6DNCR||CLEAN|active|OK|||5||d8e6026d-cec3-4bf4-9d6e-5dad85fdbe02|Connected to the Robotics Lab's internal network.
+arcadia||129.128.23.204||||||||||||retired||||5||3b1b20bf-83dc-4963-b36a-73fd1a7b740c|Surplused
+ard1|CSC323|129.128.184.76|Linux|Ubuntu 10.04 LTS (stand alone)|wildwest||stroulia|474596|P4/2.8GHz-2048 Dell OptiPlex GX270||8J05S41||NA|active||||5||7eb1fdc2-feff-40d7-b6b4-b4178e155889|Arduino Lab, User Supported
+ard2|CSC323|129.128.184.77|Linux|Ubuntu 10.04 LTS (stand alone)|wildwest||stroulia|474248|P4/2.8GHz-2048 Dell OptiPlex GX270||JV05S41||NA|active||||5||8351ac42-7fef-40e2-936c-18005f7d3550|Arduino Lab, User Supported
+ardmore||129.128.4.81||||||||||||retired||||5||a176864f-88d5-486c-b24a-bdb93147f4fd|
+ardrossan|CSC205|129.128.23.77|Linux|WPS Ubuntu 16.04|regular|zaiane|zaiane||Core i7-7700||F484HH2||CLEAN|active|OK|||5||888abb09-5cb5-43bd-89f2-075787654755|
+armena|ATH420|129.128.4.154|MacOS|10.6.4|regular|mesquita|Denilson||MacPro Xeon/2.66G-4096||G873022GUPZ||CLEAN|active|OK|||5||11e5bd3f-8033-4487-aef8-4eb14b9de980|
+aspasia|ATH450|129.128.184.45|Windows|7|regular|serranos|stroulia||Q9550/2.83GHz-4096||ACS07025||NOP|active||||5||af1b855c-1981-4fab-ab88-1dee9c438c63|Moving to NAT
+astotin|ATH207||MacOS|10.12|regular|dept|dept|586219|iMac 21.5 A1418||C02JXRFKDNCR||CLEAN|active|OK|||5||516a41c5-6534-4557-8200-c40795b2f55f|Loaned to Resul Das. On UWS.
+atari|ATH338|129.128.23.138|||unknown|bulitko|bulitko||Xbox 360||||NOP|active||||5||277a337b-81f2-47ad-bb12-825ef1ab766f|
+ath224-cpy|ATH224|129.128.23.61|||printer|ath224-cpy|tst||Xerox WorkCentre 5755||XEH488891||CLEAN|active||||5||08a87943-f0d2-4fbc-ac0a-337a4e774658|Printer
+ath234-clr|ATH234|129.128.23.11|||printer|ath234-clr|tst,dept||HP Clr LJ 3600dn-128||CNTCH33614||CLEAN|active||||5||92ab65a8-6b34-4ef1-a915-46d28fe769a8|Printer
+ath245-cpy|ATH245|129.128.23.62|||printer|ath245-cpy|tst||Xerox WorkCentre 5755||XEH488917||CLEAN|active||||5||b7ef5a21-ba3c-46da-9f1c-424286496783|Printer, FAX (780) 492-6393
+ath326-cpy|ATH326|129.128.4.130|||printer|ath326-cpy|tst||Xerox WorkCentre 5755||XEH583587N||CLEAN|active||||5||7e490b5b-6b0c-451e-9548-ae87f1bffc35|Printer, FAX (780) 492-1071
+ath427-cpy|ATH427|129.128.4.43|||printer|ath427-cpy|tst||Xerox WorkCentre 5755||XEH583557N||CLEAN|active||||5||b30eea22-b9cb-412a-9955-a9610f31745b|Printer
+athlone|ATH220|129.128.16.195|MacOS|10.8|regular|dept|dept|586223|iMac 21.5 A1418||C02JXFLQDNCR||CLEAN|spare|OK|||5||aa0706f5-e53f-4133-ae23-943e522e7ece|
+atikameg|ATH243|129.128.16.163|Windows|XP Pro|regular||dept,sunrose|528141|Dell OptiPlex 755:Core2/2.66-2048||ACS04836||CLEAN|active||||5||d311577d-2ea6-4716-869a-b47c15bde241|RDP
+atlee|ATH335|129.128.23.46|MacOS|10.10|regular|dept|sadaf|586218|iMac 21.5 A1418||C02JXRAUDNCR||CLEAN|active|OK|||5||a5360616-4726-4996-a2ea-72088871f83a|Munki Installed.
+atmore|CSC137|129.128.184.13|Linux|CentOS 6.7|regular||steve||||||NOP|active||||5||d18f594f-e2b5-4c72-bb1a-79c6a58625e5|
+audet-lk|CSC351|129.128.25.122|MacOS|10.8|regular|zhang|||iMac 27 Model A1419||C02K82X3DNCV||CLEAN|active||||5||27c4640e-dab0-49f4-9784-586ce2d52042|
+badden||129.128.23.221||||||||||||retired||||5||0c4b3dd1-9682-4824-80d3-e4c0af1cfc1a|
+baranow||129.128.23.15||||||||||||retired||||5||70ca39da-9172-49cb-986b-a24ad720208f|
+barich|CSC225|129.128.23.197|Windows|10|regular||lin,anup|361515|i7-4790,3600 16Gb||JD7VW52||CLEAN|active|OK|||5||527646fd-c6d6-45ed-aee7-9ac1e8c3d5a8|
+barnegat|CSC327|129.128.25.138|Linux|Scientific 5.1 (Boron)|regular||dwishart||Q6600/2.4GHz-3072||PTS860X034802099802700||DIRTY|missing||||5||a651c120-0dbb-4230-8bd2-dd3e8ac41a2d|Users cannot find, probably retired or surplused in the past
+barrhead|ATH419|129.128.4.39|MacOS|10.6.4|regular|wfb|wfb||||||CLEAN|active|OK|||5||a5183e5d-b70a-4125-b98f-3a8024d4fb33|
+battle-riv|CSC225|129.128.184.24|Windows|7|regular||nrossol,anup|586182|Intel Quad Core i7 3.4GHz 8GB||BB0418||CLEAN|active|OK|||5||65fdef49-bce5-43de-8644-d41a5d26b5a4|Dual boot Windows & Linux
+baytree|CSC363A?|129.128.25.161|Windows|2000 Pro|regular||wfb|411819|PIII||CPS04592||NOP|missing||||5||9a6ec145-e899-4da3-a360-e42c73a79eb8|On NAT
+bbw-grid1|CSC363A|129.128.25.191|||network|BBW|pierreb||Switch||125-000-5413??||CLEAN|active||||5||d63d023e-dc54-4bbd-842d-796c4a74f610|Switch
+bbw-grid2|CSC361|129.128.25.192|||network|BBW|pierreb||Switch||683-592-8117||CLEAN|active||||5||7c988084-b4d9-4470-a614-9d777cb2970e|Switch
+bbw-grid3|CSC361|129.128.25.193|||network|BBW|pierreb||Switch||265-875-8772||CLEAN|active||||5||14281303-a0ae-4495-bc82-9a594352af24|Switch
+bbw-grid4|CSC363A|129.128.25.194|||network|BBW|pierreb||Switch||serial??||CLEAN|active||||5||05e05309-4a53-4868-b126-9c74b8235fde|Switch
+bbw-grid5|CSC363A|129.128.25.195|||network|BBW|pierreb||Switch||serial??||CLEAN|active||||5||6ced5a33-ee7a-4fed-b8a6-29e3887cec5d|Switch
+bellis|CSC205|129.128.184.22|Linux|Ubuntu 18.04|regular|zaiane|zaiane|no-tag|Dell Vostro 430 i7/860/2.8-8192||9CQNPL1||NOP|active||||5||845931aa-1224-421a-856c-368d67cca66e|
+bentley|ATH203|129.128.25.162|Linux|WPS Ubuntu 16.04|regular||ghlin|549720|Dell OptiPlex 990||5146JS1||CLEAN|active||||5||e8c53b4e-a0b5-433d-9d75-b6aa2007b1e8|
+berwyn|cs353ptr|129.128.25.165|||alias|jag?|jag||Dell-1720dn||4F4F8D1||CLEAN|ipalias||||5||22837e6b-9817-4bb2-abfe-0bfb474f2893|Printer - CUPS printer vis
+bezanson|CSC357|129.128.184.78|Linux|Ubuntu 10.04 LTS (stand alone)|wildwest|yifeng|paullu,ghlin||Dell XPS 8300 i7-2600@3.4GHZ-12288||3QCGLS1||NOP|active||||5||8ace78e6-973e-49e4-b26f-5f86df5f8c43|User Supported
+bi-print-8620|CSC327|129.128.25.7|||printer||aguo||HP OfficeJet Pro 8620||CN559FK1DS||CLEAN|active|OK|||5||b5b06f42-b969-49fa-a992-e15398d5f98c|
+bickerdike|ATH201|129.128.25.163|Linux|WPS Ubuntu 16.04|regular||ghlin||Acer Aspire AM3970-EB12P i7-2500@3.40GHz-8192||PTSHAP201715004BC49201||CLEAN|active||||5||5340557c-6431-4ca9-a575-9d3f0e444e88|
+bighorn|CSC353|129.128.25.96|Linux|Fedora 13|regular|zichen2|jag|444197|Xeon X350qc-4096||serial-no||CLEAN|active||||5||6f35f525-7fbd-4e03-96ec-8d77dfac028c|Fedora 13 - different root password
+bioqa|CSC327|129.128.184.61|||unknown|cknox,apon,jgrant2|dwishart||||||NOP|active||||5||3509981e-7878-4ee5-946f-df476b765f31|
+bitumount|CSC351|129.128.25.104|Linux|Ubuntu 12.04|regular||mpolak,zhang|512157|P4/3.4GHz-1024||0ACS05466||CLEAN|retired||||5||bde9bcd1-c17f-4a6e-ab78-2e60d86d2f92|
+blackfoot|CSC217|129.128.184.6|Linux|Ubuntu 16.04|regular|cgao3|hayward||i77700-32768||ACS0538||NOP|active||||5||a73e0019-e147-441c-9928-a8f65d7e6694|Stuphen built,serial number is from old case,user installed OS
+blogs-dev|launch-dev|129.128.22.149|Linux|Slackware 12.2.0|alias|dept|tst||||||CLEAN|retired||||5||992cbfe3-28f1-47c7-b27f-643847cd0468|
+bmiserver|ATH123|129.128.184.20|Windows||regular||ziqi2|588738|Intel Core i7 3770||04130400037|||active||||5||0c6d9bb9-13b2-4f37-b0bb-e1bddb57dcd5|We do not manage or maintain
+bodo1|ATH337?|129.128.4.119|Linux|Fedora 7 (Moonshine)|regular||mburo||MB-AMD/MP2400-1024||serial||DIRTY|missing||||5||b9db1d6d-08b1-4f25-803a-ad0baf436a2c|
+boian|ATH419|129.128.184.44|||unknown|wfb|wfb||EeeBoxEB1006-1024||90PEAB009974||NOP|active||||5||e7c0e0e3-b313-4c22-9367-b8f28e3965b5|On wildwest
+bonanza|GSB175|129.128.21.39|Linux|WPS Ubuntu 16.04|regular|dept|dept|586214|Silicon Mechanics 2xXeon E5-2630,256GB,12x300GB Raid 6||SM80374||CLEAN|active|||F15|5||a827bb3b-708f-4387-b88d-ce1d2973fc08|
+bondiss|CSC353|129.128.25.52|Linux|Fedora 13|regular|zichen2|jag|448715|AMD Opt170/2GHz-1926||ACS03808||NOP|active||||5||33d3398d-5de9-46a5-ae49-bb2c479ff33f|Fedora 13 - different root password
+bon-accord|CSC327|129.128.25.80|Windows|10|regular||dwishart||Dell Vostro 460 i5-2400@3.1GHz-8192||8DN3DP1||CLEAN|active||||5||2a167341-4cd6-43d2-8d9c-85d31624b70f|
+botha1|CSC251A|129.128.184.7|Linux|CentOS 5.5|regular||paullu||PE2950/5150-8192||636ZMF1||NOP|active||||5||b705df29-a0e2-4da6-8dfe-f88d42e3eb4e|on wildwest;
+botha1|CSC329||Linux|RHEL WS 3 (Taroon Update 2)|regular||paullu|474740|Sun V20z Opteron/DP248-2048||XG043057933||NA|missing|||E|5||c76abda6-7758-4c40-97ce-5419e1fc07e3|Powered off; Steve will move and cluster
+botha10|CSC251A|129.128.22.140|Linux|Fedora Core 6 (Zod)|unknown||paullu|508544|PE2950/5150-8192||HKK9QC1||CLEAN|active|OK|||5||e642ffab-24b8-491f-8ad7-0fc5b207e051|Steve handled
+botha10-new|GSB175|129.128.243.12|Linux|Fedora Core 6 (Zod)|unknown||paullu|508544|PE2950/5150-8192||HKK9QC1||CLEAN|active|OK|||5||8d76b01c-23cc-43ec-bd12-9addfa83eba8|Steve handled
+bowden|CSC211|129.128.159.251|Linux|openSUSE 13.2|regular||bulitko|586216|i7-950@3,7GHz-6144||||CLEAN|active||||5||02ebb1b0-0796-43fc-89d7-52dcbeb8d988|Moved to 159 TASK0295943
+bowhay|CSC211|129.128.23.29|Linux|Ubuntu 14.04|regular|bowling|bowling|524807|AMD/DC4800-2048||14011622P||CLEAN|retired||||5||d0d97593-b1e3-4cf4-bd82-cb8c170e4587|being surplussed
+boyne|CSC211|129.128.23.27|Linux|Ubuntu 14.04|regular||bulitko|586254|i5-4670@3.4 8196||14195708p||NOP|active|OK|||5||2e4349c2-4b16-411d-b0a4-53f40a070175|standalone on NAT
+braeburn-uws-nat|CSC205||||||hasell,zaiane|no-tag|||9CPTOL1||NOP|missing||||5||138074db-2303-4c6e-a951-ae7bed448631|on UWS now; in transition to NAT
+braeburn|CSC205|129.128.23.12|Windows|7|regular||hasell,zaiane||Dell Vostro 430 i7 860@2.8GHz-4096||9CPSPL1||CLEAN|active||||5||6b150c07-39f4-4085-8e66-b4f2ab6375a3|
+brazeau|SRIT proxmox|129.128.21.237|Linux|WPS Ubuntu 16.04|virtual||jonathan||VM||||CLEAN|active||||5|SRIT|aee35726-5f9f-4175-9b0d-3edd263ea375|
+bremmer||129.128.23.117||||||||||||retired||||5||0eeb8687-a831-4011-a43c-35ddb6cb60b6|
+breton||129.128.25.14|Windows|XP - 64 bit|regular||pierreb||X5560-12288||9368144-51775||NA|missing||||5||a385d71f-1f86-43d5-8630-f022e3d68ed7|Missing? last reported in CSC365, which doesn't exist
+breynat|CSC311|129.128.25.170|Linux|Scientific 5.0 (Boron)|regular||ghlin,paullu||AcerQC8200/2.33-8192||PTSC..1235D2701||NOP|active||||5||326e1665-2cee-4780-bcf1-3efc3290b8d0|
+brownfield||129.128.25.106||||||||||||retired||||5||6d2f4ac3-867b-4d78-863e-32cc6371a902|
+brule|CSC329|129.128.23.114|Linux|RHEL Server 5.11|regular||paullu|497707|Opteron/244-2048||ACS05264||CLEAN|active||T|F|5|SRIT|a8ec3379-0b2b-4b88-939e-021871b581dc|RHN# 1017919347
+bucklake|CSC353|129.128.25.128|Linux|Ubuntu 14|regular|zichen2|jag||Core2-quad/2.4-4096||2209159||CLEAN|active||||5||451338a1-3208-4d11-bb56-a4960e404715|
+busby3|CSC251A|129.128.22.33|Linux|Ubuntu 12.04|regular||paullu,dwishart|510063|Opteron/DP250-4096||ACS05761||CLEAN|retired||||5||76273e73-6a03-46c4-bc7b-c302bdb4b74f|
+busby4|CSC251A|129.128.22.34|Linux|Ubuntu 12.04|regular||paullu,dwishart|510064|Opteron/DP250-4096||ACS05764||CLEAN|retired||||5||713b1a2a-e243-4880-8722-b0646212e76e|
+busby9|CSC251A|129.128.22.141|Linux|Fedora Core 6 (Zod)|unknown||paullu,dwishart|508557|Core2/5160-8192||serial-no||CLEAN|active|OK|||5||05b608b3-5f7f-4857-be3e-2cb43529386c|Steve handled
+cadogan||129.128.23.220||||||||||||retired||||5||5e66b79b-22be-4a95-86ac-449c016b8a2b|
+cadotte|GSB175|129.128.21.241|Linux|WPS Ubuntu 16.04|regular||bulitko||Opteron/DP246-6144||ACS04728||CLEAN|active|||F14|5|SA1|662fcb83-5200-4328-a1e3-91a2adcfb73a|
+calmar|ATH452|129.128.23.13|Windows|7|regular|guana|stroulia||Dell 8100 i5/3.2-8122||B2J5LM1||NOP|active|OK|||5||e17890ef-36ef-46d1-961b-385a0201a3ef|
+calumet-lk|CSC351|129.128.25.120|MacOS|10.8|regular||rmaiti||iMac 27 Model A1419||C02K8A7KDNCV||CLEAN|active||||5||83177412-8012-4faa-bd44-183fc6f45831|
+cambria||129.128.23.145||||||||||||retired||||5||9fc1027b-d7ca-4d8d-95f9-250dcd4f746e|
+caneta|ATH451|129.128.4.23|MacOS|10.11.3|regular|denilson|denilson||Quad-Core Intel Xeon E5 - 32GB||F5KR407RF9VN|||active||||5||fa4f8fd5-e5b7-4950-930e-aacb19f785a4|
+carcajou|ATH232|129.128.184.55|MacOS|10.5|regular||dept|221067|Mac 6100/66||XC4502D741Y||CLEAN|active||||5||fd567e76-8e99-4c63-b114-6bf77d47509b|administered by Facilities
+card|CSC205||Linux|Ubuntu 14.04|regular||hasell,zaiane|543292|Dell D540/Q9400@2.66 GHz-8GB||8FS5WK1||NOP|active||||5||3abbb446-6f92-450d-ae7e-f1384cf0cbb2|On NAT
+carvel||129.128.23.151||||||||||||retired||||5||1c1cfc0a-1a7b-499a-b238-05d283f12fce|
+ccis|CSC329|129.128.22.30|Linux|Fedora Core 5|regular||steve||||||DIRTY|missing|||F|5||7a4a4732-34b6-449a-8470-19f8898f5fbb|Steve will handle; powered off; will be rebuilt or moved to subnet 159
+charcot|CSC329|129.128.184.50||||||||||||active|||C|||cd9f68db-1567-4e6a-aee0-7dd890a2e840|one of Sutphen's?
+chard|CSC315A|129.128.25.100|Windows|7|regular||||Athlon 64 Dual 4400+/2.2GHz-4096||ACS05774|||active||||5||44e1e47d-c662-4ad5-9cff-a2887e82a9be|Hot Spare
+chauvin|CSC329|129.128.184.91|Linux|Ubuntu 12.04|regular|gkondrak|gkondrak|469353|Xeon E5-1650v2-32768||ACS04596||NOP|active|||D|5||a5741e75-4bb0-4fec-8888-456d092ae50b|
+checkmylab|IST VM|129.128.21.208|Linux|Ubuntu 16.04|virtual|||NA|VM||||CLEAN|active||||5|SA1|f7a229da-50bd-4688-a7d2-f98ed6e2f87f|CMPUT 401 project astep-ish
+checkmylabtest|IST VM|129.128.21.209|Linux|Ubuntu 16.04|virtual|||NA|VM||||CLEAN|active||||5|SA1|bc8d8ead-9314-46ce-92c2-c1b8e8112c4b|CMPUT 401 project astep-ish submission testing
+cherhill|CSC311|129.128.4.55|Linux|Ubuntu 10.04 LTS|regular|ghlin|ghlin|468224|AMD MP2400-2048||ACS04305||CLEAN|missing||||5||6e25663c-d008-45c9-b978-696b2898c5e1|
+chinook-c01|CSC329||||cluster||steve||||||NOP|missing|||B|5||bc3d21a2-2165-4860-beb1-d9c770c35918|Steve to check
+chinook-c02|CSC329||||cluster||steve||||||NOP|missing|||B|5||cbf6a106-888d-47ae-a75b-d43c5765ec96|Steve to check
+chinook-c03|CSC329||||cluster||steve||||||NOP|missing|||B|5||408f6283-9021-4238-93bf-bf9e23bf52d2|Steve to check
+chinook-c04|CSC329||||cluster||steve||||||NOP|missing|||B|5||f4300f6c-493f-4c77-aab5-814cb8b5153d|Steve to check
+chinook|CSC329|129.128.23.85|Linux|Red Hat 7.1 (Seawolf)|cluster||jonathan|438787|AMD/1.5GD-2048||ACS03085||CLEAN|active|OK||B|5|SRIT|63ba4802-fc2f-4362-9f5d-bcc14a32e297|Steve will handle
+chiplk|nojack|129.128.28.250|Linux|openSUSE 13.1|alias|dept|tst||||||CLEAN|retired||T||5||30f5879b-dd8c-4882-853b-1d5997fa90d7|chiplk interface on nojack now on IST VLAN to serve files to CS Windows machines
+chipman||129.128.25.119||||||||||||retired||||5||13458dbe-999a-4552-b230-f87239da6d4f|
+chirp|CSC301|129.128.25.37|Linux|Ubuntu 14|regular||jag||Dual/4096||||CLEAN|active|OK|||5||5f62fb2c-0efe-4f40-ace0-5d6b77dc92a1|
+chisholm||129.128.23.82||||||||||||retired||||5||3e38d3c3-2477-47fb-be6f-776ff6cedcf0|
+cims-bw|CSC351|129.128.25.93|||printer|cs351|mpolak,zhang||HP LJ Pro 400 M401dne||PHGFD37605||CLEAN|active||||5||c05a5285-83e3-4743-b0b3-953a90b81d6b|Printer
+cline28|cline|129.128.28.248|Linux|Slackware 12.2.0|alias|dept|tst||||||CLEAN|retired||||5|SA1|0158607a-1ea7-4195-8e20-b506db94d13a|
+cline|GSB175|129.128.21.10|Linux|Slackware 12.2.0|regular|dept|tst|543323|Opteron/2350-4096||SM42230||CLEAN|active|||F17|5|SA1|4ad80218-fd0e-4e2b-8333-f623181f7c1b|TST managed server
+clive||129.128.25.148||||||||||||retired||||5||c30f090a-e3d9-48f2-93da-ff0fe77490bb|
+cmpt497-nat||129.128.41.251|||regular||tst||||||NA|retired||||5||de88d0d5-dab6-44a6-aa85-4cc5596a29d6|no machine in room, wiped, off
+coldlake|CSC251A|129.128.184.54|||unknown|steve|paullu||||||NOP|active||||5||43547753-960f-401c-80f6-6c4901c72205|
+coleco|ATH338|129.128.23.137|||unknown|bulitko|bulitko||PlayStation 3||||NOP|active||||5||201d7549-39f9-4533-beb3-b3c8eb40a5ef|
+cons3|CSC329|129.128.25.238|Linux|WPS Ubuntu 16.04|regular|dept|tst|549763|Dell OptiPlex 990||696TPC1||CLEAN|active||T||5|SA1|2d7c0fd8-33b0-4e9c-a3bf-68d76269e3e5|standalone, no nis, no nfs
+console|GSB175|129.128.21.15|Linux|RHEL Server 5.11|regular|dept|tst|510095|Dell PE 2950(2)||H1LYYC1||CLEAN|active||T|F17|5|SA1|99d35be8-9ada-43ed-ade5-3da5cf653498|RHN# 1018085679
+consort|GSB175|129.128.243.69|Linux|Slackware 12.2.0|regular|dept|tst|510056|Dell PE 2950||GK491C1||CLEAN|active|||F17|5|WPS|088234cb-d1c9-4ef8-81fd-a5ed80c8457a|web server for c391
+coronado|CSC327|129.128.25.115|Windows|10|regular||dwishart||Dell Vostro 460 i5-2400@3.1GHz-8192||8DN4DP1||CLEAN|active||||5||31114a2a-4d73-4c1f-a8d9-9853c3744113|
+coronation|ECHA|129.128.21.239|Linux|WPS Ubuntu 16.04|regular|dept|tst|no-tag|Dell R7425||BXLG1T2||CLEAN|active|||P3R3|5|SA1|d96659f8-418e-4ff7-bbb3-28b4d7a11f69|TST managed server
+crescer|ATH437|129.128.184.27|||wildwest||stroulia||Dell OptiPlex 360||J9WN5J1||NOP|active||||5||7994a79a-c460-4e16-91db-3a718ca9b37f|Do not reinstall if it stays on the wildwest - OTRS 103913
+crestomere||129.128.25.114||||||||||||retired||||5||fa49b904-64b8-4ea8-a7c6-09d2376b944d|RHN# 1017917148
+cross-lake|GSB175|129.128.243.169|Linux|CentOS 6|regular|hoehn|joerg,steve|586892|Rackform iServ R485,Storform D55J.v2||SM68390||CLEAN|active|||F18|5||c5137b66-de94-4672-afc9-587ecea42b60|
+cs147ptr|CSC147|129.128.25.110|||printer|cs147|wfb|543286|HP P3005dn||SCNG1X09522||CLEAN|active||||5||327a0c9a-b186-49e3-9ff2-d0f24ae02e3a|Printer
+cs259ptr||129.128.23.125||||||||||||retired||||5||c8406e10-e164-4d04-8670-c0d0607f00be|
+cs353ptr|CSC353|129.128.25.165|||printer|jag?|jag||Dell-1720dn||4F4F8D1||CLEAN|active||||5||f5023704-77e8-4ba8-8601-7d486c79e0eb|Printer
+cs363ptr|CSC363|129.128.184.52|||printer||wfb||HP LJ2055dn||CNB9085905||CLEAN|active||||5||6c96bc22-21dc-49c9-8123-c2a35e8ecdea|AMMI printer on Wild West
+csc105-w01|CSC105|129.128.235.151|Windows|7|regular|dept|tst||Dell OptiPlex 755||33JQXF1||CLEAN|retired||||5|WPS|3737cbe7-8a10-4ffb-9cdb-e38d39927c1b|UGrad
+csc105-w02|CSC105|129.128.235.152|Windows|7|regular|dept|tst||Dell OptiPlex 755||34JQXF1||CLEAN|retired||||5|WPS|a77e34ec-5d2f-44fb-b88d-0b2ca9a4f404|UGrad
+csc105-w03|CSC105|129.128.235.153|Windows|7|regular|dept|tst||Dell OptiPlex 755||HCKQXF1||CLEAN|retired||||5|WPS|bb5c9939-f467-4021-8e9a-0625ada0674e|UGrad
+csc105-w04|CSC105|129.128.235.154|Windows|7|regular|dept|tst||Dell OptiPlex 755||2CKQXF1||CLEAN|retired||||5|WPS|f8ce6f2e-6ed1-41c7-b6fc-1fc39fce82ca|UGrad
+csc105-w05|CSC105|129.128.235.155|Windows|7|regular|dept|tst||Dell OptiPlex 755||BDKQXF1||CLEAN|retired||||5|WPS|ef9d047e-e57a-4113-9b5f-a9573b1acb91|UGrad
+csc105-w06|CSC105|129.128.235.156|Windows|7|regular|dept|tst||Dell OptiPlex 755||76JQXF1||CLEAN|retired||||5|WPS|f1b1ef65-cbfc-449e-a220-3394df3d413f|UGrad
+csc105-w07|CSC105|129.128.235.157|Windows|7|regular|dept|tst||Dell OptiPlex 755||4DKQXF1||CLEAN|retired||||5|WPS|b0507786-b126-4456-b20b-61e1e3ec8531|UGrad
+csc105-w08|CSC105|129.128.235.158|Windows|7|regular|dept|tst||Dell OptiPlex 755||95JQXF1||CLEAN|retired||||5|WPS|b3034159-b908-42fd-bbc0-aa0f6b2afc52|UGrad
+csc105-w09|CSC105|129.128.235.159|Windows|7|regular|dept|tst||Dell OptiPlex 755||G3JQXF1||CLEAN|retired||||5|WPS|3eedfcc9-690c-4e4e-bac3-c62254bfef5c|UGrad
+csc105-w10|CSC105|129.128.235.160|Windows|7|regular|dept|tst||Dell OptiPlex 755||F4JQXF1||CLEAN|retired||||5|WPS|29abad29-b966-441f-99e0-b052d6523139|UGrad
+csc105-w11|CSC105|129.128.235.161|Windows|7|regular|dept|tst||Dell OptiPlex 755||55JQXF1||CLEAN|retired||||5|WPS|403d1755-9f2a-4192-8166-da93e4a3c534|UGrad
+csc105-w12|CSC105|129.128.235.99|Windows|7|regular|dept|tst||Dell OptiPlex 755||GCKQXF1||CLEAN|retired||||5|WPS|bd7f923b-20d3-4d52-8029-f78594734434|UGrad
+csc105-w13|CSC105|129.128.235.163|Windows|7|regular|dept|tst||Dell OptiPlex 755||F5JQXF1||CLEAN|retired||||5|WPS|71f33f1f-80ed-4957-88bd-84d6165a0d90|UGrad
+csc105-w14|CSC105|129.128.235.164|Windows|7|regular|dept|tst||Dell OptiPlex 755||FCKQXF1||CLEAN|retired||||5|WPS|110ccbdd-2b78-46fc-823a-ff4c64d7e95e|UGrad
+csc105-w15|CSC105|129.128.235.165|Windows|7|regular|dept|tst||Dell OptiPlex 755||HDKQXF1||CLEAN|retired||||5|WPS|78f9ce45-a459-4f6d-a0c8-cbfe9a362554|UGrad
+csc105-w16|CSC105|129.128.235.98|Windows|7|regular|dept|tst||Dell OptiPlex 755||FDKQXF1||CLEAN|retired||||5|WPS|815ae3b4-ece7-4bc0-90f0-bb3e776a34d2|UGrad
+csc105-w17|CSC105|129.128.235.167|Windows|7|regular|dept|tst||Dell OptiPlex 755||46JQXF1||CLEAN|retired||||5|WPS|10dfd073-45bd-4d8f-b008-7cb1d0d57a8d|UGrad
+csc105-w18|CSC105|129.128.235.168|Windows|7|regular|dept|tst||Dell OptiPlex 755||5CKQXF1||CLEAN|retired||||5|WPS|f13fc577-3c49-49b4-bfcc-60b09b334012|UGrad
+csc105-w19|CSC105|129.128.235.169|Windows|7|regular|dept|tst||Dell OptiPlex 755||5DKQXF1||CLEAN|retired||||5|WPS|d4e3d0f9-9d7e-4572-8e07-b2c6455786ec|UGrad
+csc105-w20|CSC105|129.128.235.170|Windows|7|regular|dept|tst||Dell OptiPlex 755||CDKQXF1||CLEAN|retired||||5|WPS|1dac8aa9-6d3d-4394-86a0-a9898e828e19|UGrad
+csc105-w21|CSC105|129.128.235.171|Windows|7|regular|dept|tst||Dell OptiPlex 755||54JQXF1||CLEAN|retired||||5|WPS|4be6f97d-c937-4c85-8e63-ec9ea1c967c6|UGrad
+csc105-w22|CSC105|129.128.235.172|Windows|7|regular|dept|tst||Dell OptiPlex 755||94JQXF1||CLEAN|retired||||5|WPS|658c02f1-481a-4c53-a9b4-a587b8abc78e|UGrad
+csc167-in1|CSC167|129.128.235.150|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYQ||CLEAN|active||||5|WPS|597d3376-2189-45cb-857c-0c576838af62|UGrad
+csc167-w01|CSC167|129.128.235.130|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMY5||CLEAN|active||||5|WPS|9be4efc5-87d5-45ad-8873-7980f7b59f5f|UGrad
+csc167-w02|CSC167|129.128.235.131|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMY1||CLEAN|active||||5|WPS|e6cce728-95ad-48e9-9ed2-889b5bab7d75|UGrad
+csc167-w03|CSC167|129.128.235.132|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMY6||CLEAN|active||||5|WPS|d4a31a6e-56bc-4fd5-b3dc-e44dc7f572c8|UGrad
+csc167-w04|CSC167|129.128.235.133|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMXZ||CLEAN|active||||5|WPS|f256b722-f740-40a8-af49-ee380f8b934a|UGrad
+csc167-w05|CSC167|129.128.235.134|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMY0||CLEAN|active||||5|WPS|5d9cc882-e6bf-4c26-bbb5-373c56ec908d|UGrad
+csc167-w06|CSC167|129.128.235.135|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZG||CLEAN|active||||5|WPS|a7e8c4e4-bbd4-4be0-9bf2-46d33995fdc6|UGrad
+csc167-w07|CSC167|129.128.235.136|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZ6||CLEAN|active||||5|WPS|0d49c1a3-108c-4e9a-9f4f-7f67b022b198|UGrad
+csc167-w08|CSC167|129.128.235.137|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZK||CLEAN|active||||5|WPS|697d443c-c3b6-4e53-b6c4-fef896e5d27d|UGrad
+csc167-w09|CSC167|129.128.235.138|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYN||CLEAN|active||||5|WPS|8aaafa83-fce5-4516-bd17-8d197000cbf4|UGrad
+csc167-w10|CSC167|129.128.235.139|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMY2||CLEAN|active||||5|WPS|4df064d8-0cb2-48d7-a251-1a6ae9931d12|UGrad
+csc167-w11|CSC167|129.128.235.140|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZF||CLEAN|active||||5|WPS|83e5f1e8-34b0-47ef-8c4d-b7bfa4f00809|UGrad
+csc167-w12|CSC167|129.128.235.141|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZ5||CLEAN|active||||5|WPS|03cb162d-4efd-48a8-92e3-bcea4e750e1f|UGrad
+csc167-w13|CSC167|129.128.235.142|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZH||CLEAN|active||||5|WPS|98309cbf-4228-41a3-81aa-fd8a5f953698|UGrad
+csc167-w14|CSC167|129.128.235.143|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZJ||CLEAN|active||||5|WPS|977dc971-519c-4e55-8dd8-94169f1cccae|UGrad
+csc167-w15|CSC167|129.128.235.144|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYR||CLEAN|active||||5|WPS|04722089-268a-48d0-8c19-ab63d7a01e64|UGrad
+csc167-w16|CSC167|129.128.235.145|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYK||CLEAN|active||||5|WPS|0b9277bc-89f7-453f-903e-72bb375af93a|UGrad
+csc167-w17|CSC167|129.128.235.146|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZ0||CLEAN|active||||5|WPS|7452df35-a2a2-4049-8be0-61cb4e505807|UGrad
+csc167-w18|CSC167|129.128.235.147|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYJ||CLEAN|active||||5|WPS|53c76103-69d2-4b45-957a-d8a57bdbe19d|UGrad
+csc167-w19|CSC167|129.128.235.148|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMYG||CLEAN|active||||5|WPS|cb144533-c172-4ecb-9c2d-82ba1df27e0d|UGrad
+csc167-w20|CSC167|129.128.235.149|Windows|8.1|regular|dept|tst||Lenovo ThinkCentre M93p||MG00FMZD||CLEAN|active||||5|WPS|8ef0a678-37b8-46c1-925a-ba3f4040871c|UGrad
+csc228-cpy|CSC228|129.128.23.64|||printer|cs228-cpy|tst||Xerox WorkCentre 5755||XEH767329||CLEAN|active||||5||1f03d11f-f4aa-4335-9027-bb950e803560|Printer
+csmrit-imac|ATH218|129.128.159.252|MacOS|10.8|regular|dept|dept|586222|iMac 21.5 A1418||C02JXPNLDNCR||CLEAN|active|OK|||5||7fb84a3b-d11e-44c0-9898-f37087f604ec|
+csora-app|IST VM|129.128.21.37|Linux|CentOS 7.3|virtual||AppHosting|NA|VM||||CLEAN|active||||5|SA1|43d32216-9f77-4704-8fc0-f42fb1a48ad1|
+csora-db1|IST VM|129.128.21.36|Linux|RHEL Server 7.4|virtual||AppHosting|NA|VM||||CLEAN|active||||5|SA1|c25bae3f-b234-4662-ad82-6c5a1443649c|RHN# ?
+csora-tst|IST VM|129.128.21.38|Linux|RHEL Server 7.4|virtual||AppHosting|NA|VM||||CLEAN|active||||5|SA1|731f07e2-49d9-4ca2-ba75-7af8f9fa4569|RHN# ?
+cs-537152|ATH315||MacOS|10.10|laptop|balaski|balaski|537152|MacBook, Core 2 Duo @ 2.4 GHz, 4 GB RAM, 250 GB HDD||W8915BJC8QT||CLEAN|active|OK|||5||a6a53455-212d-4b1c-90ab-a653aa9c0197|Encryption key on Secret Server. Munki installed.
+cs-549679|ATH354||Windows|10 Education|laptop|you|you|549679|Dell XPS 14Z, Core i5-2430M, 6 GB, 320 GB||CFJS5R1||CLEAN|active|OK|||5||1a5d26a5-200b-47b9-81ab-10e3f49d6f52|On UWS
+cs-549828|CSC327||MacOS|10.12|laptop|dwishart|aguo|549828|Core i7 @ 2.3 GHz, 4 GB DDR3 1600 MHz, 500 GB HDD||C02HL2X2DV33||CLEAN|active|OK|||5||e120d9fd-3fa1-4c29-814f-958a07cc44e2|On UWS. Encryption key on Secret Server. Munki Installed.
+cs-586240|ATH354||Windows|10 Edu|laptop|you|you|586240|Core i5 4200U @ 1.6 GHz, 6 GB, 500 GB||DCN0CX019464499||CLEAN|active|OK|||5||50d19c46-560a-489c-b29c-17a6fdf83363|On UWS
+cs-717284|ATH451||MacOS||laptop|denilson|denilson|717284|Core i5 @ 3.1 GHz, 16 GB RAM, 512 GB SSD||C02VV076JJ3F||CLEAN|active|OK|||5||6ef6eb2d-82ac-437b-b2a2-ae86c61619b5|Purchased February 27, 2018 on speed code CS567.
+cs-722629|ATH359||Windows|10 Education|laptop|greiner|greiner|722629|ThinkPad X280, Core i5-7200U, 8 GB RAM, 500 GB SSD||PC-0YPJYV||CLEAN|active|OK|||5||64be05c1-7c80-4b74-887a-7b963c49d353|On UWS.
+cups|IST VM|129.128.21.81|Linux|Ubuntu 16.04|virtual||SA1|NA|VM||||CLEAN|active||||5|SA1|b667ff6b-e86a-4cc0-8d26-38077aeb0fa5|
+cupsr-4|CSC231|129.128.4.210|Linux|Ubuntu 16.04|regular|dept|tst|549749|PowerEdge R310||899GJS1||NOP|spare||||5|SA1|ae96ab37-5c97-42d3-a0a6-911af8d09ea8|TST managed server - used to be miquelon
+cybera-airport-2-59c|CSC259c|129.128.184.94|||regular||cybera||||||NOP|active||||5||4c1d7710-db0d-4129-b337-0fb8d6214e55|
+cybera-airport-3-43|CSC343|129.128.184.93|||regular||cybera||||||NOP|active||||5||bc24b4d9-5b1f-4e33-901c-7e9dd23211db|
+cyberdyne|ATH338|129.128.23.140|dual-boot|Windows 10 + Ubuntu 16.04|regular|bulitko|bulitko|606167|Core i7 6900K @ 3.2 GHz, 128 GB RAM, 1 TB SSD + 500 GB SSD + 1 TB HDD, dual nVidia GTX Titan X||14255237P||NOP|active||||5||053479d7-0bee-4427-9772-a72b2dc6b886|
+czar|GSB175|129.128.21.204|Linux|openSUSE 42.3|regular|IST|tst|554346|Dell R410||4R2WFN1||CLEAN|active||T|F14|3|SA1|f493641a-6a4b-4259-ae18-277878429aa7|TST managed server
+dalmuir|CSC311|129.128.25.232|Linux|WPS Ubuntu 16.04|regular||mn|549770|Dell OptiPlex 990||5138JS1||CLEAN|active||||5||2d6f7449-1997-4b38-88cb-b7878693a817|
+dapp1|GSB175|129.128.21.250|Linux|WPS Ubuntu 16.04|regular||drafiei|538422|Silicon Mechanics||SM45235||CLEAN|active|||F14|5|SRIT|9283c10e-f961-4426-a464-d95121f5ed7f|
+dapp2|GSB175|129.128.21.251|Linux|WPS Ubuntu 16.04|regular||drafiei|538423|Silicon Mechanics||SM45232||CLEAN|active|||F14|5|SRIT|c0655bb5-152d-434b-ba15-d2ae21062438|
+dapp3|GSB175|129.128.21.252|Linux|WPS Ubuntu 16.04|regular||drafiei|538424|Silicon Mechanics||SM45233||CLEAN|active|||F14|5|SRIT|338064b1-9202-437f-a003-9eae24e99730|
+dapp4|GSB175|129.128.21.253|Linux|WPS Ubuntu 16.04|regular||drafiei|538425|Silicon Mechanics||SM45234||CLEAN|active|||F14|5|SRIT|0a7542ee-8ba0-48be-bfe3-2186b022e883|
+darwell|CSC311|129.128.25.231|Linux|WPS Ubuntu 16.04|regular||mn|549709|Dell OptiPlex 990||5174JS1||CLEAN|active||||5||c3701748-ae4d-4da4-9246-a5310fc2e704|
+dc-ah126|ATH126|129.128.22.251|||network||steve||Dell 3348||d68S741||CLEAN|missing||||5||09f08006-3409-402e-bb6c-4f7085624158|Switch
+dc-ah224|ATH224A|129.128.22.247|||network||steve||Dell 3324||HN424??||CLEAN|missing||||5||59429927-8ec2-4f3e-9221-f9748578afbe|Switch
+dc-ah326|ATH326|129.128.22.248|||network||steve||Dell 3348||HN424??||CLEAN|missing||||5||ad9c1a40-9400-4113-87a1-aedf7a820f35|Switch
+dc-cs263|CSC263|129.128.22.252|||network||steve||Dell 3348||7741451||CLEAN|missing||||5||c8bd4a5f-c028-42c0-920f-fe2d9342067b|Switch
+dc-cs361|CSC361|129.128.22.249|||network||steve|482833|Dell 3348||HN42451||CLEAN|missing||||5||df5b0bdb-a698-4140-91ae-714ca11da8df|Switch
+deadwood|GSB175|129.128.21.12|Linux|openSUSE 42.3|regular|dept|tst|538411|Dell PE 2950(3)||G1NKXF1||CLEAN|active||T|T27|5|SA1|47f212df-eddf-40b7-beb1-14c1d8acefad|
+debolt|CSC311|129.128.25.236|Linux|WPS Ubuntu 16.04|regular||mn|549760|Dell OptiPlex 990||5108JS1||CLEAN|active||||5||6f2be75f-fb6b-4bfb-a359-34d2f7dbac59|
+deer-mtn|CSC311|129.128.25.61|Linux|WPS Ubuntu 16.04|regular||mn|549764|Dell OptiPlex 990||50Z1JS1||CLEAN|active||||5||80d524ca-f7cf-4a9f-a132-7f0cacecacae|
+delia|CSC311|129.128.159.209|Linux|Ubuntu 18.04|regular||mn|no-tag|Asus i9-9900K - 32Gb||190347275200427||CLEAN|active||||5||a811ae1a-d2ef-4e3a-8d8a-9b374c3e60db|
+demay-lk|CSC311|129.128.25.47|Linux|WPS Ubuntu 16.04|regular||joerg|549706|Dell OptiPlex 990||5168JS1||CLEAN|active||||5||c9c49545-bf83-4cb0-91a3-aaba2d4b81f4|
+denard|CSC311|129.128.184.18|Windows|10|regular||joerg,mario|586172|Dell Vostro 470 i7-3770, 32 GB RAM, 256 GB SSD + 500 GB HDD||8PVRNW1||CLEAN|active||||5||f564fb01-4cf5-4728-bfc1-6b5bc710bd13|
+denilson-time-capsule|ATH451|129.128.4.26|||unknown||denilson||Time Capsule||||NOP|active||||5||167b522a-1d86-4c6f-b86b-1f9e158cab7a|
+derwent|ATH430|129.128.25.213|Linux|WPS Ubuntu 16.04|regular||mn|537357|Opti/E8400-4096||85J2KH1||CLEAN|retired||||5||23527463-e9de-463b-8493-07f40d953194|Moved to surplus
+desktop-uou9u44|ATH411|129.128.4.93|Windows|10 Edu|regular|pierreb|pierreb||||||CLEAN|active||||5||6ce86c26-f7f4-4e80-bd6a-e5bf0b297b26|
+devenish|CSC311|129.128.25.233|Linux|WPS Ubuntu 16.04|regular||mn|549751|Dell OptiPlex 990||5115JS1||CLEAN|active||||5||4e890036-edca-4b60-9a80-0e968096ee67|
+dev-stage2|IST VM|129.128.21.19|Linux|Ubuntu 16.04|virtual||gordon|NA|||||CLEAN|active||||5|SA1|fb10338c-a1d6-4ab1-b74b-8cdc3bd00318|webapps development box 2
+dev-stage|IST VM|129.128.21.16|Linux|Ubuntu 16.04|virtual||gordon|NA|||||CLEAN|active||||5|SA1|a8e704c8-2bf5-4280-9156-d1d6c7617afd|webapps development box
+didsbury-v|ATH436|129.128.4.244|||virtual|drafiei|drafiei||P4/3GHz-1024||KCTD62G||DIRTY|missing||||5||6266805a-c420-43e8-9b3b-01ac3dc89277|
+didsbury|ATH436|129.128.4.234|Linux|WPS Ubuntu 16.04|regular|drafiei|drafiei|549773|Dell OptiPlex 990||50YFJS1||CLEAN|active||||5||ed17c40b-79e7-4126-b53b-5e8d662c5532|
+dillberry|CSC323?|129.128.25.198|||regular||||E8500/3.2GHz-4096||FH5F5J1||DIRTY|missing||||5||30199521-c9be-45d7-8468-24178164d417|
+diotima|ATH452|129.128.184.19|MacOS|10.6.4|wildwest|legilmou|stroulia||MacMini Exxxx/2.26-4096||YM00265R9G5||CLEAN|active||||5||2e98f907-4d65-451d-8fc8-d7e4b5fc3f31|User administered, Static IP, port tr 3-26 c106  legilmou
+discovery|CSC205||dual-boot|Windows 10 Edu & Ubuntu 16.04|regular||hasell,zaiane|no-tag|Dell XPS 9100, Core i7 960 @ 3.2 GHz, 12 GB RAM, 1 TB HDD||DNTX0R1||CLEAN|active||||5||9f5cc10a-676b-4bd8-864e-ab93db06dd8d|On NAT
+donalda|CSC311|129.128.25.202|Linux|WPS Ubuntu 16.04|regular||mn|537353|Dell OptiPlex 990||50Y4JS1||CLEAN|active||||5||65921e74-5c46-4520-9979-2e4f43553c53|
+donnelly|CSC311|129.128.25.94|Linux|WPS Ubuntu 16.04|regular||mn|549767|Dell OptiPlex 990||50Z4JS1||CLEAN|active||||5||5c3506c4-1c56-4971-a217-17ae25de4bb8|
+dorscheid|CSC205|129.128.23.36|Linux|Ubuntu|regular||hasell,zaiane||Core2/6600/2.4-2048||14027046P2||NOP|missing||||5||70bebbda-b2cc-4b1a-ba90-07c8205eeac6|On NAT
+drayton||129.128.25.62|Linux|RHEL Server 5.11|regular||drafiei||4xOpteron8378/2.4GHz-65536||SM45228||CLEAN|missing|||A|5|SRIT|e225309b-7434-4a96-b14b-28837bb4a6c9|RHN# 1018245296
+drdc-edge|ATH327|129.128.184.95|||regular|jgrant2|dwishart||||||NOP|active||||5||a1665393-dea5-44ac-b5f9-a826be4c6ef1|
+driftpile|ESQL137|129.128.21.72|Linux|openSUSE 42.3|regular|dept|tst|529108|Dell PE 2950(3)||1P9ZMF1||CLEAN|active||T|12|5|SA1|2e044dbf-5721-4891-b448-4477ac4e250e|
+dunvegan|CSC311|129.128.25.229|Linux|WPS Ubuntu 16.04|regular||mn|no-tag|Dell OptiPlex 990||5105JS1||CLEAN|active||||5||98759054-3502-464a-ba26-39cb93ff1a27|
+duvernay|ATH430|129.128.25.217|Linux|NOP|regular||mn,yannis|no-tag|Opti/E8400-4096||1NTPWH1||CLEAN|retired||||5||7d243158-d7b4-40e7-9845-2f7536a0c92d|Surplussed INC0105719
+e5-gpu-server|CSC351|129.128.184.98|Linux|Ubuntu 16.04|regular|nray1|nray1|no-tag|Custom Build||||NOP|active|OK|||5||849617df-e362-48d1-88a0-e98fa8f3aeb1|
+edberg|ATH237|129.128.16.166|Windows|XP Pro|regular||dept,cwhelan||Dell OptiPlex 755:Core2/2.66-2048||ACS04834||CLEAN|active||||5||606bc7c2-0dc1-46fb-8c34-89b9ddc7d010|
+edwand|CSC205|129.128.23.76|Linux|Ubuntu 14.04|regular||hasell,zaiane|543396|Q9400/2.66-8192||BFS5WK1||CLEAN|off||||5||6307c1a0-2b50-454d-8036-7f7ecfd89aa5|last seen disconnected and sitting on a desk
+egremont|CSC363A?|129.128.25.103|||regular||anup||Thinkpad/Cel1133-248||AK-VAH2N||NOP|missing||||5||de388e09-f1f0-459a-9b8d-7e096844e8ca|On NAT
+elkisland|czar|129.128.21.238|Linux|Slackware 15.0-current|virtual|dept|johnb||VM||||CLEAN|active|NO|U||5|SRIT|d3b0bd99-e2e3-41b3-9778-09b3746ddda2|rescue development VM
+elkpoint|czar|129.128.21.240|Linux|Slackware 14.2|virtual|dept|jmartin||VM||||CLEAN|active|NO|U||5|SA1|8b2de515-1a77-4ce3-81f1-41ee6b3c1a7f|rescue development VM
+ellis-rv|CSC205|129.128.184.26|Linux|Debian|regular||greiner,zaiane|586996|Dell XPS 8500, i7-3770, 12 GB RAM||G3LY5V1||NOP|missing||||5||1e13540c-d757-4938-b658-e982f346f63a|
+ellscott|CSC251|129.128.23.40|Linux|WPS Ubuntu 16.04|regular||paullu|549774|Dell OptiPlex 990||5147JS1||CLEAN|active||||5||06065610-0bcb-4e1b-b5e7-4b630793b11a|
+endiang|CSC205|129.128.23.45|Windows|7|regular||hasell,zaiane|543294|Q9400/2.66-8192||CFS5WK1||CLEAN|active|OK|||5||9544af3c-ba9b-4fd0-832b-03af3a2b3430|
+entwhistle|ATH353|129.128.4.16|Windows|XP Pro 5.1.2600|regular|ghlin|ghlin|467917|AMD/MP2600-2048||ACS4304||CLEAN|active|OK|||5||6dcbd768-afe5-48f0-88f5-d21f6de623ec|
+esther|CSC305|129.128.23.150|MacOS|10.2|regular||sutton|460914|PowerMac G5/1.8GHz-512||XB3410BFNVS||NA|retired||||5||dc03c28f-8a5b-447d-8425-7afb646f364a|Retired sitting in the lab but will not be reconnected
+ethnopred|||Linux|RHEL Server 5.8|virtual||hajiloo,greiner|NA|||||CLEAN|off||T||5|SRIT|41759e30-0f9c-4ab0-a454-9d7f4ded41af|SN CHG0027988
+eureka-new|CSC137|129.128.22.42|Linux|Ubuntu 18.04 Server|regular|dept|tst||Xeon E5430QC/2.66G-20480 SuperMicro X7DBR-8+/X7DBR-I+||SM39131||CLEAN|active||||5|SRIT|c01bf0da-0f4a-4a2a-bf53-76d16645c279|temporary head node for eureka
+eureka1|CSC137|129.128.22.27|Linux|Fedora Core 5|cluster||steve||Opteron/DP250-3500||SKPLF2??||CLEAN|active||||5||ce4eefd7-f5ad-4db2-a857-bebbf140b1c8|Steve handles
+eureka10|CSC137|129.128.22.110|Linux|Fedora Core 5|cluster||steve||Opteron/DP250-3500||SKPLF2??||CLEAN|active||||5||49b1fce4-db0d-424e-b924-0c0554ee6a49|Steve handles
+eureka11|CSC137|129.128.22.28|Linux|Fedora Core 5|cluster||steve||Opteron/DP250-3500||SKPLF2??||CLEAN|active||||5||fd27b92e-9546-4b77-9896-a21ebf93b035|Steve handles
+eureka|CSC137|129.128.22.26|Linux|Fedora Core 5|cluster|aicml|layola,zaiane,steve||Opteron/DP248-6144||SO-6000978||CLEAN|active|OK|||5||9e43a270-8179-43ed-9714-459ca5377e35|Steve handles
+f48sdh2|CSC211|129.128.184.145|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F48SDH2||NOP|active|OK|||5||cf4e88f9-1135-4516-a3ae-618669f3a571|
+f48vdh2|CSC211|129.128.184.146|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F48VDH2||NOP|active|OK|||5||d29246d6-206c-43e9-a8a9-ca51565b475b|
+f48wdh2|CSC211|129.128.184.142|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F48WDH2||NOP|active|OK|||5||d6ffbbbb-53a3-463c-9d6f-c504623d97e5|
+f48xdh2|CSC211|129.128.184.143|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F48XDH2||NOP|active|OK|||5||30182874-e85e-4673-9e4f-174b5396bebf|
+f49tdh2|CSC211|129.128.184.144|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F49TDH2||NOP|active|OK|||5||06ceac88-0b8d-42df-a8e9-b56b58bd8578|
+f494hh2|CSC211|129.128.184.148|dual-boot|Win10/Ubuntu16.04|regular|zaiane|zaiane||Core i7-7700||F494HH2||NOP|active|OK|||5||bb4f5f83-bfa6-47f0-9522-ac0e47def931|
+fabyan-l|fabyan|129.128.28.254|OpenBSD|4.5|alias|dept|tst||||||CLEAN|retired||T||5||fda2f2f9-054e-4ddd-983a-f27aa76054a4|internal interface
+fabyan|CSC139|129.128.29.234|OpenBSD|4.5|regular|dept|tst|no-tag|IBM||||CLEAN|retired||T|B|5||bd0d0d3e-abb1-4efe-9479-12ad575ed1cd|TST managed server
+falun|czar|129.128.21.14|Linux|openSUSE 42.3|virtual|dept|jmartin|||||||active||||5|SA1|4689df04-048f-41f4-b5f6-5cd0f23aa333|openSUSE setup
+faust-old|Off Campus||Windows|7|regular|zaiane|zaiane|539108|Core2/E8500@3.15GHz-4096 Dell OptiPlex 960||FH5F5J1||CLEAN|active|OK|||5||83922771-6686-43ac-8c28-eb971dd54a5c|
+faust|ATH443|129.128.4.60|Windows|7|regular|zaiane|zaiane|604045|Core i5-4590 @ 3.3GHz, 16GB RAM, 1TB HDD||14222549P||CLEAN|active|OK|||5||77743f27-1691-49c5-9c31-50cfe7abbd1a|
+fawcett|CSC231|129.128.4.254|||network||steve|503203|HP 5412zi||SG646SV00D||CLEAN|active||||5||fe8fbaa0-ae07-48dd-b3e9-a5b35e9836be|
+fedorah1|GSB175|129.128.21.246|Linux|WPS Ubuntu 16.04|regular||mburo|524467|Xeon E5420QC/2.5G-6144||SM39625||CLEAN|active|||F14|5|SRIT|df78c8b6-b8d9-4382-90a7-7f79d4785406|
+fedorah2|GSB175|129.128.21.247|Linux|WPS Ubuntu 16.04|regular||mburo|524464|Xeon E5420QC/2.5G-6144||SM39626||CLEAN|active|||F14|5|SRIT|204cfa6a-206c-4074-aea7-b7e3010ce2ef|
+fedorah3|GSB175|129.128.21.248|Linux|WPS Ubuntu 16.04|regular||mburo||Xeon E5420QC/2.5G-6192||SM41336||CLEAN|active|||F14|5|SRIT|fbc51201-ba92-4a66-b89f-4bd8aa5a2693|
+fedorah4|GSB175|129.128.21.249|Linux|WPS Ubuntu 16.04|regular||mburo||Xeon E5420QC/2.5G-6192||SM41504||CLEAN|active|||F14|5|SRIT|f5c71b36-03ae-479d-880b-09e04dbdbfdc|
+ferintosh|CSC205|129.128.23.174|Linux|Scientific 4.4 (Beryllium)|regular||hasell,zaiane|473431|AMD/MP2800-2048||ACS04763||DIRTY|missing||||5||3fa9846e-baae-4205-a418-559079f88d84|According to SMS inventory this has been sold at surplus
+firebag|CSC329|129.128.22.23|Linux|Ubuntu 12.04|regular||mn,yannis||Opteron/280-8164||ACS05558||CLEAN|retired|||E|5|SRIT|0361630b-a34b-4e2d-8dd9-c72f56f823c7|ssh for networks and dp groups only
+firepoint|CSC329|192.168.85.125|||||mmueller||||SM68259||NOP|active|||C|5||21a3c7eb-3170-4d34-8dac-6dee45c72878|something to do with chinook
+fire-creek|CSC329|192.168.85.129|||cluster|585990|mmueller,yannis,steve||||SM54578||NOP|active|||C|5||73798740-9aac-43b3-a477-ac094f49f53c|something to do with chinook
+fort-kent||129.128.23.19||||||||||||retired||||5||48911f95-700d-4d2b-8786-516af29da1a8|
+franchere|CSC205|129.128.23.193|Windows|7 Ent|regular||zaiane|543315|Dell Studio 540 Core2 Q9400 2.66GHz-8192||9FS5WK1||CLEAN|active||||5||144c9990-4af1-40fd-9b13-d40885193a60|
+froglake|CSC353|129.128.25.131|Linux|Ubuntu 14|regular||karteek,martin|513779|i7/4790K/16364||||CLEAN|active||||5||f7e3c187-e045-4e2d-821b-8e4e393f6126|
+fs1-r|CSC139|129.128.22.230|Linux|Ubuntu 12.04|regular|dept|tst|537340|SunFire X4540 - 32000||0909AMR141||CLEAN|retired||T|A|5||26083097-8626-49b7-a9e0-07d5d46785fa|
+fs1-u|fs1-r|129.128.29.230|Linux|Ubuntu 12.04|alias|dept|tst||||||CLEAN|retired||T||5||11ee5d74-df69-4ca4-9d7e-fd538f8970fa|
+fs2|GSB175|129.128.21.22|SunOS|unknown|regular|dept|tst|549672|Oracle 7320||1123FMMD23||CLEAN|active||T|F18|5|SA1|22cc34d2-d12f-4a2d-880e-021c302359fd|
+fs3|GSB175|129.128.21.23|SunOS|unknown|regular|dept|tst|549673|Oracle 7320||1123FMMD28||CLEAN|active||T|F18|5|SA1|52438ede-7ef3-4b09-a26b-15a5ef56952d|
+fs4|CAB311A|129.128.4.193|Linux|openSUSE 13.1|regular|dept|tst|512176|Xeon/5110-8192||49S1JC1||CLEAN|retired||T|C|5|SA1|ade69a07-ff91-4be5-9b03-8ec37853a58d|TST managed server
+fs-ugrad|fs2|129.128.243.78|SunOS|unknown|alias|dept|tst||||||CLEAN|active||T||5|SA1|4500a4a6-8867-4443-b362-152c03b74697|
+ft-mackay|CSC351|129.128.25.18|Windows|7|regular||nray1||||||CLEAN|missing|OK|||5||7397c7ad-7a57-41cd-8954-06b31075bec3|
+fuego|CSC301|129.128.25.132|Linux|Ubuntu 14|regular||jag|460690|i7-4790k/16384||||CLEAN|active|OK|||5||17b68056-5aff-413c-b909-ad3d8bfe7d59|
+fw1|CSC231|129.128.31.51|OpenBSD|5.4|regular|dept|tst|549746|Dell PE 310 Xeon X3440/2.53GHz-4G||B0YQN91||CLEAN|retired||T|B|5||a5fb9a08-e6b9-420f-b5cd-5cda706b34c0|TST managed server
+fw2|CSC231|129.128.31.52|OpenBSD|5.4|regular|dept|tst|549747|Dell PE 310 Xeon X3440/2.53GHz-4G||F0YQN91||CLEAN|retired||T|B|5||b1020176-5b40-4ae5-8f27-718907fab2bc|TST managed server
+fws23-b|CSCB31|129.128.23.246|||network|dept|steve|406481|FWS24GC||8148||CLEAN|missing||||5||9e379234-51c0-4294-bdd3-9bd818999dc3|Switch
+gadsby|CSC265|129.128.25.23|Windows|10|regular||yang|528949|Dell Dimension 9200||3N10RD1||CLEAN|active||||5||9b070509-eaca-4d53-9c33-bf4c80deabd9|
+gainford|CSC211|129.128.23.69|Linux|Ubuntu 14.04|regular||jonathan,mburo|no-tag|Q8300/2.GHz-8192||MXX9510CQ3||NOP|active||||5||a88904b4-36d1-4228-830c-0e2779fa74e1|Has net issues
+galahad|CSC265|129.128.25.24|Windows|10 Home 64-bit|regular|yang|yang|700205|Alienware Area-51 R2, Core i7 6900K 8-core @ 3.2 GHz, 32 GB (4X8GB) DDR4 2133 MHz, 256 GB SSD + 4 TB HDD, Dual GeForce GTX 1070||4CGQPD2||CLEAN|active|OK|||5||06159a27-22e1-4853-a5b1-8dbfef6a08b3|
+gamebuilder|CSC329|192.168.85.127||||||469352|||ACS04592||NOP|active|||C|5||869c9132-1fd5-43dd-942f-76b19a139cfc|E31220/3.1GHz-8192
+gaps|new-sedgewick|129.128.21.206|Linux|RHEL Server 7.4|alias||AppHosting||VM|||||active||||5|SA1|f8b9159a-8f2e-49c7-9ba9-bd91627bb80c|
+garner|CSC265|129.128.159.212|dual-boot|Win10-Ubuntu18.04|regular||yang|586244|Dell XPS 8700 i7-4770@3.4GHz-24576||DGW9L02||CLEAN|active|OK|||5||60eb3a78-1bc2-47ad-b079-5c094c50bf1b|
+ghost28|czar|129.128.28.249|Linux|openSUSE 13.1|virtual|dept|tst||||||CLEAN|retired||||5||971cb0b3-6f29-4d39-b86b-5e9442c6fb5c|3ds Max license server
+ghostpine||129.128.23.101||||||||||||retired||||5||d7be7029-e399-4399-872e-472e40db3638|
+glendon|CSC265||Windows|7|regular|yang|yang||Dell XPS 8300, Core i7-2600 3.4 GHz, 16 GB RAM, 1 TB HDD||2LBGNS1||CLEAN|active||||5||86de8af0-6d94-4ea6-b611-619c27559afe|
+glenevis|CSC265|129.128.25.19|Windows|XP Pro x64 Edition|regular||yang|509939|AMD/2212-16384||HD031407041||CLEAN|missing|OK|||5||a9b8839f-980e-4385-9153-8dbada9369da|Missing some drivers.
+gleniffer|CSC363?|129.128.25.76|Windows||regular||pierreb,wfb||Intel/E6600-2048||ACS05925||NOP|missing||||5||4dc1e777-ffe5-49bb-b63c-9e5d9b93e29b|On NAT
+godin-lk|CSC265|129.128.25.33|Windows|7|regular||yang|467926|Dell P4H/3GHz-2048||J6KXQ31||CLEAN|active||||5||fc6019ed-01df-4d1a-85b7-04f816a13465|
+goodfish|CSC265|129.128.25.20|Windows|7 Pro SP1|regular||yang|539104|i7_920-6144||41P8VH1||CLEAN|active|OK|||5||d40fda82-74a5-47c4-8517-4374b3f5c166|BIOS set to ignore errors, Ignore CPU fan failure message at boot.
+goodwin-41|CSC231|129.128.41.247|Windows|Server 2012|regular|dept|tst|586188|Intel/X3440-8192||SM55562||NA|retired|||A|5||0a700f02-d651-418f-a06d-a946d1e2835e|decommissioned 2015-10-08, RAID card has dead battery
+goose-lk|CSC315|129.128.25.25|Linux|Ubuntu 14.04|regular|||510079|AMD Athlon X2/4600+@2.4GHZ-4096||ACS06176||CLEAN|spare|OK|||5||e1dacc4e-ff30-4bc0-a100-368574d5d5bd|Hot Spare
+gordondale|CSC265|129.128.25.64|Windows|8.1|regular||yang|586245|Dell XPS 8700 i7-4770@3.4GHz-24576||DGWBL02||CLEAN|active|OK|||5||6aef7868-3d71-4297-8ad8-51118ded08ba|
+granada|CSC265|129.128.25.29|Windows|7|regular||yang||Intel Core i7 2600 3.4GHz-16GB||2L9LNS1||CLEAN|active|OK|||5||74dc09e2-b166-4890-8874-980b1ae8b320|
+grand|GSB175|129.128.243.133|Linux|RHEL Server 5.6|regular|stroulia|stroulia|549665|Silicon Mechanics iServ R143 Xeon 3430/2.4-8192||SM55766||CLEAN|active|||F17|5||0182fe62-2e2d-4f2b-83a6-b27a2da341c3|Stroulia is managing
+grapefruit|ATH357|129.128.159.200|Linux|Ubuntu 18.04 LTS|regular|jwright4|jwright4||Dell Precision 5820 Tower I7-7820X 16Gb||HGQYHQ2||CLEAN|active|||E|5||e667aeb6-8c0a-4e32-95fd-12c94cb57e85|James Wright is managing
+grassland|CSC363?|129.128.25.36|||unknown||||SGI Octane2-512||080069105B8D||NOP|missing||||5||a12c0253-efd2-4386-a520-2b77b5b90dd4|On NAT
+grd101a|ATH101|129.128.4.3|Linux|WPS Ubuntu 16.04|regular|dept|tst|545589|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW43||CLEAN|active|OK|||5|WPS|b36f6080-517a-43b2-b850-30d7fa84bfd3|
+grd101b|ATH101|129.128.4.7|Linux|WPS Ubuntu 16.04|regular|dept|tst|545578|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW94||CLEAN|active|OK|||5|WPS|4c63fe5c-121a-4c7d-9f98-f542e8e091e2|
+grd102a|ATH102|129.128.4.12|Linux|WPS Ubuntu 16.04|regular|dept|tst|545617|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW51||CLEAN|active|OK|||5|WPS|0bd9a414-af31-4fe3-ba94-763f3a826afb|
+grd102b|ATH102|129.128.4.144|Linux|WPS Ubuntu 16.04|regular|dept|tst|545609|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW59||CLEAN|active|OK|||5|WPS|6c7424c9-7f1e-4b81-95a7-9b6a1b0a13a9|
+grd105|ATH105|129.128.4.19|Linux|WPS Ubuntu 16.04|regular|dept|tst|545576|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW38||CLEAN|active|OK|||5|WPS|f3126040-ac66-48a0-8421-bc4707255d62|
+grd106|ATH106|129.128.4.27|Linux|WPS Ubuntu 16.04|regular|dept|tst|545621|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX33||CLEAN|active|OK|||5|WPS|affebbe1-f081-4fe5-a05d-65d84e8d70a7|
+grd107|ATH107|129.128.4.34|Linux|WPS Ubuntu 16.04|regular|dept|tst|545581|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX22||CLEAN|active|OK|||5|WPS|fcdbecdb-61d5-42d7-8ccd-e751d6956d67|
+grd108|ATH108|129.128.4.35|Linux|WPS Ubuntu 16.04|regular|dept|tst|545590|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW41||CLEAN|active|OK|||5|WPS|478427c5-4d92-4f8a-9b7a-f06bb6ad490f|
+grd109|ATH109|129.128.4.37|Linux|WPS Ubuntu 16.04|regular|dept|tst|545592|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX51||CLEAN|active|OK|||5|WPS|fe8bd32a-f865-4d75-b946-a7b68709a970|
+grd111|ATH111|129.128.4.40|Linux|WPS Ubuntu 16.04|regular|dept|tst|545602|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX36||CLEAN|active|OK|||5|WPS|2c485740-5fd4-4b81-9c97-a7b26ff77143|
+grd113a|ATH113|129.128.4.41|Linux|WPS Ubuntu 16.04|regular|dept|tst|545614|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW95||CLEAN|active|OK|||5|WPS|98f31761-7bc5-4154-a07a-9a727adab5f1|
+grd113b|ATH113|129.128.4.42|Linux|WPS Ubuntu 16.04|regular|dept|tst|545591|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX42||CLEAN|active|OK|||5|WPS|f9d352ee-538e-4544-9a91-1813047c686b|
+grd117|ATH117|129.128.4.51|Linux|WPS Ubuntu 16.04|regular|dept|tst|545612|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW30||CLEAN|active|OK|||5|WPS|2600486b-9d8b-4ce4-804f-016aae00ef82|
+grd120|ATH120|129.128.4.59|Linux|WPS Ubuntu 16.04|regular|dept|tst|545585|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX48||CLEAN|active|OK|||5|WPS|d9630b09-c65e-4046-bbaa-29f335a552db|
+grd121|ATH121|129.128.4.58|Linux|WPS Ubuntu 16.04|regular|dept|tst|545623|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW78||CLEAN|active|OK|||5|WPS|4c284633-8196-4d62-b66b-cfe9dbb19c6c| 
+grd123|ATH123|129.128.4.63|Linux|WPS Ubuntu 16.04|regular|dept|tst|545595|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW77||CLEAN|active|OK|||5|WPS|2ab1c976-37e5-4b53-9931-ba37066881cc|
+grd124|ATH124|129.128.4.64|Linux|WPS Ubuntu 16.04|regular|dept|tst|545607|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW58||CLEAN|active|OK|||5|WPS|3f9b8d2c-f148-4d74-aa95-375f0f639706|
+grd128a|ATH128|129.128.4.65|Linux|WPS Ubuntu 16.04|regular|dept|tst|545586|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW49||CLEAN|active|OK|||5|WPS|3909df78-f996-4c67-a046-c806ac5989af|
+grd134|ATH134|129.128.4.74|Linux|WPS Ubuntu 16.04|regular|dept|tst|545605|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW89||CLEAN|active|OK|||5|WPS|280c6358-a97e-4671-8701-7ebe48a3c9f5|
+grd135|ATH135|129.128.4.78|Linux|WPS Ubuntu 16.04|regular|dept|tst|545603|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW55||CLEAN|active|OK|||5|WPS|edc66585-ecc4-4201-97c0-cda9d11dd841|
+grd136|ATH136|129.128.4.83|Linux|WPS Ubuntu 16.04|regular|dept|tst|545606|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW75||CLEAN|active|OK|||5|WPS|6eaaed00-a930-492e-b380-c1023f319fcb|
+grd137|ATH137|129.128.4.85|Linux|WPS Ubuntu 16.04|regular|dept|tst|545597|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW54||CLEAN|active|OK|||5|WPS|9913620a-5ea6-410d-b19a-7f5c73dff08b|
+grd138|ATH138|129.128.4.88|Linux|WPS Ubuntu 16.04|regular|dept|tst|545577|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW44||CLEAN|active|OK|||5|WPS|a4eaa981-a49c-4833-b8c3-bd85be47aaf3|
+grd139|ATH139|129.128.4.89|Linux|WPS Ubuntu 16.04|regular|dept|tst|545587|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW46||CLEAN|active|OK|||5|WPS|9821f9cb-f1a6-4ab3-93b0-c1715cdc6a7e|
+grd140|ATH140|129.128.4.90|Linux|WPS Ubuntu 16.04|regular|dept|tst|545616|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX39||CLEAN|active|OK|||5|WPS|41c03fa6-8942-47a3-aee4-ada8eabbde32|
+grd141|ATH141|129.128.4.107|Linux|WPS Ubuntu 16.04|regular|dept|tst|545618|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW76||CLEAN|active|OK|||5|WPS|92b53812-3bfc-4455-ab00-3b70396f3517|
+grd143b|ATH143|129.128.4.109|Linux|WPS Ubuntu 16.04|regular|dept|tst|545584|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX38||CLEAN|active|OK|||5|WPS|dd0e4629-d959-4a85-8b8a-bc5295c78b38|
+grd150|ATH150|129.128.4.112|Linux|WPS Ubuntu 16.04|regular|dept|tst|545620|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW57||CLEAN|active|OK|||5|WPS|1c1cdfd6-5551-4d9f-81c3-099500efad25|
+grd151|ATH151|129.128.4.115|Linux|WPS Ubuntu 16.04|regular|dept|tst|545611|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW33||CLEAN|active|OK|||5|WPS|3758b704-f8fb-4a8d-ad19-845fb0a1cdd4|
+grd152|ATH152|129.128.4.117|Linux|WPS Ubuntu 16.04|regular|dept|tst|545615|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW62||CLEAN|active|OK|||5|WPS|30398be4-0e9e-46ee-bb88-1ae3ad2592d1|Currently in CSC 132
+grd153|ATH153|129.128.4.116|Linux|WPS Ubuntu 16.04|regular|dept|tst|no-tag|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW50||CLEAN|active|OK|||5|WPS|c96004ff-8f2b-465e-9e49-b69efae267f1|
+grd154a|ATH154|129.128.4.118|Linux|WPS Ubuntu 16.04|regular|dept|tst|545601|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW91||CLEAN|active|OK|||5|WPS|ed854c5b-599c-4d9b-bcca-51f1b0bf8232|
+grd154b|ATH154|129.128.4.122|Linux|WPS Ubuntu 16.04|regular|dept|tst|545624|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX50||CLEAN|active|OK|||5|WPS|6aaec4ac-452c-43df-a060-07f3f5cc3ca4|
+grd155b|ATH155|129.128.4.125|Linux|WPS Ubuntu 16.04|regular|dept|tst|545604|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW40||CLEAN|active|OK|||5|WPS|e91a423a-0e1d-4bb5-8ce1-3b6b24015bc3|
+grd211a|ATH211|129.128.4.49|Linux|WPS Ubuntu 16.04|regular|dept|tst|no-tag|Dell OptiPlex 990||5145JS1||CLEAN|active|OK|||5|WPS|5bcdb484-a950-4eca-9a73-b4c8e91b5de7|
+grd211b|ATH211|129.128.4.53|Linux|WPS Ubuntu 16.04|regular|dept|tst|549704|Dell OptiPlex 990||5113JS1||CLEAN|active|OK|||5|WPS|64bf907b-daea-43d3-801c-d5736faf79d1|
+grd211c|ATH211|129.128.4.62|Linux|WPS Ubuntu 16.04|regular|dept|tst|549757|Dell OptiPlex 990||514GJS1||CLEAN|active|OK|||5|WPS|5b8780e0-0d20-46f6-a19c-8f16fe209bcf|
+grd323a|CSC323|129.128.4.11|Linux|WPS Ubuntu 16.04|regular|dept|tst|549762|Dell OptiPlex 990||5127JS1||CLEAN|active|OK|||5|WPS|0a3290de-bc8a-4470-be81-35abdf2f2a74|
+grd323b|CSC323|129.128.4.13|Linux|WPS Ubuntu 16.04|regular|dept|tst|549757|Dell OptiPlex 990||516DJS1||CLEAN|active|OK|||5|WPS|ed89e472-41f7-4220-8cb4-eed8a45f152c|
+grd323c|CSC323|129.128.4.17|Linux|WPS Ubuntu 16.04|regular|dept|tst|549714|Dell OptiPlex 990||5155JS1||CLEAN|active|OK|||5|WPS|f8e49d61-3021-4bb9-b483-f89b63a66962|
+grd323d|CSC323|129.128.4.21|Linux|WPS Ubuntu 16.04|regular|dept|tst|549700|Dell OptiPlex 990||5137JS1||CLEAN|active|OK|||5|WPS|b5b61a07-ded2-4b81-8a39-6040bc6f000f|
+grd323e|CSC323|129.128.4.22|Linux|WPS Ubuntu 16.04|regular|dept|tst|549756|Dell OptiPlex 990||5169JS1||CLEAN|active|OK|||5|WPS|5fbe20a6-71e4-49b7-b11f-ddf278925f0f|
+grd323f|CSC323|129.128.4.32|Linux|WPS Ubuntu 16.04|regular|dept|tst|549687|Dell OptiPlex 990||5144JS1||CLEAN|active|OK|||5|WPS|54be717d-84f0-402d-8e3f-05ca40e988a1|
+grd323g|CSC323|129.128.4.54|Linux|WPS Ubuntu 16.04|regular|dept|tst|549681|Dell OptiPlex 990||5158JS1||CLEAN|active|OK|||5|WPS|9d67530e-c8e7-49ab-8a22-7461c5fdfcd8|
+grd323h|CSC323|129.128.4.48|Linux|WPS Ubuntu 16.04|regular|dept|tst|549753|Dell OptiPlex 990||50Y7JS1||CLEAN|active|OK|||5|WPS|6d82a882-3f23-4462-8315-e0b31b970f78|
+grd418|ATH418|129.128.4.135|Linux|WPS Ubuntu 16.04|regular|dept|tst|545596|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW73||CLEAN|active|OK|||5|WPS|a88cdd85-3393-4ac3-95d8-af125382e97f|
+grd420|ATH420|129.128.4.134|Linux|WPS Ubuntu 16.04|regular|dept|tst|545610|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX34||CLEAN|active|OK|||5|WPS|579ae79d-11ec-4f2f-bc73-40f6ca3917d1|
+grd422|ATH422|129.128.4.136|Linux|WPS Ubuntu 16.04|regular|dept|tst|545622|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW26||CLEAN|active|OK|||5|WPS|a3dac4eb-e525-400f-bb99-22dac42947be|
+grd424|ATH424|129.128.4.139|Linux|WPS Ubuntu 16.04|regular|dept|tst|545619|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNW35||CLEAN|active|OK|||5|WPS|570fccd0-45e0-4cec-9bbb-bbf6b688c303|
+gregoire|CSC351|129.128.25.56|Windows|7|regular||mpolak,zhang|586207|Xeon E5-2620-32768||8X2G7Y1||CLEAN|active||||5||d409ede3-a89a-4c92-a6c2-2ade8f412248|
+groot|CSC265||Windows|10|regular||yang|604054|Alienware Aurora R5, Core i7, 16 GB RAM, 2TB HD 7.2k RPM, GTX 970||3DKQSD2||CLEAN|active|OK|||5||6ee28f06-0020-49bb-8d29-acb0216b508d|on UWS
+gwang|ATH211|129.128.184.138|Windows|10|regular|jiaji|jiaji||Memory Express - i7-7700 - 16GB RAM - 1 TB HD||12124490||NOP|active||||5||732e3d16-1167-49de-a886-a18ec60ffe23|For the PFM scheduling group
+gwynne|CSC139|129.128.41.233|Linux|RHEL Server 5.11|regular|dept|tst|549726|Dell PE 510 Xeon E5503/2.00GHZ-8164||GSV6HS1||CLEAN|surplus|||A|5|SA1|b8946787-3a58-4329-b8f3-31250473eca3|RHN# 1023758513
+hamlin|ATH347|129.128.4.159|||printer|ath347|goebel||Dell 3100c||1FL7991||CLEAN|active||||5||d4352f07-3fb9-4928-b366-e6364b4a1cd0|Printer
+hanna|CSC315||||regular|dept|dept|no-tag|Dell Vostro 430, Core i7-860 @ 2.80 GHz, 8GB RAM||9CQQPL1||CLEAN|spare||||5||1233996d-03f3-41ef-8f2a-c6f12157fcc2|
+hardisty|CSC145|129.128.29.245|Linux|WPS Ubuntu 16.04|regular|dept|tst|538268|HP dc7900 Core2 Duo @ 3.16 GHz - 4G||CAC91501SM||CLEAN|stalled||||5|WPS|9bce2f68-4aec-4e5e-b1e1-beee4804f684|Consulting Room machine for TA to ugrad consulting
+harry|CSC225|129.128.184.102|dual-boot|Win10/Ubuntu16.04|regular|locheng|locheng|604108|||14265008P||NOP|active||||5||23606412-0c2d-4ea9-80a4-b451e90dc280|MRC grad lab machine
+hasketh|CSC251|129.128.184.9|||wildwest||eochoa|no-tag|FPGA||||NOP|active||||5||0bd54371-807a-42f0-bde8-2aa0c33e6e1a|test FPGA
+haylake|ATH252B|129.128.23.34|||printer|ath252b|tst||HP P2015dn||CNBJL27387||CLEAN|active||||5||632e2b3c-1c8b-4b21-9470-291b0f2cc8b5|Printer
+heisler|CSC305A|129.128.22.159|Linux|Fedora Core 6 (Zod)|cluster||mmueller,hiso,steve||Opteron/DP248-5055||SKPLF2??||CLEAN|active|OK|||5||1c03592f-e444-4b3a-a38d-2eccabe3f46a|Steve handles. Currently powered off (Jan 2018).
+heldar|CSC305A|129.128.22.40|||cluster||steve||Opteron/2354-8192||6001175||CLEAN|active|OK|||5||396c0268-9fc2-4620-a7bc-744234d98e8b|Steve will handle
+hoeth|GSB175|129.128.243.10|Linux|Ubuntu 18.04 LTS|regular|yannis|yannis||HP ProLiant ML350 G10 877622-001||MXQ85201T5||CLEAN|active|||F16|5|SRIT|a0a9c846-a652-4102-9c26-ef8bb430b79f|
+hermione|CSC225|129.128.184.104|dual-boot|Win10/Ubuntu16.04|regular|locheng|locheng|604106|||14265015P||NOP|active||||5||5894ef79-ef4b-4b94-be14-d1846e335ee8|MRC grad lab machine
+highvale|ATH437||||printer|cs311|netgroup||LaserJet 2200dn||||CLEAN|active||||5||8cf76811-8faf-4417-8555-c972b90f5655|Printer - Not in use anymore
+himalaya|CSC353|129.128.25.27|Linux|Ubuntu 14.04|regular|dana|dana,jag|510082|||||NOP|active||||5||b0dba431-a35b-4ec1-a9dc-780846e6594b|This is an old case that was reused, so the UofA tag and S/N aren't really very meaningful
+hip-p1||129.128.23.247||||||||||||retired||||5||afe00bc4-6051-45cd-8c55-36a73d4d0919|Reserved for High School Intern Program
+hip-p2||129.128.23.233||||||||||||retired||||5||320764ef-b5da-46c6-a403-f143f21d351e|Reserved for High School Intern Program
+hip-p3||129.128.4.31||||||||||||retired||||5||26436c6d-a48d-4366-a056-9e79fd3f79dd|Reserved for High School Intern Program
+hoadley|CSC323?|129.128.25.17|||printer|cs323|mn,zaiane|439711|HP LJ2200dn||JPGGC57046||CLEAN|active||||5||98576b02-684c-4dbe-b27c-cb57397570d7|Printer
+holden|ATH234|129.128.23.35|||printer|ath234|tst|497726|HP LJ2420DN||SCNGKC29979||CLEAN|active||||5||b46e320d-3ef4-42b0-8b01-f5609753dc94|Printer
+horse-rv|CSC351|129.128.184.63|Linux|Ubuntu 14.04|regular||mpolak,zhang|no-tag|Opti/E8400-4096||5SF71J1||NOP|active||||5||14646b80-50ec-49d3-afef-839b376366e7|on the wildwest
+hotchkiss|CSC225|129.128.23.25|Windows|10|regular||lin,anup|361516|i7-4790,3600 16Gb||JD7TV52||CLEAN|active|OK|||5||b1cd96d8-cbce-41d6-a192-18474b732ea5|Dual boot with Ubuntu 14.04
+hpbbd08d|ATH404|129.128.4.92|||printer|ath404|kulchits||HP Officejet Pro 6830 e-All-in-One||TH615820FH||CLEAN|active||||5||9006d992-92d0-4a22-b7fa-ba2e355e2010|Printer
+huallen|ATH317|129.128.23.43|Windows|7|regular|dept|tst|505406|Intel Core 2 6600 @ 2.40GHz-8192||14027046P1||CLEAN|active|OK|||5||195c7a11-623a-443c-b39c-7a376351e69c|Charles custom build for TASK0068006
+huxley|ATH358|129.128.4.162|||printer|ath358|duane|420190|HP LJ2100||USGW078494||CLEAN|active||||5||d9c994f7-9b78-421a-a3b4-29dd37df588c|Printer
+hy2gsdjh2|CSC265|129.128.184.66|dual-boot|Ubuntu 16.04/Windows 10 Education|regular||yang|707649|Precision T5810, Intel Xeon E5-1650v4, Dual Nvidia Quadro M4000, 16GB RAM||2GSDJH2||NOP|active||||5||ed2a7a15-1799-4140-97e2-70b03c9522b1|
+hylo|CSC251|129.128.184.10|||wildwest||artemcm|no-tag|FPGA||||NOP|active||||5||e1ecd0d5-1ff6-4a94-80b4-1ff0249fde6c|test FPGA
+hypatia-old|GSB175|129.128.243.134|Linux|RHEL Server 5.6|regular||stroulia||Xeon E5410QC/2.33-16384||SM40682||NOP|active|||F17|5||d29bd805-4cf1-40d1-9e8d-ca56fc38a77f|on the wildwest
+icdm2011|webdocs|129.128.184.25|||virtual||||||||CLEAN|active||||5||e6cee682-1e03-4551-a41a-e00efbfe3a09|Virtual Web Host on webdocs
+idamay||129.128.23.109||||||||||||retired||||5||a1e45a40-37d0-4e80-9080-175b713a923a|
+iddesleigh||129.128.23.106||||||||||||retired||||5||1cae1712-031d-4115-a7a5-8fcc5538e011|
+idm|||Linux|RHEL Server 5.8|virtual||greiner|NA||||||off||||5||a6c19520-8914-4724-9fed-cfe232e940ed|SN CHG0028135
+innisfree|GSB175|129.128.21.245|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell PE R300 Xeon X3323/2.5GHz||C419MJ1||CLEAN|active|OK||F17|5|SA1|15b68bbd-c9e8-4896-afe1-304ffc411b8b|
+intranet-dev|launch-dev||Linux|Slackware 12.2.0|alias|dept|gordon||||||CLEAN|retired||||5|SA1|c5f7ec19-d820-4be7-bad4-8e1a41586c9a|
+intranet-prod|IST VM|129.128.21.35|Linux|Ubuntu 16.04|virtual|||NA|VM|||||active||||5|SA1|3d5d2fcb-2bc0-4334-abdf-e26b6f1c2749|
+intranet-test|IST VM|129.128.21.11|Linux|Ubuntu 16.04|virtual|||NA|VM|||||active||||5|SA1|eadb8ac6-558c-4f4d-8118-2eb4e2583559|
+intranet|intranet-prod|129.128.21.35|Linux|Ubuntu 16.04|alias|||NA|VM|||||active||||5|SA1|16778aeb-dc25-4951-966e-a0be5b24a528|CNAME to intranet-prod
+ipiatik||129.128.23.251||||||||||||retired||||5||b1fedddd-ecdb-4a6e-852f-0247f60905e5|
+irma|ATH329|129.128.23.17|Windows|7|regular|smillie|dept||Lenovo M74 84 Intel Core 2 Duo E8400 3.0GHz-8192||||CLEAN|active|OK|||5||b603ff44-a6e2-481c-9ac8-ced9376aefb0|NEW not in place yet - physaddrs NIC 1
+iron-riv|ATH335|129.128.29.242|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 755||CYLQRH1||CLEAN|active||||5|WPS|f475187c-44d4-4830-a29e-7ba349d0f16e|
+irricana|CSC329|129.128.4.248|Linux|WPS Ubuntu 16.04|regular|dept|tst|527266|MacPro 2*2.8GHz-16384||G88223LGXYK||CLEAN|active|OK|||5|WPS|04d15315-b9bd-4ef8-8a6d-2c783dede5d6|
+islay||129.128.29.240||||||||||||retired||||5||1367d452-de19-4f91-8252-d1f0696d0a37|
+j5qg482|ATH252B|129.128.16.13|Windows|7|regular|kgdean|dept|605665|Optiplex 7040||J5QG482||CLEAN|active|OK|||5||3179fe38-c9d9-473b-b015-2510fc2a5fab|
+j62g482|ATH237|129.128.16.9|Windows|7|regular|kasorens|dept|605661|Optiplex 7040||J62G482||CLEAN|active|OK|||5||fa763ec0-f011-47c1-a7a0-f0838dc061ef|
+j64c482|ATH233|129.128.16.7|Windows|7|regular|britta|dept|605659|Optiplex 7040||J64C482||CLEAN|active|OK|||5||3450a6fe-2b5e-4786-82bf-ac7a79fe5172|
+j67g482|ATH252A|129.128.16.12|Windows|7|regular|sunrose|dept|605664|Optiplex 7040||J67G482||CLEAN|active|OK|||5||7e51df45-83c5-4014-9fee-f46fd106c4ea|
+j607482|ATH232|129.128.16.5|Windows|7|regular|sb4|dept|605657|Optiplex 7040||J607482||CLEAN|active|OK|||5||85a2a80c-d8ec-40b0-8e30-0a919a3dd2cd|
+j629482|ATH235|129.128.16.8|Windows|7|regular|kberg|dept|605660|Optiplex 7040||J629482||CLEAN|active|OK|||5||74fc78eb-0dc6-41eb-b268-2753964d7c5f|
+j657482|ATH252F|129.128.16.11|Windows|7|regular|lholland|dept|605663|Optiplex 7040||J657482||CLEAN|active|OK|||5||b13f2297-612d-4e87-9965-cac970b6de71|
+j678482|ATH241|129.128.16.10|Windows|7|regular|dchoi|dept|605662|Optiplex 7040||J678482||CLEAN|active|OK|||5||5a821b7b-b1a2-4637-86a3-f6268dcb1a5a|
+j688482|ATH231|129.128.16.6|Windows|7|regular|sharon|dept|605658|Optiplex 7040||J688482||CLEAN|active|OK|||5||a3f61a34-83c0-4054-96d0-94579eb0de45|
+jarvie|CSC251|129.128.23.91|Linux|WPS Ubuntu 16.04|regular|dept|dept||OptiPlex 980 i7/860@2.8GHz-8G||9KP1PM1||CLEAN|active||||5||25c1327c-7a63-4107-a6a9-0eaea797d28c|Mainboard replaced Feb 18/11.
+joffre|CSC137|129.128.22.80|||cluster||steve||Xeon:E3110-4096||SM46050||CLEAN|active|OK|||5||7ea98fb0-f45b-4969-a458-dd7dcbea4bc5|Steve handles
+kakwa-riv|ATH423|129.128.23.119|Linux|Ubuntu 14.04|regular||you|512186|AMD64/DC4600-4096||ACS05397||CLEAN|retired|OK|||5||c48a12a1-d80b-46a4-b2af-3a5a13c25fd2|being surplussed
+karim-timecapsule|ATH342|129.128.23.49|||unknown||karim2||5th Gen mid 2013 Time Capsule||||NOP|active|OK|||5||7c95ba93-b369-4d56-ac67-9c883e0de81a|
+kikino|CSC211?|129.128.23.154|Linux|Red Hat 9 (Shrike)|regular||lindek||Gen Athlon/2000-1024||2BZS232229||DIRTY|missing||||5||e7c46e1c-cc79-42bf-9d10-e0b9d3a3b06f|
+kirriemuir|CSC225|129.128.23.141|Windows|10|regular||lin,anup|361517|i7-4790,3600 16Gb||JD7XV52||CLEAN|active|OK|||5||25ce7e31-3cc6-40f7-b913-37b7511113d4|
+lacombe|CSC329|129.128.4.138|MacOS|10.6|regular|dept|tst||Mac||||CLEAN|active|OK|T|C|5|SA1|c1befc6c-2f33-4da5-b35f-d62e20fe39f3|TST managed server, od2
+lacorey|ATH359|129.128.4.94|Linux|WPS Ubuntu 16.04|regular|greiner|greiner|549772|Dell OptiPlex 990||50ZFJS1||CLEAN|active||||5||9a4b579a-3eb3-42dd-b3de-1ba84d0693b5|
+lafond|ATH354|129.128.4.61|Linux|WPS Ubuntu 16.04|regular|you|you|706799|ThinkCentre M910, Core i5||MJ05F3N9||CLEAN|active||||5||eabe568c-4ee9-412f-b4b7-7f2d7c1a72f0|
+lamont|ATH340|129.128.4.80|Linux|Ubuntu 10.04 LTS|regular|paullu|paullu|467913|AMD XP3000-1024||ACS04614||NOP|active|OK|||5||8bcfdf94-c435-45de-b996-3263ed7a2193|Paul Lu powered off, not in use at this time
+lanparty|CSC139|129.128.184.220|OpenBSD|5.6|regular|dept|tst||Dell PE 850 P4 80547/2.6-512||775D5B1||CLEAN|missing||T|B|5||a6a8fd20-266d-477b-9204-163e10665fcd|TST managed server - lanpartygw
+lasthenia|CSC259B3?|129.128.23.214|Windows||regular||stroulia||Core2/T7400/2.16-2048||L3-4N8N9||DIRTY|missing||||5||d3b025df-7e4c-41df-bf41-4ddf692b7aa6|Rene - please check
+lavoy|CSC143|129.128.4.137|Windows|7|regular|||527271|Dell 755||9950RF1||CLEAN|missing||||5||dec7b1e8-e3e7-4131-911e-d7e4ce9bd19c|
+la-nonne|CSC329|129.128.22.89|MacOS|10.6|regular|dept|tst||Xeon2.26GHz-6144||H09410JN10S||CLEAN|active|OK|T|C|5|SA1|e40a2ef7-5d17-41d3-b4e1-14777f3b24ac|TST managed server, open directory master
+leedale|CSC211|129.128.23.84|Linux|WPS Ubuntu 16.04|regular||jonathan,mburo|549722|Dell OptiPlex 990||5167JS1||CLEAN|active||||5||52574691-14e4-4f98-8774-655a44252287|
+lindale|CSC251|129.128.23.215|Linux|WPS Ubuntu 16.04|regular||amaral,paullu,jonathan|549723|Dell OptiPlex 990||5109JS1||CLEAN|active||||5||77e01c39-2a68-4306-8eb7-ea64115b21b5|
+linden|ATH302|129.128.4.126|MacOS|10.10|regular|stewart|stewart|no-tag|iMac (27 inch, Late 2015)||C02S33HTGG7L||CLEAN|active|OK|||||41a9493a-8cac-4c22-8519-16f55b028dd0|
+lobstick|GSB175|129.128.243.14|Linux|Ubuntu 20.04|regular|gkondrak|kali2||ASRock S2066 C422,Xeon W-2255,8x16GB,2xRTX 3090||||NOP|active||||5|SRIT|0435b213-af69-4921-af27-4b0720fa7779|Support provided by AMII too
+lonestar|CSC353|129.128.25.12|Linux|Ubuntu 14.04|regular|jag|jag||||||NOP|active||||5|SRIT|0d266f73-9055-4f9d-b039-e997ec16c5af|may not be SA1's responsibility
+looma|CSC225||dual-boot|Windows 10 & Ubuntu 14.04|regular||lin,anup|361520|i7-4790,3600 16Gb||JD7YV52||NOP|active|OK|||5||aa282150-3aae-453f-afab-4114dcb03dfa|On NAT.
+lousana|CSC211||Windows|7 Pro|regular||jonathan|no-tag|Q8300/2.GHz-8192||MXX9510CQF||NOP|missing||||5||65498fc3-3986-4895-aeb7-19a62aff22a4|Moved to UWS
+lubicon|CSC353|129.128.25.30|Linux|Ubuntu 14.04|regular|jag|jag|448709|||ACS03834||NOP|active||||5||8d223e20-9b54-470a-bf58-e2a6644d107b|This is an old case that was reused, so the UofA tag and S/N aren't really very meaningful
+mackay|ATH217|129.128.23.31|Linux|WPS Ubuntu 16.04|regular|carolyn|carolyn,rod|549721|Dell OptiPlex 990||5135JS1||CLEAN|active||||5||8dffe2cb-b4a4-4a8b-b99d-f6592c424706|
+madden|CSC211|129.128.23.26|Linux|WPS Ubuntu 16.04|regular||jonathan,mburo|549761|Dell OptiPlex 990||5122JS1||CLEAN|active||||5||08eb2870-f23f-42fa-a593-9aabde4bbaa0|
+magellan|CSC205|129.128.23.44|Windows|10 Education|regular||hasell,zaiane|no-tag|Optiplex 990, Core i7 2600 @ 3.4 GHz, 16 GB RAM, 500 GB HDD||JWDDVR1||CLEAN|active||||5||90803bcc-dded-4f0e-b029-877f09e3c087|
+mannville|ATH347|129.128.4.163|MacOS|10.5.8|regular|goebel|goebel|438971|Apple G4/933-512||XB2051NXM8G||NOP|missing|OK|||5||8c1cb2a1-a985-4e20-a3a4-2cd8f445f7c8|Moved to NAT
+maple|GSB175|129.128.243.166|Linux|Ubuntu 18.04|regular|karim2|karim2|718589|Thinkmate AS-1023US-TR4||S267675X8432827||CLEAN|active|OK||F17|5|SRIT|1814845e-b79b-43fa-830d-ad36c71bccdc|Support account: srit
+mariana|ATH202|129.128.23.188|Linux|Ubuntu 12.04|regular|rod|rod||HP d79008C/E8400/160hq/2U/7k US||CAC95001J5||CLEAN|retired|OK|||5||b97c4935-1ece-4764-bbf2-639d7d947de7|
+marion|CSC305A|129.128.22.25|||cluster||steve||Opteron/250-16384||ACS04802||CLEAN|active|OK|||5||fe2b60ae-d06b-46ca-9015-6dad43f863f8|Steve handles. Currently powered off (Jan 2018).
+markerville|CSC133|129.128.23.75|Windows|7|regular||hasell,zaiane|361505|i5-4460-8192||18096520||CLEAN|active|OK|||5||d49d045e-1d70-4fe6-b802-de1603e77a30|Rebuilt prior to move from subnet 184 to 23.
+marlboro|CSC132|129.128.29.238|Linux|WPS Ubuntu 16.04|regular|dept|tst|549707|Dell OptiPlex 990||514BJS1||CLEAN|off||||5|WPS|f156dddb-ecec-4643-98b5-71cedb4eefd6|UGrad
+marten|ATH438|129.128.4.30|Linux|WPS Ubuntu 16.04|regular|kondrak|kondrak||Dell OptiPlex 790 i5-2400/4086||6GHSJQ1||CLEAN|active||||5||a2f5a332-6445-4d92-8982-d19fa2e32422|
+marwayne|ATH358|129.128.4.86|MacOS|10.9.4|laptop|duane|duane||Apple laptop||serial||CLEAN|active||||5||c6b16368-2720-4479-a956-074fa4f5d9fb|Monitor is TAG# 482528
+mayatan-lk|ATH352|129.128.4.101|MacOS|10.6|regular|amaral|amaral||Mac mini Mid 2010 Core2 Duo @2.4GHz-2048||C07D40DSDD6L||CLEAN|active|OK|||5||801372c4-b58d-4a87-b925-6a90e4ff361b|
+maya|CSC301|129.128.25.133|Linux|Ubuntu 14|regular||jag|477314|X3350/4192||||CLEAN|active|OK|||5||736cb6c3-889d-4622-92f2-e2aa28c89c27|
+mayerthorpe|CSC147|129.128.25.63|MacOS|unknown|regular|rltaylor|pierreb|473449|Mac G5-1280||XB3352AM||DIRTY|stalled||||5||a3cad7fa-3ac0-49f2-80f6-fd751a2f4a04|Walter will scan and let us know.  Was missing mouse.
+mburo-lt||129.128.4.66|||laptop|mburo|mburo||Laptop||serial-no||DIRTY|missing||||5||793ceb3a-9fb6-497f-a044-b99139a3a947|off campus?
+mclennan|CSC132|129.128.4.238|MacOS|10.11|regular|dept|dept||"iMac 27"", Core i5 2.7 GHz, 12 GB RAM, 1 TB HDD"||D25GR0AKDHJV||CLEAN|active|OK|||5||00812b57-389f-41e1-82df-8cd249e7c63e|Munki installed.
+meanook|CSC225|129.128.23.57|Windows|7|regular||lin,anup|537347|Opti E8200-4096||CRT1XG1||CLEAN|active|OK|||5||f4ddff58-f9ed-4770-ac77-aaf070949d94|
+medserver|CSC147|129.128.184.96|||unknown||pierreb||||||NOP|active||||5||1b967524-83b8-4bdb-b5ec-9a341e1f43d7|
+mega-rv|ATH215|129.128.23.158|MacOS|10.6|regular|smir|smir|528103|iMac24/2.8GHz-204iMac24/2.8GHz-2048||YM8336127E4||CLEAN|missing|OK|||5||553a9ecd-cb41-4a87-8b8b-1ae9107a7c8e|Reinstalled
+meikle|ATH415|129.128.23.103|Linux|WPS Ubuntu 16.04|regular|jdavidso|jonathan|549768|Dell OptiPlex 990||5164JS1||CLEAN|active||||5||6b8699cc-a40a-4671-8c50-d34d6142b71a|
+melanoma|CSC205|129.128.184.68|||regular|zaiane|hasell,zaiane|no-tag|Dell PowerEdge T330, Xeon E3-1220 v5 @ 3.00 GHz, 8 GB RAM||HWJGJB2||NOP|active||||5||3ae6d1db-bee1-4166-9d12-2fa8b68adc97|Server for the AICML melanoma project.
+melco|GSB175|129.128.243.3|Linux|Ubuntu 18.04|regular|zaiane|zaiane|728379|Thinkmate XT24-2460V4-10GPU||S240227X8900342||CLEAN|active|OK||F16|5|SRIT|ae916436-900c-49fb-b53e-15e09d36770c|Support account: srit
+melissa|GSB175|129.128.243.4|Linux||regular||stroulia||IBM||CWVSWC1||CLEAN|active|||F17|5||7683ac9f-1dfc-4100-a921-66ab457af5b8|
+menaik|CSC329|129.128.4.241|Linux|CentOS 5.2 (Final)|regular|dept|dept,steve|508559|Dell PE 860 Xeon 3050-2048||DV2BWC1||CLEAN|active|OK||B|5|SA1|fd937d0a-ecb9-4463-b602-5756deb7296d|Steve handled
+michichi||129.128.23.89||||||||||||retired||||5||74869f57-edde-4964-a26c-b45708a854a6|
+mildred|CSC351|129.128.25.42|Linux|WPS Ubuntu 16.04|regular|rkube|zhang|549705|Dell OptiPlex 990||5118JS1||CLEAN|active||||5||88f8b7f4-54c4-491c-90c8-b0cd8279fe5b|Waiting on BIOS password reset
+millet|ATH150|129.128.4.95|MacOS|10.5|regular|enright|tony|445498|iMacG4/700-256||QT22259EL3V||NOP|active||||5||6cef2f33-9512-4a5a-b90b-4e08a44ac979|
+mininet-laptop|ATH122|129.128.23.30|Windows|10 Professional|regular|||no-tag|Dell Precision M4700 i7-3840QM 2.8 GHz, 32 GB RAM||||CLEAN|active||||5||2b204397-21c0-4542-8371-9dadcb8cad49|
+mininet-vm|ATH122|129.128.23.20|Linux|Ubuntu 14.04 Server|virtual|hanvari|hanvari|no-tag|Dell Precision M4700 i7-3840QM 2.8 GHz, 32 GB RAM||||NOP|active||||5||56df19c6-661e-412b-940a-cb8937e390b2|
+ministik|CSC355|129.128.23.87|Linux|WPS Ubuntu 16.04|regular|miyoung2|tst||Dell XPS 8500 i7-3770 3.4GHz-8192||FF12QS1||CLEAN|active||||5||9b675431-43c8-4dd3-af06-33522ee91784|
+mint-dev|launch-dev|129.128.22.151|Linux|Slackware 12.2.0|alias|dept|gordon||||||CLEAN|retired||||5||f3d6fa37-cd85-4262-b0b4-ec8478e306cd|
+mint-mon|CSC329|129.128.22.154|Linux|Cent OS|regular||steve|474864|P4/2.67GHz-3072||H8J2F1X||NOP|spare|||D|5||c5d71e31-2b4d-4990-9f06-8beb1ceffbd8|Steve wants it as his spare maybe to make redundant neapolis
+mirror|CAB311A|129.128.22.12|Linux|Ubuntu 12.04|regular|dept|tst|479279|atipa P9245 Dual Opteron 250 @2GHZ-8192||2008324||CLEAN|retired||||5|SA1|0a32d1ec-5328-4cf4-a1bf-df1200a72902|TST managed server
+mizar|CSC329|129.128.184.75|||regular|rudnicki|rudnicki,steve||||SM54879||NOP|active|||B|5||5235610b-1f1f-47a3-adcf-e6b85a6f243e|Steve handles
+mmg1|GSB315|129.128.243.170|Linux||regular|locheng|locheng||TYAN Server||||CLEAN|active|OK|||5||95ce6011-939e-4662-a406-66a031b1ed8f|GPU server for MMRG
+mmueller-lt|ATH345|129.128.4.56|MacOS|10.6.5|laptop|mmueller|mmueller||Mac Powerbook G4/867MHz||QT2440EK-N4L-ff0d||CLEAN|active|OK|||5||b5d6f156-5f2b-43d5-bf97-a7c035e9b80b|Willing to move to NAT once printing works.
+montagneuse|CSC305|129.128.23.155|MacOS||regular||hasell,zaiane|467908|PowerMac G5 1.6GHz-256||XB415020NVQ||NA|retired||||5||5b90c64d-d5b2-429b-93ee-f66069d17c3d|Retired sitting in the lab but will not be reconnected
+morecame||129.128.23.159|MacOS|10.5|laptop||tst|461431|Apple iBook G4-1024||UV34593GQE4||CLEAN|missing||||5||7fe5320e-cd93-4417-a15f-a2ee0a9c95ee|
+morley||129.128.4.75||||||||||||retired||||5||a0ea2ff0-c9f1-4bdc-a547-fc5bfbe7a1a3|
+morningside|CSC205|129.128.23.178|Linux|WPS Ubuntu 16.04|regular|||482519|AMD64/3400-2048||ACS05087||CLEAN|spare||||5||4fd0b57a-9db1-4669-abfd-d56c4f2f76f2|
+morrin||129.128.16.169|Windows|XP Pro|regular||dept|526143|Dell OptiPlex 755:Core2/2.66-2048||JT9???||CLEAN|missing||||5||754a7ef2-bf0f-436c-aded-6baa8923cb54|missing - last seen ATH252
+mstrobl-desktop|ATH424|129.128.184.16|Linux|Ubuntu|regular||mstrobl||AMD Ryzen 7 2700X-16G||||NOP|active|OK|||5||aa937f85-6bf4-419c-a465-0ba38fc0bed7|TASK0245042
+mtu18nv|CSC329|129.128.41.236|Linux|WPS Ubuntu 16.04|regular|dept|tst|549724|Dell OptiPlex 990||50Z7JS1||CLEAN|active||||5|WPS|299a0959-bff6-49ca-ba0e-c90b5c895faf|UGrad
+mtu18|CSC329|129.128.41.235|Linux|WPS Ubuntu 16.04|regular|dept|tst|549715|Dell OptiPlex 990||511GJS1||CLEAN|active||||5|WPS|21426d84-0933-41fc-adb4-b9d215462bfb|UGrad
+mtu16nv|CSC329|129.128.41.234|Linux|WPS Ubuntu 16.04|regular|johnb|tst||Dell OptiPlex 990||515BJS1||CLEAN|active||||5||3a7996ba-eeff-46ee-a4ee-b8eae004bd1c|Ubuntu 16.04 Nvidia spec box
+mtu16|CSC329|129.128.41.240|Linux|WPS Ubuntu 16.04|regular|dept|tst|513778|ACS06172||||CLEAN|active||||5||beba4fc6-24d8-43b9-914f-6f9d31bfbacb|Ubuntu 16.04 Generic spec box
+mulhurst|ATH345|129.128.4.84|MacOS|10.10|regular|mmueller|mmueller||iMac/4GHz-16384||C02PQ043FY14||CLEAN|active|OK|||5||acc4e86f-1415-4f84-aace-6242eba4b830|
+mundare|ATH220|129.128.4.82|MacOS|10.8|regular|mn|mn|524170|iMac/2.8GHz-2048||K874212HZCT||CLEAN|active||||5||61274bbb-cecb-47c6-bd40-17461512ccf7|To be used by guests
+muriel1|GSB175|129.128.21.243|Linux|WPS Ubuntu 16.04|regular||mmueller||Xeon E5420QC/2.5G-12288||SM40022||CLEAN|active|||F14|5|SRIT|02864433-bf34-4e1e-bc40-0d820deff6b9|same as for muriel
+muriel-c1|CSC329|192.168.85.128|||cluster||steve,mmueller||||SM45398||NOP|missing|||C|5||5b5f300f-4e51-465d-95d8-d539cb83792e|Belongs to chinook cluster, Steve to check
+muriel|GSB175|129.128.21.242|Linux|WPS Ubuntu 16.04|regular||mmueller||Xeon E5420QC/2.5G-12288||SM39482||CLEAN|active|||F14|5|SRIT|860ead16-d187-4f47-870a-62d03c716b70|limit users (gogroup and planninggroup)
+myria|ATH452B|129.128.184.46|Linux|Ubuntu 14.04|regular||stroulia,hzhang3|510243|E6600-8196||ACS06090||NOP|active|OK|||5||7b85b006-85b2-47db-84be-a39ed52e1099|was formerly kinsella
+myrnam|CSC243|129.128.159.136|||regular|emarkus|jonathan|420265|Mac G4/400||XA0320BHJ3C||DIRTY|missing||||5||339a2af8-d489-4f1e-aad2-df35813330ef|Could not power on
+namur|ATH322|129.128.4.68|Windows|Windows 10 Pro|regular|yannis|||i7-8700-64G|||||active|OK|||5||817e88ef-e75e-4ee8-b185-631ef32fdd62|
+nathan|CSC353|129.128.184.133|Linux|Ubuntu 18.04|regular|||||||||active|OK|||5||ef8c331f-2c25-42ab-90de-6a56651adcde|port 353-11 moved to wild west as per TASK0217380
+nathan-g5|CSC245|129.128.159.138|MacOS|10.4.11|regular|nathanst|nathanst|467900|Mac G5/1.8GHz-1Gb||XB3410B4NVS||DIRTY|missing||||5||a02026a5-0756-4610-846e-9c3a63a5051e|
+nat-gw|ATH218|129.128.184.5|OpenBSD|4.5|regular|dept|tst|503217|Dell PE 850 P4 80547/2.13G-4096||775D5B1||CLEAN|retired||T|F|5|SA1|96c3e66a-5d9e-483a-8cee-664f10935efe|Powered off
+nazim-acer|CSC259|129.128.23.51|Windows|10 Home|regular|nazimudd|nadi||Acer Aspire R14||R3-471T-5448||NOP|active||||5||43245f0a-aa95-4538-a33a-171ae96d2088|
+neapolis|CSC231|129.128.22.253|Linux|Scientific 4.2 (Beryllium)|regular||steve||Dell PE 1750||||CLEAN|active|OK||B|5||e101b06d-8c10-4c54-8b09-f14b4917ce04|Steve handled
+nebula|CSC353|129.128.184.48|||regular||zichen2||||||NOP|active||||5||ca57955d-87a0-4656-8509-d1f09632a87d|
+sarah|CSC353|129.128.184.49|Linux|Ubuntu 18.04|regular|zichen2|||Threadripper 2950X-128||||NOP|active||||5||39072958-ad1e-4877-bbd9-93f048143b41|
+neerlandia|CSC341||||regular|dept|steve||Optiplex 780, Core 2 Duo E7500, 2 GB RAM, 160 GB HDD||3YB8NM1||CLEAN|active||||5||f93c9b74-c8af-4529-908d-5f4191f2a805|
+netera-e5|CSC295A|129.128.184.15|||regular||cybera||||||NOP|active||||5||ef047b75-9f2b-4efe-87b0-10967f948ad7|barton.satchwill@cybera.ca
+nevis|129.128.25.130|||||||||||||retired||||5||aa26da70-31ae-4a1a-aca1-48aa0af22d63|
+new-czar|GSB175|129.128.21.17|Linux|Ubuntu 20.04|regular|tst|tst||||||CLEAN|active||T||3||2b0f27db-6ed4-4dc8-9197-6f8aeca06854|TST managed server
+new-sedgewick|IST VM|129.128.21.206|Linux|RHEL Server 7.4|virtual||AppHosting|NA|VM|||||active||||5|SA1|73e9e220-5e71-4ef5-aa85-1a15685ac41c|
+new-ssrga|melissa|129.128.243.5|||virtual|dwt|stroulia||||||NOP|active||||5||1e7aaa15-4b17-4428-998d-50ab04cea862|
+new-ssrgb|melissa|129.128.243.6|||virtual|dwt|stroulia||||||NOP|active||||5||56642300-fb3c-40f1-8f10-26d944528de6|
+new-ssrgc|melissa|129.128.243.7|||virtual|dwt|stroulia||||||NOP|active||||5||fb9bd61f-850a-4e14-88d5-fab62fcfff7d|
+new-ssrgd|melissa|129.128.243.8|||virtual|dwt|stroulia||||||NOP|active||||5||33386fae-6a27-49f3-bd07-4e1f57bdbbce|
+newbrook|ATH437|129.128.25.214|||||macg,networks|431945|PIII/800-512||PS128495||DIRTY|retired||||5||0c7d484f-527a-44a3-a2dd-39818d857d36|unplugged, out of service, data needs to be removed, then surplus
+newfs2|GSB175|129.128.21.42|Linux|openSUSE 42.3|regular|dept|tst|720555|Dell R6415||HW7Q0T2||CLEAN|active||T|F18|5|SA1|2e9b8e8d-090c-4df3-b24a-8be37a8abb38|
+newfs2|GSB175|129.128.21.43|Linux|openSUSE 42.3|regular|dept|tst|720554|Dell R6415||HW7R0T2||CLEAN|active||T|F18|5|SA1|77214175-1243-4a4a-a058-4e87f0ead325|
+newnorway||129.128.25.153||||||||||||retired||||5||5eacb03a-721f-4005-b61c-3feeb2322233|
+newsarepta|CSC315|129.128.4.69|Windows|7|regular|dept|dept|no-tag|Dell 755||3GC7HH1||CLEAN|spare||||5||df60037a-5bab-4103-a3c2-68a094495507|
+ni23-165|CSC165|129.128.23.250|||network|dept|steve|406483|NetIron||02915c||CLEAN|missing||||5||505a94d4-932e-4799-a78a-1ea12497dd3a|Switch
+nicot-lk||129.128.23.59||||||||||||retired||||5||e2319845-e7fd-4d47-8c42-667e92a2151d|
+nilrem|ATH406|129.128.4.131|Windows|7|regular|nray1|nray1||i7-920/2.66GHz-12288||DCLHBK1||CLEAN|active|OK|||5||581d0d7e-f75d-45e2-8faa-8f0c4a97f340|
+niton|ATH437|129.128.25.13|Linux|Ubuntu 14.04|regular||netgroup|497681|AMD64 X2 4400+ 2.2GHz, 3GB, 250GB||ACS05641||CLEAN|surplus||||5||9dc3dbe9-5ff1-4c89-9979-8243c71fecad|Yannis will replace niton this summer (2017) and wants the same hostname and IP. Leaving this record in place for now.
+nojack|CSC329|129.128.29.236|Linux|openSUSE 13.1|regular|dept|tst|549748|Dell PE R310||899FJS1||CLEAN|active|||B|5|SA1|37a85339-39da-41f6-a9f1-9b228d49f7c3|TST managed server
+nordegg|ATH252D|129.128.4.70|MacOS|10.5.8|regular|macg|macg|513631|MacPro/2x2.66-16384||G8723536UPZ||CLEAN|active|OK|||5||6e4afcfc-0666-4082-9e3b-243a3fad3804|
+northstar||129.128.25.180||||||||||||retired||||5||335cffa8-38f4-4c52-961a-07beffe5315f|
+notecc|CSC351|129.128.184.106|Linux|Ubuntu 16.04|regular||ktgordon||||||NOP|active||||5||41cb2c62-66ac-48e0-8cef-53b30975843c|
+oardakan-desktop|ATH321||MacOS|10.12|regular|oardakan|oardakan|586225|iMac 27 2017||C02V424RJ1GN||CLEAN|active|OK|||5||1dabaa3d-31db-4545-ba17-c883a958ae59|On subnet 4
+odb1|IST VM|129.128.21.98|Linux|Ubuntu 16.04|virtual||IApps|NA|VM||||CLEAN|active||||5|SA1|79418a7a-ebbc-4446-9b44-37bbba748403|
+odb2|||Linux|Slackware 12.2.0|regular|dept|tst|510096|Dell PE 2950 Xeon/5130||12LYYC1||CLEAN|retired||T|B|5|SA1|d40f756e-d527-4e6b-b837-56b02b9c7850|TST managed server
+odyssey|ATH338|129.128.23.133|||regular|bulitko|bulitko||PlayStation 4||||NOP|active||||5||bcc22715-1f83-4b78-aa78-bccb5454a83c|
+ohaton|GSB175|129.128.243.70|Linux|WPS Ubuntu 16.04|regular||dept||Xeon/X5687x2-148842||||CLEAN|active|||F15|5|SRIT|10a5c551-7005-4c42-a324-6be5de158c05|
+ohaton-old|GSB175|129.128.243.67|Linux|WPS Ubuntu 16.04|regular|dept|tst|no-tag|Dell 2950||3CR3DG1||CLEAN|retired|||F17|5|SA1|b1a4cc46-c562-4069-b5e7-412686c6b83b|TST managed server,replaced by a bigger machine
+old-onoway|CSC231|129.128.4.128|Linux|RHEL Server 5.11|regular|dept|shauna,carolyn,rod|537334|Dell PE R300 Xeon X3323/2.5GHz-4096||GMTZ3J1||CLEAN|retired||T|C|5|SA1|c887bc17-c0d2-445e-8e08-f4f08a23e8f0|RHN# 1017908131, replaced by csora-app & csora-db1
+old-warburg|CSC231|129.128.22.37|Linux|RHEL Server 5.11|regular|dept|tst|510057|Dell PE 2950 Xeon/5110-8192||17506C1||CLEAN|retired||T|B|5|SA1|66804d49-d712-4534-809d-babdd5be58a8|RHN# 1018073815
+old-webdocs-4|CSC231|129.128.4.217|Linux|RHEL Server 5.11|regular|dept|tst||||||CLEAN|retired||T|B|5|SA1|7481bc3d-7a0d-4ca0-9f07-687d7a2967b3|RHN# 1019100174
+old-webdocs|CSC231||Linux|RHEL Server 5.11|regular|dept|tst||||||CLEAN|retired||M|B|5|SA1|d6740945-99e7-43b7-97e7-eb8c5b707455|RHN# 1019100174
+otrs-dev|launch-dev|129.128.22.145|Linux|Slackware 12.2.0|alias|dept|tst||||||CLEAN|retired||||5||0e6e2725-bfb5-4494-a602-12ac1230056f|
+palisade|ATH340|129.128.4.99|MacOS|10.9.5|regular|paullu|paullu||iMac 3.5GHz i7/32768||D25MD1MLF8JC||CLEAN|active|OK|||5||1f7de8d5-90ff-46b6-a0d2-0b45a334b1ef|
+peace-riv|CSC205|129.128.23.180|Linux|Scientific 5.1 (Boron)|regular||hasell,zaiane|469204|AMD/MP2800-2048||ACS04720||DIRTY|missing||||5||454666d6-2d90-4324-8de2-29c9f50035b0|
+peers|CSC251|129.128.23.249|Linux|WPS Ubuntu 16.04|regular||amaral,paullu,jonathan|513784|AM2-X2-4800-4096||ACS06174||CLEAN|retired||||5||4a6f2ad3-a403-4322-9b4c-852bcae60f44|
+pendryl|CSC265|129.128.25.38|Windows|7|regular||yang|528946|PWST7400/E5405-4096||9DS0JF1||CLEAN|active|OK|||5||788900f9-1830-4365-88d2-6319e26f8612|
+penhold|CSC251A||AIX|5.1.0.0|regular||amaral,paullu,jonathan||IBM P610/1024||10733AA||NA|missing||||5||a69d6b9f-a95e-44aa-9dd0-160199d8c258|not online
+peoria|CSC261|129.128.23.58|Windows|7|regular|lin|lin,anup|537349|Opti E8200-4096||DRT1XG1||CLEAN|active|OK|||5||64fc0425-1f22-46c2-bfb3-a69069e33020|Was sunnynook
+pfm2|CSC133|129.128.184.67|Windows|Server 2012 64-bit|regular|hasell|hasell|543297|Dell Core2 Quad Q9400 @ 2.67 GHz; 8 GB RAM||7FS5WK1||NOP|active||||5||dd9eaa74-565c-4fba-9d55-97bcba071153|On WW
+pibroch|CSC211|129.128.23.55|Linux|WPS Ubuntu 16.04|regular||greiner|549712|Dell OptiPlex 990||5156JS1||CLEAN|active||||5||28211e6d-de98-4589-8e52-62f63b11be9b|
+pickardville|CSC305A?||Linux|Red Hat 9 (Shrike)|regular||paullu|467916|AMD/MP2400-1024||ACS04564||NA|retired||||5||54df228d-86b7-4b82-876f-78bd3f3423ae|MB swapped after power outage August 9, 2010.  being retired
+pinehurst|CSC251A|129.128.23.128|Windows||regular||denmanse||MemoryExpress i5-8GB||||CLEAN|active||||5||34986cdf-f66f-4aa4-8af2-cf485c2a6ee9|
+pinelake||129.128.4.87||||||||||||retired||||5||326685c6-366e-4db3-9dcd-25adeb6d62e0|
+pipestone|GSB175|129.128.21.40|Linux|WPS Ubuntu 16.04|regular|dept|tst|no-tag|Dell PowerEdge 815 Opteron/6276*4-265GB||4X7S5P1||CLEAN|active|||F|5|SA1|f709fb9a-86e1-4434-8c10-f6798723a6a2|eth0 uses NIC 2 with MAC f0:4d:a2:3c:4c:4e because idrac uses NIC 1 with MAC f0:4d:a2:3c:4c:4c
+pizza|CSC259B3|129.128.184.21|||unknown||hindle1||||||NOP|active||||5||da40d007-fd37-4543-9a90-0a9baf7c775f|
+placid|ATH306|129.128.25.16|MacOS|10.11|regular|zacharyf|zacharyf|604046|iMac, Core i5 3.2 GHz, 16 GB DDR3, 1 TB HDD||D25R30WLGQ18||CLEAN|active||||5||64e6b5a3-62f7-42ba-b3bd-222407e9c78c|
+polaris|CSC251A|129.128.184.40|||regular|||no-tag|Opt2378/2.2GHz-16384||SM3??||NOP|active||||5||ff51835c-c624-427a-9359-de19155e5d6f|on wildwest; Steve will handle
+polygon|CSC211||Linux|Ubuntu 16.04|laptop|bulitko|bulitko||"MacBook (13"" Late 2009), Core 2 Duo P7550 @ 2.26 GHz, 4 GB RAM, 250 GB HDD"||WQ9429738PW||NOP|active||||5||e918e50e-ed6e-45fd-9232-980bc341cc50|On NAT. Encryption key on Secret Server.
+ponoka|ATH232|129.128.16.171|Windows|XP Pro|regular||dept|528139|Dell OptiPlex 755||||CLEAN|active||||5||22a14040-a032-410f-ab71-3856c85a0877|Used by whomever is at reception.
+priam|ATH338|129.128.23.135|MacOS|10.11.3|regular|bulitko|bulitko|543237|Core 2 Duo 2.93 GHz, 8 GB RAM||QP9170UT0TM||CLEAN|active||||5||87a35c32-bb91-43d0-8381-98d3e79d486c|
+prn353-clr|CSC353|129.128.25.67|||printer|cs353-clr|jag|420464|HP ColorLJ||JPHAE13146||CLEAN|stalled||||5||728c7a4e-1eba-4ff4-901c-d744cd1baef9|disconnected and powered off - no barcode sticker
+provost||129.128.4.243|||regular|||||||||retired||||5||2b536e12-0590-4f5a-9c32-b8db04efe6c0|
+psychiatry|GSB175|129.128.243.168|||unknown|steve|rgreiner|482843|||ACS05152||NOP|active|||F14|5||7cfca85c-4624-41a3-a318-888944b72a28|i3-4130/3.4GHz-8192
+puppetmaster-r|CSC231|129.128.4.228|Linux|Ubuntu 12.04|regular|dept|tst|537338|PowerEdge R300||HMTZ3J1||CLEAN|retired||T||5|SA1|8e8fd568-c076-4f8d-b201-e497eaa219a5|puppetmaster research interface
+pyramid-lk|CSC251A|129.128.23.123|Linux|Scientific 4.3 (Beryllium)|regular||duane||ACS-AMD/1.5GD-2048||ACS03199||DIRTY|missing||||5||970fa441-4efd-46e4-9a65-093ff0b508ec|Rene - please check
+pythais-old|GSB175|129.128.243.135|Linux|RHEL Server 5.6|regular||stroulia||Opteron-1216HE/2.4GHz-4096||SM45386||NOP|active|||F17|5||1af1521d-6476-4a94-a723-78cd557b9f57|
+quack|ATH401|129.128.4.141|Linux|Fedora 13|regular||jag|479752|Compaq Semp/3100-512||CNH4480M||CLEAN|active||||5||0a912fce-73dc-4b30-9fa2-05aebe7c78cf|Used to be ryley and was moved from CS353 to ATH 401 by Martin Jagersand
+ranee|CSC301|129.128.25.124|Windows||regular||jag||Shuttle P4/3.2G-1024||T62K00408D04256||NOP|missing||||5||937fbec2-306f-428a-b74c-8c2dc20cf14f|on private NAT for robot work
+ranfurly|CSC315|129.128.29.237|||regular|dept|||Dell OptiPlex 755||1TX37J1||CLEAN|retired||||||0bf5fb33-1048-43f1-937c-8c23f269a86a|
+redwater||129.128.23.22|Windows|XP Pro 5.1.2600|regular||yuan|431556|AMD XP 800-1024||PS130394||NOP|missing||||5||8bc792c5-5127-49f1-95e7-c3cdf220457c|User suggests retirement; last seen in CSC250?
+reita-lake|CSC211|129.128.159.244|Windows|10 Education|regular||bulitko|598148|ThinkCentre M93p - Type 10A7, Core i7-4770 @ 3.4 GHz, 16 GB RAM, 1 TB HDD||MG00FMXX||CLEAN|active|OK|||5||d78ff3f6-2ff4-483d-9e20-11b33695a221|Warranty valid until 2018-09-04.
+repos|IST VM|129.128.21.207|Linux|Ubuntu 16.04|virtual|||NA|VM|||||active||||5|SA1|89c39d08-6a6c-4f52-8317-dab264056d43|
+richdale|CSC353|129.128.25.129|Linux|Ubuntu 14|regular||karteek,martin|586195|i7/3770K/32728||DG12223130||CLEAN|active||||5||1069aae6-5d89-4d34-be56-d67c876c0335|
+rlai-cmput-1|CSC205|129.128.159.203|Linux|Ubuntu 18.04 LTS|regular|amii|amii||Unknown||||CLEAN|active|||E|5||6047d31f-8767-424c-956b-1eabab7874b5|Andrew Patterson is managing
+roche-miette|CSC353|129.128.25.46|Linux|Fedora 13|regular|cobzas,zichen2|jag|444197|Q9450/2.6GHz-4096||PS125247||CLEAN|active|OK|||5||d05b7d5a-9b94-4ced-acf1-811b012d06e8|Fedora 13 - different root password
+rock-crk|CSC231|129.128.22.20|Windows|Server 2003|regular|dept|tst|482844|P4/1.8GHz-512||ACS05161||CLEAN|off|||B|5||50a12bd3-1d38-45f1-af1d-478f914929cc|TST managed server, Virus checked, uptodate, VI server
+rodef|CSC301|129.128.25.28|Linux|WPS Ubuntu 14.04|regular||zhang,jag|no-tag|E8400-4096||HRWV4J1||CLEAN|retired|OK|||5||aac5f3fd-78dd-4081-8dd6-579eb44a45e7|
+ron|CSC225|129.128.184.103|dual-boot|Win10/Ubuntu16.04|regular|locheng|locheng|604109|||14265005P||NOP|active||||5||439d91b6-4ae6-4e4e-a4ba-e4586c42d62f|MRC grad lab machine
+rotationbuilder|CSC135|129.128.184.62|Windows|unknown|regular||aicml||||||NOP|active||||5||97408ca8-d138-4b31-8395-39feb5bae058|Not installed by TST.
+rowley|CSC353|129.128.25.92|Linux|unknown|regular|zichen2|jag|448708|P4/2.4G-1024||ACS03672||CLEAN|active||||5||b20ae27a-c098-46de-abd2-18a858b08677|
+rts|ATH424|129.128.184.64|Linux|Mint 17.3|regular|astanesc|astanesc|no-tag|Pentium G2120 @ 3.1 GHz, 8 GB RAM, 1 TB HDD + 128 GB SSD||||NOP|active||||5||562a693e-a525-462b-976f-35056f5cf9f2|Grad student's personal property
+rumsey|CSC301|129.128.25.158|Linux|Ubuntu 16.04|regular|cjs|zhang|no-tag|E8400-4096||HRWT5J1||NOP|active|OK|||5||87555197-c14a-4a3b-a7ed-b23540889b81|robotis lab installed their own OS
+russ-home|Off Campus||Windows|10 Edu|regular|greiner|greiner|704406|OptiPlex 7040, Core i5-6500, 8GB, 256GB SSD, 3yr ProSupport||12BNCH2||CLEAN|active|OK|||5||2d750deb-f704-49f8-86c6-501d2a733ecd|Russ' home office computer.
+rycroft|CSC315A|129.128.25.11|||unknown||zhang|423127|RMI Magellan||31046||DIRTY|missing||||5||c919a481-cab6-498c-9a5d-a90508781470|Missing, not in CS301 - Rene is looking for it
+sabine|ATH432|129.128.4.45|Windows|10|regular|joerg|joerg|543283|i7/920-12288||DHT25K1||NOP|active||||5||857875e4-a434-440c-9d23-b01c0ddeec7f|Not installed by TST. Installed by user
+saddle-lk|CSC251|129.128.23.68|Linux|WPS Ubuntu 16.04|regular||paullu|549771|Dell OptiPlex 990||516BJS1||CLEAN|active||||5||2d9f656c-498b-4bff-821f-925a596d6ae5|
+sakwatamau|ATH351|129.128.23.236|Windows|7|regular||paullu|586232|BearBones ASUS H87M-Plus i7 4770@3.4GHz-8GB||BB0636||CLEAN|active|OK|||5||65fc9534-9f65-4604-8638-533b6b656c84|BIOS password lower case only,used by the PVG MOOC
+salient|CSC305A|129.128.22.17|Linux|RHEL AS 4 (Nahant)|cluster||steve,dale||Opteron/DP248-6144||SKPLF2??||CLEAN|active|OK|||5||a0d686b2-abc4-4959-80da-fc7c912b1a13|Steve will handle
+sand-rv|CSC315|129.128.25.59|Linux|WPS Ubuntu 16.04|regular|charles|charles,rod|549716|Dell OptiPlex 990||512GJS1||CLEAN|active||||5||384bb70b-cf5a-4238-b36d-795d2198292f|
+sangudo|ATH207|129.128.25.2|MacOS|10.6|regular|rene|rene|489480|iMac core2duo/2.4-2048||W873340LX86||CLEAN|active|OK|||5||d2a883cd-b90b-414f-823e-f4ba7796331a|
+sarahs-macbook-pro|ATH441|129.128.23.129|MacOS|10.12|laptop|nadi|nadi|606053|MacBook Pro Retina 3.1GHz||C02S13NMFVH8||CLEAN|active||||5||5433fb0b-a726-4212-8a7b-e4a1244ce036|
+sass-lake|CSC211|129.128.23.67|Linux|WPS Ubuntu 16.04|regular||jonathan,mburo|549750|Dell OptiPlex 990||5139JS1||CLEAN|active||||5||f9862d9d-03c8-4d39-9f2a-a013add4b9e3|
+saulteaux||129.128.23.245||||||||||||retired||||5||1f536f97-7a7c-49bc-9ec6-27d1d96599d6|
+sawnlk||129.128.4.250||||||||||||retired||||5||96907d16-e4d6-4db9-a2fb-0b9d4506d218|
+sawridge||129.128.23.66||||||||||||retired||||5||c2caffea-92a4-429e-896d-18c0e2b60caf|
+scan228|CSC228|129.128.23.192|Linux|WPS Ubuntu 16.04|regular|dept|tst|549719|Dell OptiPlex 990||515DJS1||CLEAN|active|OK|||5|WPS|d4c1c4ce-eede-4dc6-af31-c329c1bfe0cb|
+scotfield|ATH409|129.128.4.38|Linux|WPS Ubuntu 16.04|regular|dale|dale|586173|Dell OptiPlex 790 i7/2600-8192||7S8XPW1||CLEAN|active||||5||277099c3-ef9f-4c68-8581-1923ba2b6dca|
+scovil|CSC251A||Linux|Red Hat 7.2 (Enigma)|regular||paullu|422841|ACS-PIII/700D-512||ACS02392||NA|missing||||5||545c6fc2-458d-4d0d-b0e0-8d4462d57e54|out of service -- does this mean surplus
+seba-bch||129.128.23.185||||||||||||retired||||5||ee24d910-ed3f-491a-9774-e87243bcf29e|
+sedalia||129.128.4.36||||||||||||retired||||5||1bfd040a-2608-4aa2-a320-300839415d9f|
+sedgewick|CSC231|129.128.4.8|Linux|RHEL Server 5.11|regular|dept|carolyn,shauna,rod||Dell PE 860 Xeon 3050/2.13G-2048||6DR6SD1||CLEAN|retired|||A|5|SA1|84f7d8bb-d141-4932-ad8d-2f3dac551728|RHN# 1018141960, former GAPS server
+sega|ATH338|129.128.23.139|||unknown|bulitko|bulitko||Xbox One||||NOP|active||||5||3c73a17f-429d-4222-96b9-1da0583aed84|
+seiulake|ATH217|129.128.23.37|Linux|WPS Ubuntu 16.04|regular|shauna|shauna,rod|549725|Dell OptiPlex 990||510GJS1||CLEAN|active||||5||9cf3a7d7-1dab-4430-94fa-7b03006d946a|
+serv-vcenter|CSC231|129.128.22.60|Linux|Rescue|regular|dept|tst|549631|Dell PE R300 Xeon /2.40Ghz-4096||F419MJ1||CLEAN|retired|||B|5||a4e117ac-f8bc-442c-8097-40e0be9c37e0|to be reused or retired
+setup4a||129.128.4.1||||||||||||temp||||5||5078ce3d-485f-4fc3-abf7-5a98b31daf0a|
+setup4b||129.128.4.2||||||||||||temp||||5||6a7d3db7-3e5a-4d5f-bdc9-b04058b67df3|
+setup4c||129.128.4.4||||||||||||temp||||5||72367bfe-8a5f-4924-a4c9-148117901991|
+setup4d||129.128.4.5||||||||||||temp||||5||42d9495d-cb2f-4347-acd3-c7a40a032254|
+setup4e||129.128.4.6||||||||||||temp||||5||1359d0e9-84c8-4b2a-b7e6-5aa5b1577475|
+setup16a||129.128.16.168||||||||||||temp||||5||be78700f-9a39-429f-a485-5ab98e0e6884|
+setup16b||129.128.16.174||||||||||||temp||||5||6a0fb216-e1f7-4232-a603-50b505b0252f|
+setup16c||129.128.16.2||||sysadmin||||||||temp||||5||75ed7096-d35f-42e7-a970-ca6358247f82|tmcguire from SA1 needs an IP for 2015-07-07
+setup16d||129.128.16.3||||||||||||temp||||5||0838ee6e-87ed-476d-a1df-c45139d8e846|
+setup16||129.128.16.1||||||||||||temp||||5||1af4415d-37da-4b44-89e7-045e60154593|
+setup22a||129.128.22.1||||||||||||temp||||5||ee3bf662-c163-48fc-a7c0-512e2f08c143|
+setup22b||129.128.22.2||||||||||||temp||||5||cde3f6fe-ec1f-4c1d-910c-44d1addf2ad0|
+setup22c|CSC139|129.128.22.3||||jmartin||||||||temp||||5||d62ef05c-987a-4d10-9062-5d304dbeb6b1|old vanrena, disk testing
+setup22d|fs1|129.128.22.4||||johnb||||||||temp||||5||609ece94-a368-4d25-9ce1-f5aab4147da3|22 route to back up scratch
+setup22e||129.128.22.5||||||||||||temp||||5||071cde7e-7a75-4673-8995-38ef9e110118|
+setup23a||129.128.23.1||||charles||||||||temp||||5||be138821-114a-4ba7-afef-f314b0813952|Test computer
+setup23b||129.128.23.2||||johnb||||||||temp||||5||a0fbed27-5261-4588-a157-278ce11ffeaa|ROG computer CSC 2-25
+setup23c||129.128.23.3||||||||||||temp||||5||7d0d1878-21bd-47f1-a281-5a0f67d802e5|
+setup23d||129.128.23.4||||||||||||temp||||5||cdf71ba4-ff12-49bc-979f-e7e3b7f0e3e9|
+setup23f||129.128.23.6||||||||||||temp||||5||3963f3a6-5de4-4750-930f-d36deded349b|
+setup23g||129.128.23.7||||||||||||temp||||5||3045e05b-bad8-4e9d-863f-60b6a27ef562|
+setup23s||129.128.23.99||||||||||||temp||||5||09c7b078-eee4-4ee3-b84f-fc6bac8562d5|
+setup25a||129.128.25.3||||||||||||temp||||5||3539916a-f124-4e8c-b723-4fccdf48f0da|
+setup25b||129.128.25.49||||||||||||temp||||5||204d9fca-75ef-47a1-afaf-b03c5c66c0a2|
+setup25c||129.128.25.6||||||||||||temp||||5||a28e6884-b3ff-4426-ae69-8a7f82e34f5f|
+setup25d||129.128.25.8||||||||||||temp||||5||42229ce6-f482-488e-ab8f-2a812253e056|
+setup25||129.128.25.1||||||||||||temp||||5||076d73e5-430d-43ea-8480-a6bf67e3d338|
+sexsmith|CSC327|129.128.25.199|dual-boot|Windows 10 & Ubuntu 16.04|regular||dwishart||Dell XPS 8500 i7-3770 3.4GHz-8192||99LV3V1||CLEAN|active||||5||a5147d93-ade0-49e5-94c0-3fb954e9b4bd|
+shaspa-brdg|ATH437A|129.128.184.43|||network|bridge|steve|549636|mdl-0922-000966||0922-000966||CLEAN|missing||||5||7614e267-1579-4d9e-be69-06159e67027e|Switch
+sheerness||129.128.4.72||||||||||||temp||||5||b8a9275a-80d3-4c47-a492-afa5eb9a1e43|
+skat2|ATH337|129.128.184.141|Linux|Fedora 25|regular|mburo|mburo|no-tag|Core i7 7700K, 32 GB RAM, 500 GB SSD + 1 TB HDD, dual GTX 1070||||NOP|active|OK|||5||edbfa227-e04a-47b3-8c19-cdd0b29979fb|
+skat3|ATH337|129.128.184.152|Linux|Fedora 25|regular|mburo|mburo|no-tag|Core i7 7700K, 32 GB RAM, 500 GB SSD + 1 TB HDD, dual GTX 1070||||NOP|active|OK|||5||bf119d9f-bcc4-4a9f-b9dd-e6b5cbfa1547|
+skat4|ATH337|129.128.184.153|Linux|Fedora 25|regular|mburo|mburo|no-tag|Core i7 7700K, 32 GB RAM, 500 GB SSD + 1 TB HDD, dual GTX 1070||||NOP|active|OK|||5||f0b03c13-b3d2-448f-bdbc-09e387d24cad|
+skat|ATH337|129.128.184.139|Linux|Fedora 25|regular|mburo|mburo|no-tag|Core i7 4790K, 32 GB RAM, 500 GB SSD + 1 TB HDD, Titan X + GTX 1070||||NOP|active|OK|||5||76eabb98-3837-424a-a0fa-02ea75c6e6a2|Also has DNS alias skat1.
+smb-home|IST VM|129.128.21.202|Linux|RHEL Server 5.11|virtual|||NA|VM||||CLEAN|active||||5|SA1|f587377e-4c77-4ee7-81cf-621a1e005061|
+smithmill|CSC315|129.128.23.209|MacOS|10.6.2|regular|||528790|iMac20/2/66GHz-2048||YM8344X0ZE3||CLEAN|spare||||5||74bd1da3-3d32-4db9-9cc4-7aa441fe923f|In Shop can be redeployed
+smr|GSB175|129.128.243.167|Linux|Ubuntu 16.04|regular|nadi|nadi||ASUS PRIME X399-A||170808861101013||CLEAN|active|OK||F17|5|SRIT|206bca9c-d78a-44ef-8bdf-e67d3411c096|Support account: srit
+snaring|CSC341|129.128.25.4|Linux|Red Hat 9 (Shrike)|regular|steve|steve||Sempron 2800-1024||ACS05013||CLEAN|active|OK|||5||106052be-1447-4dfd-95e8-9947095373fd|Steve will handle
+snipe-lake|CSC251|129.128.23.235|Linux|WPS Ubuntu 16.04|regular||amaral,paullu|586246|BearBones ASUS H87M-Plus i7 4770@3.4GHz-8GB||BB0694||CLEAN|active|OK|||5||f6111050-fdef-43c6-8c38-ca634f8db951|
+sonata|CSC211|129.128.23.136|Windows|8.1?|regular|bulitko|bulitko|no-tag|Core i7 980x 3.33GHz, 24 GB RAM||||CLEAN|active|OK|||5||64481c52-e728-45fa-a781-242f497efba0|
+so-baptiste|CSC225|129.128.184.71|dual-boot|Ubuntu 16.04 & Windows 10 Enterprise|regular||lin,anup|361518|i7-4790,3600 16Gb||JDBYV52||NOP|active||||5||53bd09dd-1bd4-4fea-ad0b-5105db9bf627|On WW
+sparefw1|CSC231||||regular|dept|tst|549746|Dell PE R310||serial-no|||spare||||5||c3a627e0-2ff7-4c0b-9e49-e945804eb968|new-non-production firewall
+sparefw2|CSC231||||regular|dept|tst|549747|Dell PE R310||serial-no|||spare||||5||62a48d15-3b92-42c2-addb-cd69291c3f45|new-non-production firewall
+sparevpn1|CSC231||||regular|dept|tst|549748|Dell PE R310||serial-no|||spare||||5||30fb1c8c-b2c6-4b34-aaba-e269c36f2665|new-non-production vpn
+sparevpn2|CSC231||||regular|dept|tst|549749|Dell PE R310||serial-no|||spare||||5||3db9128b-324b-473d-8b68-0818eec92145|new-non-production vpn
+sputina|ATH309|129.128.4.24|MacOS|10.5.4|regular|ehab|ehab|482525|Mac G5||serial-no||CLEAN|active|OK|||5||b51aa999-49a3-4a6e-b751-62beecc9dfc1|
+sputinow|BS-CW410|129.128.159.20|MacOS|10.8.2|regular||kenw|586174|"iMac 3.4 GHz i7 27"" 8 GB 1 TB"||C02K25CBDNMP||NOP|active|OK|||5||e94a42b1-15a5-4782-9fb7-477dd92229ce|Moved to BioSci CW 410 as per TASK0077943
+sspml|CSC305|129.128.184.41|Linux|Ubuntu 14.04|regular|karami1|ECEdept|545217|ThinkStation-D20||||NOP|active|OK|||5||351cabb1-f207-441d-a7d1-5e814447007b|Regular services-Matlab,C,Python,Julia
+ssrg0|melissa|129.128.243.136|||virtual|dwt|stroulia||||||NOP|active||||5||1787a710-1deb-41b5-9233-b7aa6c2949a3|
+ssrg1|melissa|129.128.243.137|||virtual|dwt|stroulia||||||NOP|active||||5||534a4630-0d55-486d-a676-12b9501ea8dd|
+ssrg2|melissa|129.128.243.138|||virtual|dwt|stroulia||||||NOP|active||||5||db7ad135-fc83-47a0-9979-a6e4ab11b3b8|
+ssrg3|melissa|129.128.243.139|||virtual|dwt|stroulia||||||NOP|active||||5||8f121444-ee06-43b5-a803-8d505a6fe9b4|
+ssrg4|melissa|129.128.243.140|||virtual|dwt|stroulia||||||NOP|active||||5||ae644624-1c36-43d4-9d19-5c98a162dfde|
+ssrg5|melissa|129.128.243.141|||virtual|dwt|stroulia||||||NOP|active||||5||6c89379e-1312-4929-936f-3f0e36896caa|
+ssrg6|melissa|129.128.243.142|||virtual|dwt|stroulia||||||NOP|active||||5||da2b4078-1f87-4338-a91a-b3e3a75ac80d|
+ssrg7|melissa|129.128.243.143|||virtual|dwt|stroulia||||||NOP|active||||5||cabd826f-6a09-461a-9ae1-ca0a0403ca7a|
+ssrg8|melissa|129.128.243.144|||virtual|dwt|stroulia||||||NOP|active||||5||3cd5d8f1-b560-4ad4-a6ea-3b097fe94c61|
+ssrg9|melissa|129.128.243.145|||virtual|dwt|stroulia||||||NOP|active||||5||f2960674-a1af-4c0f-9b5a-2a36a9b0b2c9|
+ssrg10|melissa|129.128.243.146|||virtual|dwt|stroulia||||||NOP|active||||5||a8d25117-bad4-4c59-8264-1e063716fe69|
+ssrg11|melissa|129.128.243.147|||virtual|dwt|stroulia||||||NOP|active||||5||6e9e51a3-a534-4d76-8608-6675460ff13b|
+ssrg12|melissa|129.128.243.148|||virtual|dwt|stroulia||||||NOP|active||||5||734e382a-fea6-4bad-9ae3-477f7c038f9a|
+ssrg13|melissa|129.128.243.149|||virtual|dwt|stroulia||||||NOP|active||||5||8d48c325-6a8f-4d26-8e64-810d70df0844|
+ssrg14|melissa|129.128.243.150|||virtual|dwt|stroulia||||||NOP|active||||5||07c46bb2-e663-486b-a8e2-b87cfc82ba1b|
+ssrg15|melissa|129.128.243.151|||virtual|dwt|stroulia||||||NOP|active||||5||e0ae203f-4602-41a5-9f86-adb22b450153|
+ssrg16|melissa|129.128.243.152|||virtual|dwt|stroulia||||||NOP|active||||5||3ca081fc-0b55-48ad-ba90-043795a76203|
+ssrg17|melissa|129.128.243.153|||virtual|dwt|stroulia||||||NOP|active||||5||6461ebd5-f837-429b-b580-2cd84ce7b822|
+ssrg18|melissa|129.128.243.154|||virtual|dwt|stroulia||||||NOP|active||||5||91151c9d-e109-4b24-88af-6a842e895d34|
+ssrg19|melissa|129.128.243.155|||virtual|dwt|stroulia||||||NOP|active||||5||9d23d79c-dcc1-4e39-9076-d48e6aeac4a6|
+ssrg20|melissa|129.128.243.156|||virtual|dwt|stroulia||||||NOP|active||||5||e1cd9e39-05d2-462b-81eb-d7698873f268|
+ssrg21|melissa|129.128.243.157|||virtual|dwt|stroulia||||||NOP|active||||5||67f363a6-b1af-460e-b7bd-f64cc18c174c|
+ssrg22|melissa|129.128.243.158|||virtual|dwt|stroulia||||||NOP|active||||5||62e303af-8efa-4874-916f-51f4d6fb0952|
+ssrg23|melissa|129.128.243.159|||virtual|dwt|stroulia||||||NOP|active||||5||777d145f-b4c7-46e1-b00a-47a538de7854|
+ssrg24|melissa|129.128.243.160|||virtual|dwt|stroulia||||||NOP|active||||5||b0bd672d-b780-4d39-9469-8b9f1f362017|
+ssrg25|melissa|129.128.243.161|||virtual|dwt|stroulia||||||NOP|active||||5||7e0fdb85-0a68-4069-b4b6-dd7d8f950bf7|
+ssrg26|melissa|129.128.243.162|||virtual|dwt|stroulia||||||NOP|active||||5||68c8339c-83bc-4882-8c71-095a88f194dd|
+ssrg27|melissa|129.128.243.163|||virtual|dwt|stroulia||||||NOP|active||||5||65c8d50d-6dbe-4da6-b995-ffc201996e7a|
+ssrg28|melissa|129.128.243.164|||virtual|dwt|stroulia||||||NOP|active||||5||c40ada0f-5b72-47ea-be36-382a29f50550|
+ssrg29|melissa|129.128.243.165|||virtual|dwt|stroulia||||||NOP|active||||5||241f9eb6-9a9e-4cf9-b8e0-d98701a100f3|
+stanger|ATH315|129.128.23.16|MacOS|10.5.8|regular|lori|sutton,lori||||serial-no||CLEAN|active|OK|||5||756a9772-900c-41a5-913f-81da0d1a4071|
+stanmore|CSC315|129.128.25.31|Linux|WPS Ubuntu 16.04|regular|charles,rick|charles,rick,rod|549752|Dell OptiPlex 990||50Y8JS1||CLEAN|active||||5||43cd5bde-da8f-46c6-a91c-e1eb8b401b21|
+steepbank|CSC347|129.128.23.79|Windows|7|regular|mcalvert|zhang|no-tag|Opti/E8400-4096||6SF71J1||CLEAN|active|OK|||5||4be5b22e-32e3-4c69-b0b7-26d1d05caf88|
+stettler||129.128.23.63||||||||||||retired||||5||8618f27c-8aad-468e-a52a-d7884e0b73e9|
+st-brides|CSC251|129.128.23.21|Linux|Ubuntu 13.04|regular||amaral,paullu,jonathan|no-tag|AMD/PN/9750-4096||ACS06778||CLEAN|active||||5||d8606570-5582-49db-8c3d-dc7f23ee34c5|Moved under Rodolfo Wottrich desk temporarily while en-route to surplus
+st-francis|ATH447|129.128.4.50|Linux|Ubuntu 10.04 LTS|regular|hindle1|hindle1|479284|AMD XP/2800-1024||ACS04832||NOP|active||||5||6175e9cd-adb5-4b7d-85c5-a4525d577585|
+st-lina|CSC147|129.128.25.108|Windows|7|regular||||XFX 790i Intel Core2Quad X9770@4.00GHz-4G||RC11-140772||CLEAN|active|OK|||5||ce165395-109f-4525-aee0-342204e9a91a|Overclock Settings: CPU 4GHz FSB 1600Hz RAM 2000MHz CPU Core 1.4V FSB 1.3V RAM 1.9V NForce Spp 1.4V Mcp 1.55V XFX Product Code: MB-N790-IUL9 Registration Code:CFOLQBMVPS
+sullivan|CSC251|129.128.23.115|Linux|WPS Ubuntu 16.04|regular||amaral,paullu,jonathan|549769|Dell OptiPlex 990||50Z8JS1||CLEAN|active||||5||6abf20f8-6587-420d-bf43-747917c342f8|
+summerhaswellii|CSC251|129.128.184.58|Linux|Ubuntu 12.04|regular|mgaudet|amaral||i7-4470||MG-PC2||NOP|active||||5||5fcc02d0-4ac6-4ef3-9f70-fd544a5c7eb5|User Administered
+summerhaswell|ATH150|129.128.184.57|Linux|Ubuntu 12.04|regular|mgaudet|amaral||i7-4470||||NOP|active||||5||13f6173d-6e41-485b-8358-191eee9c7724|User Administered
+sundog||129.128.4.208||||||||||||surplus||||5||f6180b11-d197-4d12-98cd-0ca2d5c65d8e|
+sundre|ATH303|129.128.4.46|Linux|WPS Ubuntu 16.04|regular|mreza|mreza|549701|Dell OptiPlex 990||5159JS1||CLEAN|active||||5||7d904443-85d9-401c-9f93-04326cef002f|
+sunflower|Off Campus||Windows|10 Education|regular|dept|sunrose|527275|Optiplex 755, Core 2 Duo E6750, 4 GB RAM, 250 GB HDD||DN5GWG1||CLEAN|active|OK|||5||a6f37285-7b26-4511-ad01-b794b698798c|Sunrose's home computer. Rebuild Sept 25, 2018.
+sunnynook|CSC225|129.128.23.198|Windows|10|regular||lin,anup|361519|i7-4790,3600 16Gb||JD5TV52||CLEAN|active|OK|||5||444f5ab5-ee7a-4a97-9c31-b4340c0c9abb|
+sunnyslope|ATH305|129.128.23.147|MacOS|10.5.8|regular|kenw|kenw|473223|Mac G5/2GHz-2048||XB34601SNVB||CLEAN|missing|OK|||5||738d1490-4250-40b0-ad7a-a19c9292c6fe|
+sunray|CSC351|129.128.184.42|Linux|Ubuntu 14.04|regular|nray1|nray1|604040|i7-4790K @ 4.0 GHz, 32 GB RAM||14232682P||NOP|active||||5||3401d5b4-f696-4350-8312-1e73c370b506|On WW 
+sun-creek|CSC211|129.128.23.9|Windows|10|regular|bulitko|bulitko||Ryzen processor, 2x GTX 1070||||CLEAN|active|OK|||5||90159881-ec79-4b90-b80b-282d65668301|New Ryzen processor workstation
+swanhills|CSC259B1|129.128.159.21|MacOS|10.8.2|regular||kenw|586175|"iMac 3.4 GHz i7 27"" 8 GB 1 TB"||C02K25CCDNMP||CLEAN|active|OK|||5||6391ca16-1e3b-4b1e-985d-9b5cbe074dfe|
+talbot|ATH452|129.128.184.53|Linux|Ubuntu 10.04 LTS|wildwest|legilmou|stroulia||Dell Vostro 460 i7-2600 Quad@3.4GHz-16Gb||3GVY1R1||NOP|active||||5||b4b61ef1-4109-4c18-9541-250c04de3554|User administered, Static IP
+tanberg1|CSC363||||network|Tanberg|pierreb|no-tag|codex||23.16077||NA|missing||||5||98326b2f-b534-4fd4-9a7b-1cefe4d0c5fb|missing? not on a research subnet
+tanberg2|CSC363||||network|Tanberg|pierreb|no-tag|codex||23.24007||NA|missing||||5||17510cf1-a122-4c96-8dd0-c06e8ff761ec|missing?  not on a research subnet
+tawayik|CSC217|129.128.23.102|Linux|WPS Ubuntu 16.04|regular||hayward|512155|i5-6400-24576||ACS05908||CLEAN|active||||5||2945a2c4-5853-418b-9c93-a3d5cfcc4377|new machine old case
+tdcs|GSB175|129.128.243.11|Linux|Ubuntu 18.04 LTS|regular|greiner|greiner||SuperMicro||||CLEAN|active|||F16|5|SRIT|447153d3-246c-4fa4-9949-ea0d84092df9|
+teepee-crk|CSC217|129.128.23.248|Linux|WPS Ubuntu 16.04|regular||hayward|no-tag|i7/860-16384||1YNLJM1||CLEAN|active||||5||85acd928-5d40-49ac-a20c-12dce92deb25|
+tees|CSC329|129.128.4.57|Linux|RHEL Server 5.11|regular||hayward||AMD Opteron/250-4096||ACS05645||CLEAN|retired||T|D|5||e0c6b80b-fa0a-425a-b28f-bb77163e391c|RHN# 1017914937 - there's a note in nagios that this is retired
+telehealth|CSC147|129.128.184.59|||unknown||pierreb||||||NOP|active||||5||dec0c57f-7d88-43b7-93d6-ccd14aa4053b|
+temp28-0||129.128.28.200||||||||||||temp||||5||529474a9-a177-45fd-8a43-4a017c3b2d8a|
+temp28-1||129.128.28.201||||||||||||temp||||5||b5404e80-bd8e-4ed7-b59d-420342136459|
+temp28-2|czar|129.128.28.202|||virtual|johnb||||||||temp||||5||a21e29ab-5d53-48da-b7c2-3196b7919f95|ProjectSpark testing
+temp28-3||129.128.28.203||||||||||||temp||||5||5f038cbd-4d48-4121-85d8-48ac025f245a|
+temp28-4||129.128.28.204||||||||||||temp||||5||e74592b2-2049-41eb-8b44-5750232e7b9e|
+temp28-5||129.128.28.205||||||||||||temp||||5||4a9d961c-fb11-4f5e-b8f5-13aed740b3ab|
+temp28-6||129.128.28.206||||||||||||temp||||5||675861aa-b260-49c2-96b0-50d1c012e4c9|
+temp28-7||129.128.28.207||||||||||||temp||||5||f7120452-78b3-42a0-a9a5-f89e8980666d|
+temp28-8||129.128.28.208||||||||||||temp||||5||502b0373-a28f-470e-8c4f-c68ff25fa35b|
+temp28-9||129.128.28.209||||||||||||temp||||5||61d33d90-2db9-4327-84d6-22ec5829544a|
+temp29-0||129.128.29.200||||||||||||temp||||5||3024bab0-38bb-48a7-8e4f-640635ea1d61|
+temp29-1||129.128.29.201||||||||||||temp||||5||b3e2cb85-fef2-4dee-aa7b-5f422e4fbcbe|
+temp29-2||129.128.29.202||||||||||||temp||||5||f93502b7-a394-475c-b097-3ef04687b5d3|
+temp29-3||129.128.29.203||||||||||||temp||||5||1cb888e9-3fd7-49d6-b9fa-90e3f5aa6692|
+temp29-4||129.128.29.204||||||||||||temp||||5||1fa4c41c-bacc-4dc0-8adf-13ea7512a6d3|
+temp29-5||129.128.29.205||||||||||||temp||||5||1b217e9a-c618-4f95-92d5-d7ad818218b7|
+temp29-6||129.128.29.206||||||||||||temp||||5||9e2a16f3-1b1a-4395-9b41-95dc59bc395f|
+temp29-7|daysland|129.128.29.207|||virtual|johnb||||||||temp||||5||0a6502fe-61a3-4a4d-8455-2d4fd1cfb640|ugrad image
+temp29-8||129.128.29.208||||||||||||temp||||5||f9866e07-535e-49a1-b84c-b2a835fbe7dd|
+temp29-9||129.128.29.209||||||||||||temp||||5||57e7acef-72e5-4a0a-846a-cbb214549b36|
+temp41-0|irricana|129.128.41.200|||virtual|jmartin||||||||temp||||5||0abe4c14-8843-46bd-bb8a-7498f0a4d31c|OpenBSD 5.4
+temp41-1|czar|129.128.41.201|||virtual|johnb||||||||temp||||5||8b58d7f6-36c9-4870-aa74-2c0c1fcc3815|WPS single partition MSB
+temp41-2|czar|129.128.41.202|||virtual|johnb||||||||temp||||5||402112de-33e5-4c5b-80d6-ae94fd07580c|WPS single partition
+temp41-3||129.128.41.203||||||||||||temp||||||a990aac0-cc0c-49bc-bbd9-82ffffae44cf|
+temp41-4|czar|129.128.41.204|||virtual|johnb||||||||temp||||5||46dcf7f7-e96f-4a60-a38e-80f6f919c72c|Ubuntu 14.04 development
+temp41-5|ATH220|129.128.41.205|Linux|Ubuntu 14.04|regular|johnb||||||||temp||||5||a2cbc45c-03e6-430e-a5f0-24fcc0a0b43c|CMPUT 412 spare machine test
+temp41-6||129.128.41.206||||||||||||temp||||5||589029e5-0030-4b33-810a-a26782f9384d|
+temp41-7||129.128.41.207||||||||||||temp||||||0979231f-2e02-4de2-a908-cddeaf83bab3|
+temp41-8|czar|129.128.41.208|Linux|Ubuntu 14.04|virtual|johnb|tst||||||CLEAN|temp||||5||db6bfaed-8fcf-4b27-a3b6-bac9334b75de|testing cloning 
+temp41-9|czar|129.128.41.209|Linux|openSUSE 13.1|virtual|jmartin|||||||CLEAN|temp||||||05ae4599-32dc-4a74-ae18-12d6a6fc581f|openSUSE 13.1 template
+temp184-0|CSC231|129.128.184.200|Linux|RHEL Server 5.6|regular|rod|||||||CLEAN|missing|||B|5||1f39d3b8-c75b-45ab-9c25-cc71d25efc07|in process of being wiped for return to Paul Lu (botha-c16)
+temp184-1||129.128.184.201||||||||||||temp||||5||384fa208-b7ad-4c54-b027-287956716aff|
+temp184-2||129.128.184.202||||bmw||||||||temp||||5||16dfaf75-9971-4cf3-bf4a-113a0ea04b3b|PXE Testing
+temp184-3||129.128.184.203||||||||||||temp||||5||dcd671d4-7929-471e-afdc-972b9386382c|
+temp184-4||129.128.184.204||||||||||||temp||||5||1b161830-3cc6-4275-a950-82e452ebb366|
+temp184-5||129.128.184.205||||||||||||temp||||5||ab3a9dfb-1a55-4bf8-bf4a-7919a975b078|
+temp184-6||129.128.184.206||||||||||||temp||||5||52a50b8d-0343-43fd-9051-60804849ef80|
+temp184-7||129.128.184.207||||||||||||temp||||5||b58da614-4d3f-429b-95f8-e30bfd60f7dc|
+temp184-8||129.128.184.208||||||||||||temp||||5||cd97cf75-11db-4e4b-a0d2-1f869aaafe26|
+temp184-9||129.128.184.209||||||||||||temp||||5||863a0425-9c8b-403b-b6fd-73a2666bb0f5|
+theano|ATH452||Windows|10|regular|stroulia|stroulia||Core i7 2600, 16 GB RAM||3GYY1R1||CLEAN|active|OK|||5||b914e1a8-631e-44ed-999c-386f9aa5b9bd|On NAT
+theia|CSC353|129.128.25.134|Linux|Ubuntu 14|regular||karteek,martin||E8400/8184||||CLEAN|active||||5||e86b6b48-5afa-4447-9114-6eb31c1508a0|
+therien|ATH301|129.128.4.52|MacOS|10.11.6|regular|hayward|hayward|524173|iMac24 Core2/2.8-2048||W87350Y3ZCT||CLEAN|active|OK|||5||9a122fab-99af-4184-986c-43af75081a18|
+thickwood|CSC351|129.128.25.15|Windows|7|regular||mpolak,zhang||Dell XPS 8500 i7-3770 3.4GHz-16GB||71RY5V1||CLEAN|active|OK|||5||be401691-4fcf-4eb2-b570-efcd310e8b59|
+thorhild|CSC217|129.128.23.153|Linux|WPS Ubuntu 16.04|regular||hayward|510085|i5-6400-24576||ASC05984||CLEAN|active||||5||f8befaec-61a7-461e-8f9a-a480d4419252|new machine old case
+thorsby|CSC217|129.128.23.200|Linux|WPS Ubuntu 16.04|regular||hayward|no-tag|i7/920-8192||350K6J1||CLEAN|active||||5||96d6013c-95b5-4e17-9b3d-9e20218a5cce|
+tofield|CSC217|129.128.23.132|Linux|WPS Ubuntu 16.04|regular||hayward|512198|i5-6400-24576||ASC05805||CLEAN|active||||5||b14aa945-3592-4fbe-8275-9f71054296f7|new machine old case
+torrington|CSC217|129.128.23.28|Linux|WPS Ubuntu 16.04|regular||hayward|no-tag|i7-860/2.8GHz-8192||7BM7HK1||CLEAN|active||||5||1db90d89-0600-44f4-ba1c-5ffb5be3a5eb|
+tove|CSC305|129.128.184.28|OpenBSD|unknown|regular|sutton|rshariff||||||NOP|active||||5||070be456-b308-4cce-8fef-b28528a6c228|NAT gateway to local robot wireless network SSID critterbot
+trochu|CSC217|129.128.23.88|MacOS|10.6.3|regular||hayward|549648|iMac/Core2:3.1GHZ-4096||W8016FHZ5PC||CLEAN|active|OK|||5||52fd0c1d-2e0f-4829-bb95-49de1909d475|
+tulliby|CSC217|129.128.23.228|MacOS|10.6.3|regular||hayward|549649|iMac/Core2:3.1GHZ-4096||W8016FGE5PC||CLEAN|active|OK|||5||76be5c89-cead-4b52-863b-3235582f548a|Inventory tag appears to be incorrect.
+u16-gold|czar|129.128.243.71|||virtual|johnb||||||||active||||5||6e8b625f-7419-4d37-9b4e-584af1705740|Ubuntu 16.04 development
+u16-rch-test|czar|129.128.21.254|Linux|WPS Ubuntu 16.04|virtual|johnb|||||||CLEAN|active|OK|||5||b5fe5c7f-7332-4ae1-9a2c-8569363a74db|Ubuntu 16.04 research domain testing
+ua01|CSC218|129.128.29.1|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||2H6TPC1||CLEAN|retired||||5|WPS|0e2eca49-4bdd-40c7-8bc8-1cf6538ad9fa|UGrad
+ua02|CSC220|129.128.29.2|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||FD6TPC1||CLEAN|retired||||5|WPS|8b78cf1d-7fb5-4860-9c9b-91a33692eae8|UGrad
+ua03|CSC220|129.128.29.3|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||JH6TPC1||CLEAN|retired||||5|WPS|5139d7bd-c14f-4476-814f-e369bae9484a|UGrad
+ua04|CSC220|129.128.29.4|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||2X7TPC1||CLEAN|retired||||5|WPS|0cf39364-a49a-4f37-89df-564b0132f421|UGrad
+ua05|CSC224|129.128.29.5|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||BC6TPC1||CLEAN|retired||||5|WPS|6d99a3b6-4aad-436c-8d57-a7578251a7b8|UGrad
+ua06|CSC224|129.128.29.6|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||3V7TPC1||CLEAN|retired||||5|WPS|48f49b1c-44c2-46e6-9520-1d91b35bfa91|UGrad
+ua07|CSC224|129.128.29.7|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||4X7TPC1||CLEAN|retired||||5|WPS|64c878f2-30a6-4684-983b-34dd301afcb3|UGrad
+ua08|CSC250|129.128.29.8|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||7X7TPC1||CLEAN|retired||||5|WPS|b0871eec-de25-496e-b49c-401f5e389ba9|UGrad
+ua09|CSC252|129.128.29.9|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||2S7TPC1||CLEAN|retired||||5|WPS|8e358419-b5ce-45c7-b362-33f23698f0ad|UGrad
+ua10|CSC252|129.128.29.10|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||HM6TPC1||CLEAN|retired||||5|WPS|a40ea748-7f83-4d64-9355-a3d0258a6f89|UGrad
+ua11|CSC252|129.128.29.11|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||BW7TPC1||CLEAN|retired||||5|WPS|5d2abee1-d907-466e-b1fa-bf79e51d9ac3|UGrad
+ua12|CSC224|129.128.29.12|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||6S7TPC1||CLEAN|retired||||5|WPS|6092e4e7-09fa-4078-8dcd-f0cfe547d3a0|UGrad
+ua13|CSC260|129.128.29.13|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||GW7TPC1||CLEAN|retired||||5|WPS|96f1df8f-e7e3-49a2-a2b7-8f7ce85cdaa4|UGrad
+ua14|CSC260|129.128.29.14|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||8W7TPC1||CLEAN|retired||||5|WPS|f17177c7-fb94-4a6a-a54e-3c6cd5ab8305|UGrad
+ua15|CSC262|129.128.29.15|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||HB6TPC1||CLEAN|retired||||5|WPS|e511847a-1f7f-4b55-983f-d466db4e9925|UGrad
+ua16|CSC326|129.128.29.16|Linux|WPS Ubuntu 16.04|regular|dept|tst|512143|Dell OptiPlex 745||5W7TPC1||CLEAN|retired||||5|WPS|17f8c108-d00e-4c60-ab7b-3b4faebceb14|UGrad
+ua17|CSC350|129.128.29.17|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||9H6TPC1||CLEAN|retired||||5|WPS|9459a830-f4c3-46f6-b8ea-1f0954c2749d|UGrad
+ua18|CSC166|129.128.29.18|Linux|Ubuntu 12.04|regular|dept|tst||Dell OptiPlex 745||8G6TPC1||CLEAN|retired||||5||74ec5903-6e54-493a-8917-53e991c5465c|UGrad
+ub01|CSC105|129.128.29.161|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726322|Lenovo M920 TWR CTO||MJ090PRW||CLEAN|active||||5|WPS|524e20a5-5136-4fb0-8ca0-67d370c2a83b|Ugrad new 2019-07
+ub02|CSC105|129.128.29.162|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726323|Lenovo M920 TWR CTO||MJ090PSD||CLEAN|active||||5|WPS|5e5c9b2d-efbc-4f37-99c6-aea648bfa409|Ugrad new 2019-07
+ub03|CSC105|129.128.29.163|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726324|Lenovo M920 TWR CTO||MJ090PSH||CLEAN|active||||5|WPS|f1c2dd18-57ba-4c36-82fd-116a0fe874d0|Ugrad new 2019-07
+ub04|CSC105|129.128.29.164|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726325|Lenovo M920 TWR CTO||MJ090PS8||CLEAN|active||||5|WPS|a0c93afb-4813-4611-bb83-40bd41d01978|Ugrad new 2019-07
+ub05|CSC105|129.128.29.165|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726326|Lenovo M920 TWR CTO||MJ090PSG||CLEAN|active||||5|WPS|616a1cdc-a08d-4b21-a500-88a543d25465|Ugrad new 2019-07
+ub06|CSC105|129.128.29.166|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726327|Lenovo M920 TWR CTO||MJ090PS1||CLEAN|active||||5|WPS|534b4cb4-6231-4272-afe8-80679a268d90|Ugrad new 2019-07
+ub07|CSC105|129.128.29.167|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726328|Lenovo M920 TWR CTO||MJ090PS0||CLEAN|active||||5|WPS|a2d9808a-2284-458e-9e9d-8e8f5418f5e6|Ugrad new 2019-07
+ub08|CSC105|129.128.29.168|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726329|Lenovo M920 TWR CTO||MJ090PRR||CLEAN|active||||5|WPS|7eace497-76cf-40bb-af33-cc844e87ba03|Ugrad new 2019-07
+uc01|CSC121|129.128.41.11|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726330|Lenovo M920 TWR CTO||MJ090PRP||CLEAN|active||||5|WPS|c1033af0-c300-4c1d-87d7-a98ee86398ee|Ugrad new 2019-07
+uc02|CSC121|129.128.41.12|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726331|Lenovo M920 TWR CTO||MJ090PSC||CLEAN|active||||5|WPS|d7e0d867-4526-4710-b91b-b3e48e1e0620|Ugrad new 2019-07
+uc03|CSC121|129.128.41.13|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726332|Lenovo M920 TWR CTO||MJ090PS7||CLEAN|active||||5|WPS|2c897941-c414-4d8c-8d33-d307297c89ff|Ugrad new 2019-07
+uc04|CSC121|129.128.41.14|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726333|Lenovo M920 TWR CTO||MJ090PSJ||CLEAN|active||||5|WPS|c0ca08cf-0a59-4f6f-942f-fd80b316631c|Ugrad new 2019-07
+uc05|CSC121|129.128.41.15|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726334|Lenovo M920 TWR CTO||MJ090PRL||CLEAN|active||||5|WPS|2094c0e0-99da-4ee8-98dc-5263051cf96e|Ugrad new 2019-07
+uc06|CSC121|129.128.41.16|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726335|Lenovo M920 TWR CTO||MJ090PQ7||CLEAN|active||||5|WPS|9b5086ad-7cbe-4e5b-8ae2-5c4aca0ec6fc|Ugrad new 2019-07
+uc07|CSC121|129.128.41.17|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726336|Lenovo M920 TWR CTO||MJ090PQK||CLEAN|active||||5|WPS|1762c64a-451b-4b41-9ed8-0d509f318577|Ugrad new 2019-07
+uc08|CSC121|129.128.41.18|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726337|Lenovo M920 TWR CTO||MJ090PQY||CLEAN|active||||5|WPS|18c85ef3-a2c9-4049-87e1-05213c302bb0|Ugrad new 2019-07
+uc09|CSC121|129.128.41.19|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726338|Lenovo M920 TWR CTO||MJ090PR3||CLEAN|active||||5|WPS|e3844e14-3ac8-4674-9bca-6215952d35a1|Ugrad new 2019-07
+uc10|CSC121|129.128.41.20|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726339|Lenovo M920 TWR CTO||MJ090PQP||CLEAN|active||||5|WPS|051db395-ebd3-4c40-9601-2681911a7225|Ugrad new 2019-07
+uc11|CSC121|129.128.41.21|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726340|Lenovo M920 TWR CTO||MJ090PQF||CLEAN|active||||5|WPS|8751fcf2-9a0c-482e-a3f5-cbdc3257a5f1|Ugrad new 2019-07
+uc12|CSC121|129.128.41.22|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726341|Lenovo M920 TWR CTO||MJ090PQB||CLEAN|active||||5|WPS|91ca6bd0-7d40-46f5-ac40-8456988b8a18|Ugrad new 2019-07
+uc13|CSC121|129.128.41.23|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726342|Lenovo M920 TWR CTO||MJ090PRF||CLEAN|active||||5|WPS|dd745f6a-8404-45a8-a1f3-6bbdfde31cbb|Ugrad new 2019-07
+uc14|CSC121|129.128.41.24|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726343|Lenovo M920 TWR CTO||MJ090PTX||CLEAN|active||||5|WPS|0187f6cb-09d4-4f1d-9e83-93d59d099201|Ugrad new 2019-07
+uc15|CSC121|129.128.41.25|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726344|Lenovo M920 TWR CTO||MJ090PR6||CLEAN|active||||5|WPS|92458284-3db6-4073-890f-1bd682942556|Ugrad new 2019-07
+uc16|CSC121|129.128.41.26|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726345|Lenovo M920 TWR CTO||MJ090PW7||CLEAN|active||||5|WPS|877f2215-0c83-4410-b571-96e39bf4bc24|Ugrad new 2019-07
+ud00|CSC125|129.128.29.70|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726300|Lenovo M920 TWR CTO||MJ090PT1||CLEAN|active||||5|WPS|2da5078d-73fe-4248-ae54-a22084e4cc07|Ugrad new 2019-07
+ud01|CSC125|129.128.29.71|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726285|Lenovo M920 TWR CTO||MJ090PT7||CLEAN|active||||5|WPS|2ebf9ec5-5470-41db-a521-7b75b02ff301|Ugrad new 2019-07
+ud02|CSC125|129.128.29.72|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726294|Lenovo M920 TWR CTO||MJ090PT3||CLEAN|active||||5|WPS|c299839c-c08c-4aaa-847e-7b6deaee02f4|Ugrad new 2019-07
+ud03|CSC125|129.128.29.73|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726293|Lenovo M920 TWR CTO||MJ090PTK||CLEAN|active||||5|WPS|7ec76bb6-a626-4c28-9aa0-aba8340cb4eb|Ugrad new 2019-07
+ud04|CSC125|129.128.29.74|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726273|Lenovo M920 TWR CTO||MJ090PSZ||CLEAN|active||||5|WPS|4d4b1154-b40c-4eea-87ca-e2e5b6b52119|Ugrad new 2019-07
+ud05|CSC125|129.128.29.75|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726287|Lenovo M920 TWR CTO||MJ090PTB||CLEAN|active||||5|WPS|5ad3970c-b82b-4548-97a6-9a51f74ad9da|Ugrad new 2019-07
+ud06|CSC125|129.128.29.76|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726265|Lenovo M920 TWR CTO||MJ090PW6||CLEAN|active||||5|WPS|8228c3dc-f15d-46e8-9a0d-231d3e210f06|Ugrad new 2019-07
+ud07|CSC125|129.128.29.77|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726269|Lenovo M920 TWR CTO||MJ090PR7||CLEAN|active||||5|WPS|f07ed53b-d70f-4de2-97dc-7b1e47e09c22|Ugrad new 2019-07
+ud08|CSC125|129.128.29.78|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726264|Lenovo M920 TWR CTO||MJ090PQZ||CLEAN|active||||5|WPS|b441a23c-362e-4c91-bc2b-b44f5de8babd|Ugrad new 2019-07
+ud09|CSC125|129.128.29.79|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726268|Lenovo M920 TWR CTO||MJ090PRB||CLEAN|active||||5|WPS|93708ee0-fbbd-4d65-8613-4e24623a63b7|Ugrad new 2019-07
+ud10|CSC125|129.128.29.80|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726291|Lenovo M920 TWR CTO||MJ090PTA||CLEAN|active||||5|WPS|6b5cb307-3098-4bae-a124-e1618766c977|Ugrad new 2019-07
+ud11|CSC125|129.128.29.81|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726303|Lenovo M920 TWR CTO||MJ090PRK||CLEAN|active||||5|WPS|f559124d-f620-4bc7-bc68-14c2574a2cc5|Ugrad new 2019-07
+ud12|CSC125|129.128.29.82|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726281|Lenovo M920 TWR CTO||MJ090PQX||CLEAN|active||||5|WPS|0071cf09-fb25-40aa-821a-9cd82fc0d8d1|Ugrad new 2019-07
+ud13|CSC125|129.128.29.83|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726279|Lenovo M920 TWR CTO||MJ090PW2||CLEAN|active||||5|WPS|b1082576-281a-4f6a-9f2f-4322260cb7e9|Ugrad new 2019-07
+ud14|CSC125|129.128.29.84|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726266|Lenovo M920 TWR CTO||MJ090PTJ||CLEAN|active||||5|WPS|f6a9b25e-9101-421e-918a-620bb03334ab|Ugrad new 2019-07
+ud15|CSC125|129.128.29.85|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726278|Lenovo M920 TWR CTO||MJ090PW3||CLEAN|active||||5|WPS|280d0fd1-111b-4dda-bf2a-3ee5f54d6548|Ugrad new 2019-07
+ud16|CSC125|129.128.29.86|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726270|Lenovo M920 TWR CTO||MJ090PTR||CLEAN|active||||5|WPS|63a5aff1-d56a-4394-a281-26320302a3a3|Ugrad new 2019-07
+ud17|CSC125|129.128.29.87|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726271|Lenovo M920 TWR CTO||MJ090PQG||CLEAN|active||||5|WPS|b6de46f5-c549-4acb-a3a1-0ddb60f070e0|Ugrad new 2019-07
+ud18|CSC125|129.128.29.88|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726295|Lenovo M920 TWR CTO||MJ090PT9||CLEAN|active||||5|WPS|5d47efea-4b23-458c-9643-a4ff019cd575|Ugrad new 2019-07
+ud19|CSC125|129.128.29.89|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726263|Lenovo M920 TWR CTO||MJ090PQC||CLEAN|active||||5|WPS|5632f78e-14b1-44df-9fd0-499bf9483bd5|Ugrad new 2019-07
+ud20|CSC125|129.128.29.90|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726292|Lenovo M920 TWR CTO||MJ090PT6||CLEAN|active||||5|WPS|ac7a4cf0-fa2c-41ae-9784-b9f3e5693663|Ugrad new 2019-07
+ud21|CSC125|129.128.29.91|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726306|Lenovo M920 TWR CTO||MJ090PVS||CLEAN|active||||5|WPS|0f64c30d-0859-41fb-a69e-fb18e821506d|Ugrad new 2019-07
+ud22|CSC125|129.128.29.92|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726304|Lenovo M920 TWR CTO||MJ090PSS||CLEAN|active||||5|WPS|1668b175-f755-4f10-bd70-c4b915e3aeaa|Ugrad new 2019-07
+ud23|CSC125|129.128.29.93|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726310|Lenovo M920 TWR CTO||MJ090PVW||CLEAN|active||||5|WPS|dfe41bdc-c40f-4939-afc9-63ec9f16411d|Ugrad new 2019-07
+ud24|CSC125|129.128.29.94|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726280|Lenovo M920 TWR CTO||MJ090PR9||CLEAN|active||||5|WPS|43827783-07aa-4b23-976d-5a98997f8552|Ugrad new 2019-07
+ud25|CSC125|129.128.29.95|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726277|Lenovo M920 TWR CTO||MJ090PWP||CLEAN|active||||5|WPS|07bb7f37-c2ad-4657-b16d-5f9d3771fcd9|Ugrad new 2019-07
+ud26|CSC125|129.128.29.96|Linux|WPS Ubuntu 16.04|regular|dept|WPS||Lenovo M920 TWR CTO||MJ090PRQ||CLEAN|active||||5|WPS|8b9727ff-b72b-4377-9bdb-13b3425db928|Ugrad new 2019-07
+ue00|CSC129|129.128.29.100|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726346|Lenovo M920 TWR CTO||MJ090PV0||CLEAN|active||||5|WPS|667190a9-2190-4fe0-8670-f39844de46df|Ugrad new 2019-07
+ue01|CSC129|129.128.29.101|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726347|Lenovo M920 TWR CTO||MJ090PVX||CLEAN|active||||5|WPS|16a3281f-6e08-4811-9390-a19e8bafabef|Ugrad new 2019-07
+ue02|CSC129|129.128.29.102|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726348|Lenovo M920 TWR CTO||MJ090PR0||CLEAN|active||||5|WPS|c2b7f389-aa5b-4c94-af50-d7369c668391|Ugrad new 2019-07
+ue03|CSC129|129.128.29.103|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726349|Lenovo M920 TWR CTO||MJ090PSR||CLEAN|active||||5|WPS|6bafd56d-0c23-4308-9a73-587d5a5387c4|Ugrad new 2019-07
+ue04|CSC129|129.128.29.104|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726350|Lenovo M920 TWR CTO||MJ090PQ5||CLEAN|active||||5|WPS|1aac0708-9f5a-4359-a49b-59c5d60d474f|Ugrad new 2019-07
+ue05|CSC129|129.128.29.105|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726351|Lenovo M920 TWR CTO||MJ090PRC||CLEAN|active||||5|WPS|817573e6-a6db-4894-aa57-5a5dc4d06f20|Ugrad new 2019-07
+ue06|CSC129|129.128.29.106|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726352|Lenovo M920 TWR CTO||MJ090PRA||CLEAN|active||||5|WPS|99cf9632-425d-4aa2-9db9-6539d5ce78f7|Ugrad new 2019-07
+ue07|CSC129|129.128.29.107|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726353|Lenovo M920 TWR CTO||MJ090PWG||CLEAN|active||||5|WPS|fd18f327-0101-457d-b581-404a4c96e271|Ugrad new 2019-07
+ue08|CSC129|129.128.29.108|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726354|Lenovo M920 TWR CTO||MJ090PV9||CLEAN|active||||5|WPS|61444108-37ab-4986-9401-56fb85cf17c2|Ugrad new 2019-07
+ue09|CSC129|129.128.29.109|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726355|Lenovo M920 TWR CTO||MJ090PVT||CLEAN|active||||5|WPS|dde40b63-a376-4e98-9b87-65de57a07c9b|Ugrad new 2019-07
+ue10|CSC129|129.128.29.110|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726356|Lenovo M920 TWR CTO||MJ090PR4||CLEAN|active||||5|WPS|dac7c2f1-6650-4978-b840-94fe885eaf9e|Ugrad new 2019-07
+ue11|CSC129|129.128.29.111|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726357|Lenovo M920 TWR CTO||MJ090PVQ||CLEAN|active||||5|WPS|ff91d061-16be-4ab7-954e-acf45a0bd1e0|Ugrad new 2019-07
+ue12|CSC129|129.128.29.112|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726358|Lenovo M920 TWR CTO||MJ090PVY||CLEAN|active||||5|WPS|1551760c-8b0e-4f7d-af7f-0c242f55a5c7|Ugrad new 2019-07
+ue13|CSC129|129.128.29.113|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726359|Lenovo M920 TWR CTO||MJ090PVD||CLEAN|active||||5|WPS|402eed05-cf2c-4060-a2df-b8aaa7740338|Ugrad new 2019-07
+ue14|CSC129|129.128.29.114|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726360|Lenovo M920 TWR CTO||MJ090PVV||CLEAN|active||||5|WPS|3e678b49-b647-4a98-ba75-c8c38a46b1f8|Ugrad new 2019-07
+ue15|CSC129|129.128.29.115|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726361|Lenovo M920 TWR CTO||MJ090PVR||CLEAN|active||||5|WPS|0bcf7f85-becd-4c70-acc1-e52359f1dde7|Ugrad new 2019-07
+ue16|CSC129|129.128.29.116|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726362|Lenovo M920 TWR CTO||MJ090PVG||CLEAN|active||||5|WPS|9f277537-cb76-478f-905d-dfe54ebd5864|Ugrad new 2019-07
+ue17|CSC129|129.128.29.117|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726363|Lenovo M920 TWR CTO||MJ090PVF||CLEAN|active||||5|WPS|0951b931-f863-4d07-b6b7-e08fa555a280|Ugrad new 2019-07
+ue18|CSC129|129.128.29.118|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726364|Lenovo M920 TWR CTO||MJ090PVJ||CLEAN|active||||5|WPS|975566fd-782a-4666-9401-7f0b36616a6f|Ugrad new 2019-07
+ue19|CSC129|129.128.29.119|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726365|Lenovo M920 TWR CTO||MJ090PR1||CLEAN|active||||5|WPS|f20b6817-7d36-4ac7-9ae0-a7c7bc76f753|Ugrad new 2019-07
+ue20|CSC129|129.128.29.120|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726366|Lenovo M920 TWR CTO||MJ090PQM||CLEAN|active||||5|WPS|0d42d68a-3737-4992-99c1-721e0f653a48|Ugrad new 2019-07
+ue21|CSC129|129.128.29.121|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726367|Lenovo M920 TWR CTO||MJ090PVH||CLEAN|active||||5|WPS|5d7ca66f-6d60-4caf-b234-c79f930ca5e4|Ugrad new 2019-07
+ue22|CSC129|129.128.29.122|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726368|Lenovo M920 TWR CTO||MJ090PRE||CLEAN|active||||5|WPS|0644bc12-8730-474f-a1cd-ee2d8804783d|Ugrad new 2019-07
+ue23|CSC129|129.128.29.123|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726369|Lenovo M920 TWR CTO||MJ090PR5||CLEAN|active||||5|WPS|63870c54-88bb-44a1-b2c5-e43c0a2a1d15|Ugrad new 2019-07
+ue24|CSC129|129.128.29.124|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726370|Lenovo M920 TWR CTO||MJ090PRD||CLEAN|active||||5|WPS|c37db311-cc4d-4c8b-8e4f-ab574fb306b4|Ugrad new 2019-07
+ue25|CSC129|129.128.29.125|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726371|Lenovo M920 TWR CTO||MJ090PTF||CLEAN|active||||5|WPS|9e3ceaf0-4916-4556-a529-ca335c6f15f1|Ugrad new 2019-07
+ue26|CSC129|129.128.29.126|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726372|Lenovo M920 TWR CTO||MJ090PW9||CLEAN|active||||5|WPS|d29509d2-644d-44ea-9a07-6a2eaa5de008|Ugrad new 2019-07
+uf00|CSC153|129.128.29.130|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726321|Lenovo M920 TWR CTO||MJ090PSF||CLEAN|active||||5|WPS|12e17f62-2a21-4523-9f7c-36cd21ad71f5|Ugrad new 2019-07
+uf01|CSC153|129.128.29.131|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726286|Lenovo M920 TWR CTO||MJ090PSV||CLEAN|active||||5|WPS|fb0a8bf0-e05b-4992-8185-6aaac619a706|Ugrad new 2019-07
+uf02|CSC153|129.128.29.132|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726283|Lenovo M920 TWR CTO||MJ090PWM||CLEAN|active||||5|WPS|dee11876-42fe-4a0e-b57a-84c8685f3f60|Ugrad new 2019-07
+uf03|CSC153|129.128.29.133|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726313|Lenovo M920 TWR CTO||MJ090PWW||CLEAN|active||||5|WPS|7a58d319-7e09-4f60-9540-58e44cb1e958|Ugrad new 2019-07
+uf04|CSC153|129.128.29.134|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726314|Lenovo M920 TWR CTO||MJ090PWX||CLEAN|active||||5|WPS|90b8704b-d816-406b-9e31-122050b3adc6|Ugrad new 2019-07
+uf05|CSC153|129.128.29.135|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726302|Lenovo M920 TWR CTO||MJ090PRG||CLEAN|active||||5|WPS|4f4773e6-4689-48c1-b9ea-66d18abdf747|Ugrad new 2019-07
+uf06|CSC153|129.128.29.136|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726284|Lenovo M920 TWR CTO||MJ090PTM||CLEAN|active||||5|WPS|0b1b225e-bef3-41cb-99ab-59eba2c01ea1|Ugrad new 2019-07
+uf07|CSC153|129.128.29.137|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726298|Lenovo M920 TWR CTO||MJ090PSX||CLEAN|active||||5|WPS|89b09209-7900-4d67-a22d-4a99c2c2a983|Ugrad new 2019-07
+uf08|CSC153|129.128.29.138|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726282|Lenovo M920 TWR CTO||MJ090PWC||CLEAN|active||||5|WPS|622a8dfa-21de-426c-a4ac-c403ad8e2286|Ugrad new 2019-07
+uf09|CSC153|129.128.29.139|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726274|Lenovo M920 TWR CTO||MJ090PV3||CLEAN|active||||5|WPS|2f611260-9501-4332-9bc4-39aa67895347|Ugrad new 2019-07
+uf10|CSC153|129.128.29.140|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726311|Lenovo M920 TWR CTO||MJ090PT5||CLEAN|active||||5|WPS|92d44256-df01-46dd-8496-94884919bb40|Ugrad new 2019-07
+uf11|CSC153|129.128.29.141|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726317|Lenovo M920 TWR CTO||MJ090PRY||CLEAN|active||||5|WPS|3a3e4753-4479-43d0-aebb-702a5f078407|Ugrad new 2019-07
+uf12|CSC153|129.128.29.142|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726312|Lenovo M920 TWR CTO||MJ090PVL||CLEAN|active||||5|WPS|05c6a5ba-e07d-4bd2-bec7-1a07945ee2d8|Ugrad new 2019-07
+uf13|CSC153|129.128.29.143|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726288|Lenovo M920 TWR CTO||MJ090PS3||CLEAN|active||||5|WPS|4a1bfe2b-5c77-4519-82c3-d2150193f59e|Ugrad new 2019-07
+uf14|CSC153|129.128.29.144|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726309|Lenovo M920 TWR CTO||MJ090PRS||CLEAN|active||||5|WPS|a1dd4a06-c24e-4006-a0ea-32cbf261d12c|Ugrad new 2019-07
+uf15|CSC153|129.128.29.145|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726308|Lenovo M920 TWR CTO||MJ090PTH||CLEAN|active||||5|WPS|371cc005-e50a-492c-81df-049b5e5d983b|Ugrad new 2019-07
+uf16|CSC153|129.128.29.146|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726290|Lenovo M920 TWR CTO||MJ090PQA||CLEAN|active||||5|WPS|4b5b3269-58e3-4635-af1b-a800f27dbf46|Ugrad new 2019-07
+uf17|CSC153|129.128.29.147|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726276|Lenovo M920 TWR CTO||MJ090PQ6||CLEAN|active||||5|WPS|d3bb46aa-9f62-4886-aaeb-2db982d62325|Ugrad new 2019-07
+uf18|CSC153|129.128.29.148|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726275|Lenovo M920 TWR CTO||MJ090PV6||CLEAN|active||||5|WPS|f0c9c3f2-52ee-4f6f-81be-d34158693e32|Ugrad new 2019-07
+uf19|CSC153|129.128.29.149|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726316|Lenovo M920 TWR CTO||MJ090PRN||CLEAN|active||||5|WPS|1c7deb1d-2584-436e-88fd-1408cafee93e|Ugrad new 2019-07
+uf20|CSC153|129.128.29.150|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726320|Lenovo M920 TWR CTO||MJ090PS5||CLEAN|active||||5|WPS|7892345d-4db3-431e-921c-24f208fc06dc|Ugrad new 2019-07
+uf21|CSC153|129.128.29.151|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726297|Lenovo M920 TWR CTO||MJ090PTD||CLEAN|active||||5|WPS|1387aef9-6858-4a61-989d-c66132a4b2c8|Ugrad new 2019-07
+uf22|CSC153|129.128.29.152|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726307|Lenovo M920 TWR CTO||MJ090PQT||CLEAN|active||||5|WPS|2c80eaf1-62fa-4c0c-b506-5eb6141991e7|Ugrad new 2019-07
+uf23|CSC153|129.128.29.153|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726289|Lenovo M920 TWR CTO||MJ090PTL||CLEAN|active||||5|WPS|19352db0-f049-4359-8958-528487c0bba0|Ugrad new 2019-07
+uf24|CSC153|129.128.29.154|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726267|Lenovo M920 TWR CTO||MJ090PQ8||CLEAN|active||||5|WPS|db861c8a-0b55-4839-a2c6-1f34e39db0aa|Ugrad new 2019-07
+uf25|CSC153|129.128.29.155|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726305|Lenovo M920 TWR CTO||MJ090PVP||CLEAN|active||||5|WPS|b41a8582-3e8c-4615-af83-d8f9f20d491f|Ugrad new 2019-07
+ug00|CSC159|129.128.29.30|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726373|Lenovo M920 TWR CTO||MJ090PWE||CLEAN|active||||5|WPS|77ae23b4-51ef-40d8-823d-f0a454a8cf08|Ugrad new 2019-07
+ug01|CSC159|129.128.29.31|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726374|Lenovo M920 TWR CTO||MJ090PV1||CLEAN|active||||5|WPS|7af17bfd-3bdd-4701-9701-57c70bf072b1|Ugrad new 2019-07
+ug02|CSC159|129.128.29.32|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726375|Lenovo M920 TWR CTO||MJ090PQW||CLEAN|active||||5|WPS|6a1301fe-bd3b-455b-adaf-2bddce4f82da|Ugrad new 2019-07
+ug03|CSC159|129.128.29.33|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726376|Lenovo M920 TWR CTO||MJ090PWN||CLEAN|active||||5|WPS|1d570e13-185a-4ec1-bb1d-8f0dcea51f4f|Ugrad new 2019-07
+ug04|CSC159|129.128.29.34|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726377|Lenovo M920 TWR CTO||MJ090PQV||CLEAN|active||||5|WPS|41a7de30-299f-44c0-a72f-bcfeb417dad9|Ugrad new 2019-07
+ug05|CSC159|129.128.29.35|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726378|Lenovo M920 TWR CTO||MJ090QN3||CLEAN|active||||5|WPS|2acdf747-cb80-4f68-a6c2-497f2bb75df7|Ugrad new 2019-07
+ug06|CSC159|129.128.29.36|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726379|Lenovo M920 TWR CTO||MJ090PWL||CLEAN|active||||5|WPS|4cda5189-7df0-43d6-9819-389a691ba772|Ugrad new 2019-07
+ug07|CSC159|129.128.29.37|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726380|Lenovo M920 TWR CTO||MJ090PW1||CLEAN|active||||5|WPS|b09f03c2-bc08-4008-a2e2-cfe9215dcbde|Ugrad new 2019-07
+ug08|CSC159|129.128.29.38|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726381|Lenovo M920 TWR CTO||MJ090QN4||CLEAN|active||||5|WPS|614a453a-9dec-4114-8575-d020e72b2f29|Ugrad new 2019-07
+ug09|CSC159|129.128.29.39|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726382|Lenovo M920 TWR CTO||MJ090PSE||CLEAN|active||||5|WPS|ea2406de-ba89-4427-b98f-e291538aeb84|Ugrad new 2019-07
+ug10|CSC159|129.128.29.40|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726383|Lenovo M920 TWR CTO||MJ090PSP||CLEAN|active||||5|WPS|0da79219-9522-4891-9266-3ae7299248c8|Ugrad new 2019-07
+ug11|CSC159|129.128.29.41|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726384|Lenovo M920 TWR CTO||MJ090PWH||CLEAN|active||||5|WPS|541ec5ec-6f54-46b7-96f6-c980dc63a904|Ugrad new 2019-07
+ug12|CSC159|129.128.29.42|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726299|Lenovo M920 TWR CTO||MJ090PT2||CLEAN|active||||5|WPS|a037e2be-ba53-45d9-8e93-e9e720e1f6be|Ugrad new 2019-07
+ug13|CSC159|129.128.29.43|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726386|Lenovo M920 TWR CTO||MJ090PQE||CLEAN|active||||5|WPS|003aedd9-cec9-44e7-a43b-5a6757a882de|Ugrad new 2019-07
+ug14|CSC159|129.128.29.44|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726387|Lenovo M920 TWR CTO||MJ090PWJ||CLEAN|active||||5|WPS|baaf2163-c2e7-4ced-8cff-483fed7e036a|Ugrad new 2019-07
+ug15|CSC159|129.128.29.45|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726388|Lenovo M920 TWR CTO||MJ090PTG||CLEAN|active||||5|WPS|71e53666-2309-4d98-8b3c-cfad15be575a|Ugrad new 2019-07
+ug16|CSC159|129.128.29.46|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726389|Lenovo M920 TWR CTO||MJ090PQS||CLEAN|active||||5|WPS|ff141273-7757-4c7f-a153-16b757f7582c|Ugrad new 2019-07
+ug17|CSC159|129.128.29.47|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726390|Lenovo M920 TWR CTO||MJ090PQJ||CLEAN|active||||5|WPS|a7e365c4-20e2-4e71-b19c-659d119b9de9|Ugrad new 2019-07
+ug18|CSC159|129.128.29.48|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726391|Lenovo M920 TWR CTO||MJ090PQN||CLEAN|active||||5|WPS|650cfb1e-7628-4a25-91e9-52531e2e74dd|Ugrad new 2019-07
+ug19|CSC159|129.128.29.49|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726392|Lenovo M920 TWR CTO||MJ090PS2||CLEAN|active||||5|WPS|3afcbf5e-fc5d-472f-a42d-8be27ac2d0ca|Ugrad new 2019-07
+ug20|CSC159|129.128.29.50|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726393|Lenovo M920 TWR CTO||MJ090PWF||CLEAN|active||||5|WPS|921b1616-4e2a-4fad-86f1-428d2de3588e|Ugrad new 2019-07
+ug21|CSC159|129.128.29.51|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726394|Lenovo M920 TWR CTO||MJ090PWQ||CLEAN|active||||5|WPS|834977eb-8635-408d-a352-b09be54c2b87|Ugrad new 2019-07
+ug22|CSC159|129.128.29.52|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726395|Lenovo M920 TWR CTO||MJ090PRZ||CLEAN|active||||5|WPS|a45c5264-bc54-456e-af15-bb902bda2354|Ugrad new 2019-07
+ug23|CSC159|129.128.29.53|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726396|Lenovo M920 TWR CTO||MJ090PS4||CLEAN|active||||5|WPS|a1d96a86-0a79-4a42-b611-81c51dc40713|Ugrad new 2019-07
+ug24|CSC159|129.128.29.54|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726397|Lenovo M920 TWR CTO||MJ090PS9||CLEAN|active||||5|WPS|224227df-4bca-447b-a4a9-4d1377a7c647|Ugrad new 2019-07
+ug25|CSC159|129.128.29.55|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726398|Lenovo M920 TWR CTO||MJ090PRM||CLEAN|active||||5|WPS|a1031d5a-c797-454e-b841-d749474dbcf9|Ugrad new 2019-07
+ug26|CSC159|129.128.29.56|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726399|Lenovo M920 TWR CTO||MJ090PSK||CLEAN|active||||5|WPS|3156df58-c02f-4298-a104-30b09a178183|Ugrad new 2019-07
+ug27|CSC159|129.128.29.57|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726400|Lenovo M920 TWR CTO||MJ090PSL||CLEAN|active||||5|WPS|49d9d8da-245e-4f9b-9357-a4ab4bd92b5a|Ugrad new 2019-07
+ug28|CSC159|129.128.29.58|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726401|Lenovo M920 TWR CTO||MJ090PRX||CLEAN|active||||5|WPS|4cea4397-0f3e-4ac4-b8f0-5a17c00855c6|Ugrad new 2019-07
+ug29|CSC159|129.128.29.59|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726402|Lenovo M920 TWR CTO||MJ090PSM||CLEAN|active||||5|WPS|e4ac868e-b7b5-4f68-aff2-aa970e848e8d|Ugrad new 2019-07
+ug30|CSC159|129.128.29.60|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726403|Lenovo M920 TWR CTO||MJ090PVN||CLEAN|active||||5|WPS|fed1dacd-4810-42d0-81fb-43a10d8cf2bc|Ugrad new 2019-07
+ug31|CSC159|129.128.29.61|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726404|Lenovo M920 TWR CTO||MJ090PRH||CLEAN|active||||5|WPS|e50d7b9b-8832-4d02-a501-2f4141823c58|Ugrad new 2019-07
+ug32|CSC159|129.128.29.62|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726405|Lenovo M920 TWR CTO||MJ090PSA||CLEAN|active||||5|WPS|309eb942-5654-4408-aae9-3bcf2bc7b36d|Ugrad new 2019-07
+ug33|CSC159|129.128.29.63|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726406|Lenovo M920 TWR CTO||MJ090PTP||CLEAN|active||||5|WPS|f8e49ed7-9f33-42c4-b551-de5ae0825e44|Ugrad new 2019-07
+ug34|CSC159|129.128.29.64|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726407|Lenovo M920 TWR CTO||MJ090PWS||CLEAN|active||||5|WPS|7619e48f-9e8a-4d15-99fc-ea2edd693219|Ugrad new 2019-07
+ugfw1|CSC139|129.128.31.57|OpenBSD|4.5|regular|dept|tst|497678|Dell PE850 Celeron D 80547@2.66GHz-512||80YQN91||CLEAN|retired||T|B|5||b52a97ce-78f3-46b7-8977-2a5b4e525ec0|TST managed server
+ugfw2|CSC139|129.128.31.58|OpenBSD|4.5|regular|dept|tst|497679|Dell PE850 Celeron D 80547@2.66GHz-512||||CLEAN|retired||T|B|5||c49ee468-7597-4fae-9bc8-f3a200630cc7|TST managed server
+ugweb|webdocs|129.128.243.190|Linux|OS VERSION|alias|OWNER|AUTHORITY|NA|DESCRIPTION||SERIAL NUMBER|HOSTID||ipalias||||5|SA1|cf1923e3-d26c-4594-81ce-8f419d03920f|COMMENTS
+ui00|CSC219|129.128.41.30|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726408|Lenovo M920 TWR CTO||MJ090PQ9||CLEAN|active||||5|WPS|dc166b0d-405d-4e59-81de-06c910d00466|Ugrad new 2019-07
+ui01|CSC219|129.128.41.31|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726409|Lenovo M920 TWR CTO||MJ090PRJ||CLEAN|active||||5|WPS|93390b78-bd1a-4d5f-9ec8-7ee04fd95fc9|Ugrad new 2019-07
+ui02|CSC219|129.128.41.32|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726410|Lenovo M920 TWR CTO||MJ090PQQ||CLEAN|active||||5|WPS|54eeb678-1807-4868-aad2-109d0c232fe7|Ugrad new 2019-07
+ui03|CSC219|129.128.41.33|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726411|Lenovo M920 TWR CTO||MJ090PQL||CLEAN|active||||5|WPS|acd9daee-db38-4dde-a2bb-d641eba85cfb|Ugrad new 2019-07
+ui04|CSC219|129.128.41.34|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726412|Lenovo M920 TWR CTO||MJ090PV4||CLEAN|active||||5|WPS|a463675d-6e0c-4c95-b160-56542c0b1b63|Ugrad new 2019-07
+ui05|CSC219|129.128.41.35|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726413|Lenovo M920 TWR CTO||MJ090PVK||CLEAN|active||||5|WPS|ec22f00d-cefc-4584-9c61-352374e51a8a|Ugrad new 2019-07
+ui06|CSC219|129.128.41.36|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726414|Lenovo M920 TWR CTO||MJ090PS6||CLEAN|active||||5|WPS|bba7e4ad-3314-4efb-b9d0-8a0745e3e36a|Ugrad new 2019-07
+ui07|CSC219|129.128.41.37|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726415|Lenovo M920 TWR CTO||MJ090PVA||CLEAN|active||||5|WPS|3cfc5864-4e36-4617-8e75-e1de67d3b521|Ugrad new 2019-07
+ui08|CSC219|129.128.41.38|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726416|Lenovo M920 TWR CTO||MJ090PTY||CLEAN|active||||5|WPS|28b2a65a-1e5d-47c5-98ec-dab9d3641cfb|Ugrad new 2019-07
+ui09|CSC219|129.128.41.39|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726417|Lenovo M920 TWR CTO||MJ090PTZ||CLEAN|active||||5|WPS|abd4e9ba-cfe3-47f1-8afe-6cef8b7463f7|Ugrad new 2019-07
+ui10|CSC219|129.128.41.40|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726418|Lenovo M920 TWR CTO||MJ090PQR||CLEAN|active||||5|WPS|d3256e19-11e6-45fb-94a4-118bb149c248|Ugrad new 2019-07
+ui11|CSC219|129.128.41.41|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726419|Lenovo M920 TWR CTO||MJ090PW4||CLEAN|active||||5|WPS|2356402e-9bed-4175-8d2e-19c73be1a9ab|Ugrad new 2019-07
+ui12|CSC219|129.128.41.42|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726420|Lenovo M920 TWR CTO||MJ090PWA||CLEAN|active||||5|WPS|b125e189-abf9-4811-aad1-2a93a68c6984|Ugrad new 2019-07
+ui13|CSC219|129.128.41.43|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726421|Lenovo M920 TWR CTO||MJ090PV5||CLEAN|active||||5|WPS|7f322371-ff72-41d6-af7d-5c5a3e93ef5e|Ugrad new 2019-07
+ui14|CSC219|129.128.41.44|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726422|Lenovo M920 TWR CTO||MJ090PWT||CLEAN|active||||5|WPS|77c50aab-e40c-43c1-af00-a00e4f152d11|Ugrad new 2019-07
+ui15|CSC219|129.128.41.45|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726423|Lenovo M920 TWR CTO||MJ090PVB||CLEAN|active||||5|WPS|ec0fbf30-5585-4b0e-b094-fc5db4eafe59|Ugrad new 2019-07
+ui16|CSC219|129.128.41.46|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726424|Lenovo M920 TWR CTO||MJ090PT4||CLEAN|active||||5|WPS|de6da26f-5ccc-4c91-a736-98de2cddcb7c|Ugrad new 2019-07
+ui17|CSC219|129.128.41.47|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726425|Lenovo M920 TWR CTO||MJ090PV2||CLEAN|active||||5|WPS|9063f3ca-9a7a-4187-b0ab-1604c9cbfd51|Ugrad new 2019-07
+ui18|CSC219|129.128.41.48|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726426|Lenovo M920 TWR CTO||MJ090PV8||CLEAN|active||||5|WPS|1d28459f-f948-43db-9dfb-318b2bbf4a2b|Ugrad new 2019-07
+ui19|CSC219|129.128.41.49|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726427|Lenovo M920 TWR CTO||MJ090PSY||CLEAN|active||||5|WPS|b064c82d-86a5-4dca-ad5b-4e8cd5b9579a|Ugrad new 2019-07
+ui20|CSC219|129.128.41.50|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726428|Lenovo M920 TWR CTO||MJ090PTT||CLEAN|active||||5|WPS|f3257a50-104a-4a13-bb04-67b8a76d0e20|Ugrad new 2019-07
+ui21|CSC219|129.128.41.51|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726429|Lenovo M920 TWR CTO||MJ090PTQ||CLEAN|active||||5|WPS|a00e6c34-6f77-4e77-8d54-901466364092|Ugrad new 2019-07
+ui22|CSC219|129.128.41.52|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726430|Lenovo M920 TWR CTO||MJ090PSW||CLEAN|active||||5|WPS|92264e7c-1b96-460a-9ffc-ca4a08a15aac|Ugrad new 2019-07
+uk01|CSC229|129.128.41.91|Linux|WPS Ubuntu 16.04|regular|dept|tst|512124|Dell OptiPlex 745||1K6TCP1||CLEAN|retired||||5|WPS|8d1ceb07-074b-440a-91f1-2ad9e0f04029|UGrad
+uk02|CSC229|129.128.41.92|Linux|WPS Ubuntu 16.04|regular|dept|tst|512125|Dell OptiPlex 745||DJ6TCP1||CLEAN|retired||||5|WPS|404c8231-fde6-4142-a630-98870ac0954b|UGrad
+uk03|CSC229|129.128.41.93|Linux|WPS Ubuntu 16.04|regular|dept|tst|512140|Dell OptiPlex 745||5J6TPC1||CLEAN|retired||||5|WPS|bf029497-111f-4559-a476-f1c4db9d5c99|UGrad
+uk04|CSC229|129.128.41.94|Linux|WPS Ubuntu 16.04|regular|dept|tst|512145|Dell OptiPlex 745||DK6TCP1||CLEAN|retired||||5|WPS|f00ea501-82b2-4cdb-a4ba-b96a2ff186fb|UGrad
+uk05|CSC229|129.128.41.95|Linux|WPS Ubuntu 16.04|regular|dept|tst|512146|Dell OptiPlex 745||1M6TCP1||CLEAN|retired||||5|WPS|68dfa039-0d25-4c78-9a0b-568037bb20b0|UGrad
+uk06|CSC229|129.128.41.96|Linux|WPS Ubuntu 16.04|regular|dept|tst|512196|Dell OptiPlex 745||DF0WSC1||CLEAN|retired||||5|WPS|5a90b2eb-2cab-40d9-90f2-63ab11b81893|UGrad
+ultratrak||129.128.25.107||||||||||||missing||||5||d4e032ec-2bdf-48ac-bc82-02325a195cfb|last seen in CSC363A
+um00|CAB311|129.128.119.66|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PST||CLEAN|active||||5|WPS|08feca86-d79a-454b-8c1c-da5f29eca53f|Ugrad new 2019-07
+um01|CAB311|129.128.119.67|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PSB||CLEAN|active||||5|WPS|df6200af-45b2-4ad6-ac7d-d317b73da6d4|Ugrad new 2019-07
+um02|CAB311|129.128.119.68|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PT8||CLEAN|active||||5|WPS|e3b61f92-345c-4057-81be-c95866ce3fa5|Ugrad new 2019-07
+um03|CAB311|129.128.119.69|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PT0||CLEAN|active||||5|WPS|fbe0ca9f-cedb-41cd-80cd-756759981d3b|Ugrad new 2019-07
+um04|CAB311|129.128.119.70|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PWR||CLEAN|active||||5|WPS|46c4ef55-4507-453f-abcb-c6e22168afcb|Ugrad new 2019-07
+um05|CAB311|129.128.119.71|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PWK||CLEAN|active||||5|WPS|be4a4be0-4e4d-4d10-8085-12020ad0fa09|Ugrad new 2019-07
+um06|CAB311|129.128.119.72|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PQH||CLEAN|active||||5|WPS|6bb4bd53-53ec-42da-a88e-4afa4db86c4d|Ugrad new 2019-07
+um07|CAB311|129.128.119.73|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PTV||CLEAN|active||||5|WPS|957f88fe-5758-48eb-9a8a-5ea263e9b9fa|Ugrad new 2019-07
+um08|CAB311|129.128.119.74|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PVC||CLEAN|active||||5|WPS|89bfbb29-9bad-41d0-a7f3-6e245dca4eea|Ugrad new 2019-07
+um09|CAB311|129.128.119.75|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PTS||CLEAN|active||||5|WPS|fd9e9c3b-0bb2-48c5-9655-e8e76916cbd9|Ugrad new 2019-07
+um10|CAB311|129.128.119.76|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PQD||CLEAN|active||||5|WPS|fd8fd9f2-e58f-4e12-a2f7-a781b03a8b11|Ugrad new 2019-07
+um11|CAB311|129.128.119.77|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PWD||CLEAN|active||||5|WPS|ed924890-9a6c-4658-bb51-daafb22595dd|Ugrad new 2019-07
+um12|CAB311|129.128.119.78|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PWB||CLEAN|active||||5|WPS|13fb0bc0-c662-45c8-b140-827aa1ef26b0|Ugrad new 2019-07
+um13|CAB311|129.128.119.79|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PTN||CLEAN|active||||5|WPS|2a00e2bf-4586-4de5-92bb-35680ecfa213|Ugrad new 2019-07
+um14|CAB311|129.128.119.80|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PR2||CLEAN|active||||5|WPS|d35c64db-0177-43cc-bc53-05329ce36e06|Ugrad new 2019-07
+um15|CAB311|129.128.119.81|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PVZ||CLEAN|active||||5|WPS|cc58ac04-ea2f-4d6a-852b-065e8aae77a0|Ugrad new 2019-07
+um16|CAB311|129.128.119.82|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PW5||CLEAN|active||||5|WPS|7a1ad2a0-bd81-48a5-a085-65b64a1ad877|Ugrad new 2019-07
+um17|CAB311|129.128.119.83|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PW8||CLEAN|active||||5|WPS|e418457b-2425-4fe6-88ec-545c0a6035f7|Ugrad new 2019-07
+um18|CAB311|129.128.119.84|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PVE||CLEAN|active||||5|WPS|56ba6cbf-6c97-4654-a57e-6862e221f021|Ugrad new 2019-07
+um19|CAB311|129.128.119.85|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PWV||CLEAN|active||||5|WPS|2b176d54-f2d4-402b-b2ec-f777dfef4591|Ugrad new 2019-07
+um20|CAB311|129.128.119.86|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PTW||CLEAN|active||||5|WPS|7d46e6ac-a983-4a93-aa87-e925daa39e95|Ugrad new 2019-07
+um21|CAB311|129.128.119.87|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PVM||CLEAN|active||||5|WPS|3ddea4d2-39dd-4f35-8369-c1e8d0ebb562|Ugrad new 2019-07
+um22|CAB311|129.128.119.88|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PW0||CLEAN|active||||5|WPS|300d7e38-fd8a-43f1-a845-161b0bad76cc|Ugrad new 2019-07
+um23|CAB311|129.128.119.89|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PV7||CLEAN|active||||5|WPS|94eaaa67-cde3-4326-bac7-ef06a7bc9a40|Ugrad new 2019-07
+um24|CAB311|129.128.119.90|Linux|WPS Ubuntu 16.04|regular|dept|WPS|726431|Lenovo M920 TWR CTO||MJ090PSQ||CLEAN|active||||5|WPS|af547f21-b867-457e-b97f-73d492cc7b74|Ugrad new 2019-07
+unis-master|IST VM|129.128.21.31|Linux|Ubuntu 16.04|virtual|||NA|VM|||||active||||5|SA1|70b5c1a9-fbcf-4cc9-9eb6-11bccfed1948|
+unis-slave|IST VM|129.128.21.32|Linux|Ubuntu 16.04|virtual|||NA|VM|||||active||||5|SA1|8b535f87-0dab-4592-8ca2-d0a0ddf14a7e|
+uofa-jay|ATH211|129.128.23.175|Windows|7|regular|zaiane|hasell||||||CLEAN|active||||5||706b51b1-8183-4be7-8893-b9d4a8642591|
+usona1|CSC363?|129.128.25.181|Windows|XP Pro 5.1.2600|regular||pierreb|457529|HP-P4/2.4G-4096||6Y33KZKZ600E||NOP|retired||||5||4c831775-b95e-4778-89ca-2344e907a7a7|historical record
+usona2|CSC363?|129.128.25.182|Windows|XP Pro 5.1.2600|regular||pierreb|457530|HP-P4/2.4G-4096||6Y33KZKZ6???||NOP|retired||||5||015a3723-c3ff-457e-b617-d4e8246e5964|historical record
+usona3|CSC363?|129.128.25.183|Windows|XP Pro 5.1.2600|regular||pierreb|457528|HP-P4/2.4G-4096||6Y33KZKZ6???||NOP|retired||||5||a5e93bed-d057-4aaf-b6bf-762eaef31f90|historical record
+usona4|CSC363?|129.128.25.184|Windows|XP Pro 5.1.2600|regular||pierreb|457527|HP-P4/2.4G-4096||6Y33KZKZ6???||NOP|retired||||5||fa6df3b2-5cd2-495e-9a72-2e27f1f06cc4|historical record
+usona5|CSC363?|129.128.25.185|Linux|Scientific 4.4 (Beryllium)|regular||pierreb|457526|HP-P4/2.4G-4096||6Y33KZKZ6???||NOP|retired||||5||b92ade7c-f58c-419b-ba0c-5b7fd5a876a1|historical record
+usona6|CSC147|129.128.25.186|Windows|XP Pro 5.1.2600|regular|idanis|pierreb|457525|HP-P4/2.4G-4096||6Y33KZKZ600H???||CLEAN|retired|OK|||5||01a81ffe-09d5-47c9-b2e0-441f8abf1066|historical record
+usona7|CSC359|129.128.25.173|Windows|XP Pro|regular||wfb,pierreb|482841|Opteron/250D-4096||ACS05105||CLEAN|retired|OK|||5||52a2e505-1b3b-493a-a73c-89d54a402e56|historical record
+usona8|CSC359|129.128.25.117|Windows|XP Pro|regular||wfb,pierreb|484840|Opteron/250D-4096||ACS05104||CLEAN|retired|OK|||5||ca6d2e10-11b2-4b1f-898d-22bd8cde4ced|historical record
+usona9|CSC363?|129.128.25.216|Linux|Ubuntu 10.04 LTS|regular||pierreb||Opteron/270D-4096||S2S057197||NOP|retired||||5||d91f674a-38c1-437b-9548-9f8d91f81987|historical record
+usona10|CSC147||Linux|Ubuntu 10.04 LTS|regular|mhamilton|pierreb|495992|Opteron/270D-4096||S2S057198||CLEAN|retired||||5||2be93980-23df-4120-ab8b-c17883885c48|User needs CUDA and bleeding edge NVIDIA drivers, on  159 so he can sudo
+usona11|CSC363?||Windows|XP Pro 5.1.2600|regular||pierreb||Toshiba Satellite 5200||63015776P||NOP|retired||||5||a9166f61-541a-4bc1-aa64-d736b9b628e5|historical record
+usona12|CSC363?||Linux|Scientific 4.3 (Beryllium)|regular||pierreb||Acer Aspire||LXAA705104606067B1EM14||NOP|retired||||5||e905384f-a96e-4ddc-9973-a3fae332c991|historical record
+utikuma||129.128.29.231|||||||||||NA|retired||T||5||994d5e66-de43-4763-82a5-f7d6555cfd1f|no machine in rack
+valhalla|CSC353|129.128.25.66|Linux|Fedora 13|regular|zichen2|jag|473445|Dell P4/3.2G-512||6NFWT41||NOP|active||||5||e7b2f8f4-6774-4ac8-8a02-62b2f54f405f|Fedora 13 - different root password
+valleyview|CSC259B1?|129.128.23.118|||unknown||hoover,stroulia||Polycom SP 128||03C655||DIRTY|missing||||5||7970ff4f-56e3-42e0-bb1c-615611b2ca35|Rene - please check
+vanrena|CSC231|129.128.22.70|Linux|Rescue|regular|dept|tst|538412|Opteron/DP2376-32768||SM45510||CLEAN|retired|||B|5||2131df8e-945c-4de4-b3ea-eb0f4450756f|to be reused or retired
+vanzac|CSC231|129.128.22.58|VMware ESX|3.5.0 Update 5|regular|dept|tst|528930|Opteron/DP250-8192||SM39094||CLEAN|retired|||B|5||bc18efc3-a63b-48ed-8b71-ed6f1178dacf|TST managed server, Reinstalled
+veteran||129.128.4.79||||||||||||retired||||5||c74643a4-9370-4a49-a1a2-5fa01b428cdf|
+villeneuve|CSC363?|129.128.25.205|||unknown|Gtwy|||AMD64/3700-1024||RH2535110404||NOP|missing||||5||efae1117-42b4-4792-a321-3b3d208f3cfb|On NAT
+viking|ATH2-30|129.128.184.56|Linux|Ubuntu 18.04|regular|chuang8|chuang8|no-tag|ASUS||03000200-0400-0500-0006-000700080009||CLEAN|active|||5|||4696acbf-18f6-44b8-8e6c-ead2dd8dca8c|SRIT
+vilna||129.128.25.149||||||||||||retired||||5||88d3cf80-5a34-4a53-83ee-09daebbae197|
+vimy|CSC251A|129.128.22.59|Linux|CentOS|regular||li|no-tag|Xeon X5550/2.66GHz-49152||SM48986||CLEAN|missing|OK|||5||628749e7-c49c-426f-b74e-c00058811f70|Steve handled
+visitor4b|ATH329|129.128.4.223|Linux|WPS Ubuntu 16.04|regular||dept|545608|Dell OptiPlex 990||5117JS1||CLEAN|active|OK|||5||1efa3db0-67fd-42a2-a65f-3d4cc36878d9|
+visitor4c|ATH329|129.128.4.224|Linux|WPS Ubuntu 16.04|regular||dept|545583|Dell OptiPlex 990||5129JS1||CLEAN|active|OK|||5||0cdf8045-7a55-4b32-bf28-3bbda3852c62|
+voldemort|CSC211|129.128.184.90|Linux|Ubuntu 12.04|regular|burch|burch,bowling|586215|Dell Optiplex 9010 i7-3770@3.4GHz-16384||C14R9Y1||NOP|active||||5||715e8cd3-3606-4f03-b919-ec6f472e7a2a|User Administered
+vulcan|ATH219|129.128.23.148|Windows|7|regular|dept|tst||||||CLEAN|retired||||5||9cb530a9-79d3-46b9-8336-707f5767a3e0|
+wabasca|CSC211|129.128.184.69|Linux|Ubuntu 16.04|regular|rgreiner|zaiane|704937|Dell Precision 5810 with Titan XP||3LK8HH2||NOP|active||||5||c30970d2-86a1-4e13-96f1-0e374b50cdec|
+wam1|CSC301|129.128.25.135|Linux|Ubuntu 14|regular||jag||Quad/1024||||CLEAN|active|OK|||5||ca5615cd-20b5-46d7-94f3-41b307b73c4b|
+wam2|CSC301|129.128.25.136|Linux|Ubuntu 14|regular||jag||Quad/3072||||CLEAN|active|OK|||5||7d95fd41-f504-49a8-95ee-db6a0aa99059|
+wanham|CSC363A?|129.128.25.222|Windows|98|regular||wfb,pierreb|363128|PII/266-128||A1171||NOP|missing||||5||bd096261-a1d4-4d22-87f7-55a761c3e93b|On NAT
+wappau|CSC301|129.128.25.121|||regular||jag||x86-yyy||K43012011GA3TH0||NOP|missing||||5||9fa50afe-fea5-4d73-9207-b15485e94dcc|on private NAT for robot work
+warburg|IST VM|129.128.21.205|Linux|Ubuntu 16.04|virtual|||NA|VM||||CLEAN|active||||5|SA1|1d733aae-1f21-4be7-8f24-395863b64ef2|RHN# 1018073815
+warner|ATH218|129.128.23.10|Windows|7|regular|gordon||464689|Dell||||CLEAN|active|OK|||5||4961f56f-44d5-4271-9376-11e94c72d313|office machine CSC 218
+warspite|CSC225|129.128.23.5|Windows|7|regular||lin,anup|no-tag|XPS,Core2/Q6600-3072||9H80YG1||CLEAN|active|OK|||5||83464f28-0300-4464-881b-b572d8845abb|
+wasel|ATH220|129.128.28.253||||||||||||active||||5||5987ced8-7af6-48af-99a1-400fd535fca7|XBone
+waskatenau|ATH204|129.128.29.243|||regular|dept|tst||||||CLEAN|retired||||5||6f1010c2-5cc7-47f1-b4f6-0d53a89c0563|
+watino|CSC353|129.128.25.175|Linux|Fedora 13|regular|zichen2|jag|444197|Xeon X350qc-4096||serial-no||CLEAN|active||||5||050befc6-fc71-4ced-b618-e862fe1e56d3|Fedora 13 - different root password
+waugh||129.128.28.251||||||||||||spare||||5||7d785fbf-9ee0-46e3-8eff-6dda8a21a907|
+wawa|CSC353|129.128.25.212|Linux|Ubuntu 14|regular|zichen2|jag|512167|PentD830/3GHz-3072||36W6L81||CLEAN|active|OK|||5||12ed8c25-4b2e-4cfd-9856-d2c842aa73b3|
+web1|CSC231|129.128.21.66|Linux|Slackware 12.2.0|regular|dept|tst||Dell PE R200 Xeon-x3210/2.13G-4096||B0PFWG1||CLEAN|retired|||B|5|SA1|a0b4d1cd-89a5-4322-ab3a-07de8a3db9a3|TST managed server was lutose1
+web2|CSC231|129.128.21.67|Linux|Slackware 12.2.0|regular|dept|tst||Dell PE R200 Xeon-x3210/2.13G-4096||C0PFWG1||CLEAN|retired|||B|5|SA1|2f6ef1c3-0f70-42a6-9c79-a0b878b13311|TST managed server, was lutose2
+webapps-dev|launch-dev|129.128.22.147|Linux|Slackware 12.2.0|alias|dept|gordon||||||CLEAN|retired||||5||5948f650-b1a5-4260-8464-31f9a92f770b|
+webapps|IST VM|129.128.21.73|Linux|Ubuntu 16.04|||IApps|NA|VM||||CLEAN|active||||5|SA1|f4c8d300-c84d-4262-b027-08cdb071750d|
+webdocs-4|IST VM|129.128.21.34|Linux|RHEL Server 5.11|virtual|NA|VM||||||CLEAN|active||||5|SA1|b276b0c6-2c24-44c5-a456-95f9028355b5|RHN# 1018405571, webdocs data store
+webdocs-dev|IST VM|129.128.21.203|Linux|CentOS 7.4|virtual|dept|tst|NA|VM||||CLEAN|active||||5|SA1|8f18885f-2451-4784-8548-5262198b344f|for webcode (webdocs) development by users
+webdocs-u|webdocs-4|129.128.21.34|Linux|CentOS 7.4|alias||VM||||||CLEAN|active||||5||3d52fc73-19d9-4cd1-adfb-3c6c36a3f33a|legacy CNAME for accessing webdocs-4 on ugrad side
+webdocs|IST VM|129.128.243.190|Linux|CentOS 7.4|virtual|NA|VM||||||CLEAN|active||M||5|SA1|4f39a605-bd73-42ce-bc6f-072cb97a1022|RHN# 1019100174
+webdocs-test|czar|129.128.243.72|Linux|WPS Ubuntu 16.04|virtual|bmw|||||||CLEAN|active|OK|||5||0304691b-cd98-435a-b37a-723c55e847ae|SRIT new webdocs testing
+webiou|ATH215|129.128.184.99|||unknown||smir||Dell R420||||NOP|active||||||99d63358-eaa1-4fa7-bdda-6931221c1221|
+westlock|CSC363|129.128.25.77|Windows|95|regular||pierreb,wfb|401286|Description||serial-no||NOP|missing||||5||03601669-a520-4fb9-979a-e14e5b3b7e0a|On NAT, CSC363 is last known location
+whitecourt|CSC315|129.128.25.85|MacOS|10.6.8|regular|charles|charles,rod|438799|iMac4,1 Intel Core Duo 2GHz-2048||QP619036V4Q|503210|CLEAN|active||||5|SA1|111ad243-264f-42b8-b677-63aa7481411d|For printing administration and monitoring
+whitegull|CSC333|129.128.25.40|Windows|XP|regular||dept||IBM P4/1.8G-256||23N0279||CLEAN|active|OK|||5||49e98747-7d09-4934-a2d9-7cfa770f1d01|
+wildhay|CSC353|129.128.25.35|Linux|Ubuntu 12.04|regular|zichen2|jag||AMD64/3800-2048||HB5103102B||CLEAN|retired||||5||37aa377f-771e-4e1f-b928-9591601b7a95|
+willingdon|GSB175|129.128.21.244|Linux|WPS Ubuntu 16.04|regular||mmueller||Xeon E5420QC/2.5G-8192||SM38052||CLEAN|active|||F14|5|SRIT|a3dedf14-df70-4b8f-9c44-7b2fd3149fe4|same as for muriel
+willmore||129.128.25.139||||||||||||retired||||5||9e3deaba-874f-434c-bf6c-ec3e03b3b457|
+willow-lk||129.128.25.125||||||||||||retired||||5||db821883-58a1-42a3-930d-d1bba074d41f|
+winagami|CSC139|129.128.29.228|Linux|openSUSE 13.1|regular|dept|tst|510234|Sun V40z||XG060362357||CLEAN|retired|||A|5||65ec635e-9ebf-42f5-adb0-ca51f92ae52f|was gwynne in a previous life
+www-dev|launch-dev|129.128.22.148|Linux|Slackware 12.2.0|alias|dept|gordon||||||CLEAN|retired||||5||9c6e155f-2763-45c5-b5f4-d18b7ab0aacf|
+yeoford|ATH413|129.128.4.25|Windows|7|regular|yang|yang|528947|Dell T7400 Dual Xeon E5405@2.6GHz-11GB||4DS0JF1||CLEAN|active|OK|||5||f7a531ef-e0d0-4d37-b9b8-1b1c37f2558c|
+ypmaster|IST VM|129.128.21.8|Linux|Ubuntu 16.04|virtual|||NA|VM||||CLEAN|active||||5|SA1|dd73d571-1603-4ca0-ac63-a1d05399a415|research yp master
+ypslave1|IST VM|129.128.21.9|Linux|Ubuntu 16.04|virtual|||NA|VM||||CLEAN|active||||5|SA1|58b2df10-7885-4d60-9f6e-65d1d82a9916|research yp slave
+ypslave2|CSC231||Linux|Slackware 12.2.0|regular|dept|tst||Dell PE 650||||CLEAN|retired|||A|5|SA1|a2c8f853-7cda-4329-9459-eecf2c237d22|TST managed server
+zappa|GSB175|129.128.243.9|Linux|Ubuntu 18.04 LTS|regular|yannis|yannis||HP ProLiant ML350 G10 877622-001||MXQ8470315||CLEAN|active|||F16|5|SRIT|91bba06b-66c1-47c3-8580-e9a87f9a527f|
+zeus|CSC301|129.128.25.127|Linux|Ubuntu 12.04|regular|jag|jag|543354|Barrett WAM Robot Arm 7DOF, Geode Integrated Processor (500MHz, 32-bit), 1 GB RAM, 8 GB HDD||||NOP|active||||5||1582edb1-bd43-4f7a-a56a-1844351c2aea|Robotic Arm
+zhang-ptr|ATH407|129.128.4.18|||printer|zhang|zhang|603723|HP LJ M402n||PHBHC06421||CLEAN|active||||5||854da464-ed31-4a2b-a970-a015828a6565|Printer
+|ATH224|129.128.184.70|||printer|ath224|tst|360955|HP LJ 4000N||USEK031082||CLEAN|missing||||5||c8151192-213a-4da5-a710-44d30ec18deb|Was prn-ww1, the printer for WildWest network.
+|ATH326||||printer|ath326|tst|438958|HP LJ8150dn||CNGKC67506||CLEAN|retired||||5||3d4f96e9-8e08-4b9d-83a7-121e9906548a|was habay
+|ATH338?|129.128.4.91|MacOS|10.3|regular|bulitko|bulitko||PowerBook C2D||W871104SW0L||DIRTY|missing||||5||d34f6bb9-bf1c-44a9-8eea-3249f2b89323|Was priam.
+|ATH339||MacOS|10.5.8|regular|bowling|bowling|539107|imac core2duo/2.8-2048||W88117EKZE4||NA|retired|OK|||5||a777a2db-91c1-4293-a044-4768d2ad66c7|spare, was wolf-crk
+|ATH349||Linux|Ubuntu 14.04|regular|holte|holte|456687|AMD/XP3000-2048||s2s-58398||CLEAN|retired|OK|||5||5457d06b-c8d0-41ce-aa53-07fc90cf3c55|Stopped booting
+|ATH354||Linux|Ubuntu 14.04|regular|you|you|509954|AMD Opteron/175 2.2GHz-3072||ACS05435||CLEAN|retired||||5||9768b7a5-d98d-4c3d-a5c8-0768d3ef7956|Was Lafond
+|ATH403||Linux|Ubuntu 12.04|regular||mreza|512204|AMDAthlon64/3800-2048||ACS05773||CLEAN|retired||||5||e2a6cd28-3263-4a92-89e3-a98c07375b5b|machine formerly known as worsley
+|ATH430|129.128.25.235|Linux|Ubuntu 14.04|regular||mn|no-tag|Opti/E8400-4096||2NTPWH1||CLEAN|retired||||5||db68ab50-13c0-4b0c-9855-58cacd4a18fe|Was drumheller
+|BioSciM330||Windows|10|regular||dwishart||Dell Vostro 460 i5-2400@3.1GHz-8192||1L1GDP1||NOP|missing||||5||ed22be6c-2177-48b9-9c2c-8a02280c8d75|Was kelsey.
+|CSC205|129.128.23.107|Linux|Ubuntu 14.04|regular||hasell,zaiane|543291|Q9400/2.66-8192||4FS5WK1||NA|retired||||5||03714453-0e5b-4baa-86bf-9d130b095bcf|was ardrossan
+|CSC205|129.128.23.149|Linux|Ubuntu 14.04|regular||zaiane||Dell Vostro 430 i7 860@2.66GHz-8192||9CQPPL1||NA|spare||||5||84502444-065c-4d1b-964f-b5e629e2eacb| Was Fitzgerald. Sitting in CSC205 (AMII Lab)
+|CSC205||Linux|Ubuntu|regular||hasell,zaiane|549826|Dell Vos V470-8GB||FMVMVV1||NOP|spare||||5||6ae48852-8951-4222-bc4b-a7fc2b1c70af|Was aicml1
+|CSC211||||regular||nolan||AMD-MP2400-1024||0PS?????||NOP|missing||||5||2e7f9ee9-4dac-414d-b6d4-c346fc866da3|was kitscoty 129.128.184.22
+|CSC211||Windows|8 (64-bit)|regular||bulitko|513622|Dell XPS600/p4/3.4-2048||FYKXW81||CLEAN|missing|OK|||5||747f6606-34ae-4b46-b8ed-a4d2487552b6|being surplussed; old boyne?
+|CSC211||Linux|Ubuntu 14.04|regular|holte|hasell,zaiane|no-tag|Optiplex 990, Core i5 2500 @ 3.3 GHz, 16 GB RAM, 500 GB HDD||J3C2HS1||CLEAN|spare||||5||3e9eea47-511d-4181-b330-619ed2848893|Was galileo
+|CSC211||MacOS| MocOS 10.5|regular|||513620|PowerMac G5||G84456VPQPR||CLEAN|spare|OK|||5||164169d2-e4ae-4172-9914-933ddd783b77|was reita-lake 129.128.159.244
+|CSC225|129.128.23.18|Linux|Ubuntu 10.04 LTS|regular||lin,anup|438243|Dell P4/1.6G-1024||DTRQB11||NOP|retired|OK|||5||2785abdc-57d3-492d-a276-3b5db0e01c59|Was vermillion
+|CSC225||Windows|XP Pro 5.1.2600|regular||lin,anup|no-tag|AM2 Athlon64/3800-1024||ACS05985||CLEAN|retired|OK|||5||1d88b188-0a84-45af-8535-e1eda3d586aa|Was peoria
+|CSC225|129.128.23.81|Windows|XP Pro 5.1.2600|regular||lin,anup|510085|AM2 Athlon64/3800-1024||ACS05984||CLEAN|retired|OK|||5||23f4dd61-2370-4aab-b1cf-5a5c52f5fc61|Was meander
+|CSC225||dual-boot|Linux,XP Pro 5.1.2600|regular||lin,anup|510061|Opteron/DC165-2048||ACS05735||CLEAN|surplus|OK|||5||1a6f6925-43f6-4a68-b92e-dc7426312f18|Currently has WinXP installed. Half disk left free for Linux. Was barich.
+|CSC225|129.128.23.242|Windows|XP Pro 5.1.2600|regular||lin,anup|503218|P4/630-2048||ACS05693||CLEAN|retired|OK|||5||e8d1d09f-b239-4dc5-ba2b-2ebc9ae1eed3|Was berrymoor
+|CSC225||Linux|Ubuntu 12.04|regular||Anup|512177|AMD64/3700-3072||ACS05692||CLEAN|retired|OK|||5||ae93a5be-9b99-41fa-ae9c-9ea35f79d128|Was ipiatik
+|CSC231||Linux|RHEL Server 5.11|regular|dept|tst||Dell PE 860 E2160/1.8GHz-1024||1Q58ZD1||CLEAN|retired|||A|5|SA1|f0522472-bb7a-4fe1-a9e9-f320356fe795|formerly vpn, RHN# 1018106752
+|CSC231||MacOS|10.6.5 Server|regular|dept|tst||MacMini 4,1 C2D@2.66 8GB||C07CV1TDDD6K||CLEAN|retired||T|A|5|SA1|9f8b748c-fc4f-4277-aa78-41ad1a8f4a44|formerly serv-admin-test, TST managed server, Admin zone server testing
+|CSC231||MacOS|10.6.5 Server|regular|dept|tst||MacMini 4,1 C2D@2.66 8GB||C07CV1TDDD6K||CLEAN|spare||T|A|5|SA1|70237966-bace-4998-be14-1957906c34fc|formerly serv-admin, TST managed server, Admin zone server
+|CSC231||MacOS|10.6.5 Server|regular|dept|tst||Mac X-server||||CLEAN|spare||T||5|SA1|59dbbeea-ce36-4abe-98cd-68030e4e2716|formerly grouard, TST managed server, samba server
+|CSC231||MacOS|10.6.8 Server|regular|dept|tst||Mac tower||||CLEAN|spare||T||5|SA1|9c50213c-61d4-4300-8499-067e854db789|formerly ma-me-o, Terry McGuire (SA1) is keeping as a spare for serv-admin
+|CSC251||Linux|Scientific 4.4 (Beryllium)|regular||amaral,duane,paullu,jonathan|455598|AMD-XP/2400-1024||PS130492||NA|retired||||5||b79f500e-d3b2-4d92-937c-070b2271a803|surplus, was padstow
+|CSC251||Windows|2000 Pro 5.0.2195|regular||amaral,duane,paullu,jonathan|513781|AMD64/3500-2048||ACS05304||NA|retired|OK|||5||8389e8a8-db39-42b5-8b80-454178fecf3c|surplus, was lisburn
+|CSC251||Windows|XP Pro 5.1.2600|regular||amaral,duane,paullu,jonathan|455599|AMD-XP/2400-1536||PS130493||NA|retired|OK|||5||4ac7de5b-e020-448d-9c43-4d6cad5ab118|surplus, was sunset
+|CSC251||Windows|XP Pro 5.1.2600|regular||amaral,duane,paullu,jonathan|513780|AMD64/3500-2048||ACS05303||NA|retired|OK|||5||23bc2197-6cdd-418f-b431-d92a76e79d7e|surplus, was mewatha
+|CSC251||Windows|XP Pro|regular||amaral,duane,paullu,jonathan|513783|AMD64/3500-2048||ACS05305||NA|retired|OK|||5||e3a94142-2bf2-4c26-af0b-a3a35e6a84c8|surplus, was sunnybrook
+|CSC251||Windows|XP|regular||amaral,duane,paullu,jonathan|513782|AMD64/3500-1024||ACS05315||NA|retired|OK|||5||c0437e3c-9e38-44a3-8db2-5d34f8742a8a|surplus, was calais
+|CSC265|129.128.25.75|Windows|XP Pro 5.1.2600|regular||yang|509937|AMD/2214-4096||C600071||CLEAN|missing|OK|||5||d5808c63-b26b-4edc-b82b-f87ef3a4b9e7|Was glendon. Probably surplussed.
+|CSC315A||||||||Opteron/280-8164||ACS05475|||retired||||5||501149b0-04d1-4123-a4a4-0bbd8b109def|was netook 00:e0:81:34:02:9c
+|CSC315A||||||||Core2/5150-8192||G13KMC1||NA|retired||||5||c53a088e-d9cc-422b-9438-ad00ed99c09b|Surplus, was botha14
+|CSC315A|||||||451473|HP-AMD/XP2200-1024||6Y31KWMZP001||NA|retired||||5||c5ebfbf4-036c-4f63-a5df-28153f53793d|Surplus, was fort-kent
+|CSC315A|||||||482450|Dell OptiPlex GX270 P4/2.4-512||4XSLT41||NA|retired||||5||a07ee053-1d7c-4d01-bc0f-ac6544b99cf7|Surplus, was alice-lk
+|CSC315A|||||||427822|Core2 E6850/3GHz-4096||ACS06524||NA|retired||||5||09e04c06-7ff2-49b1-b5e7-44bfced24b11|Parts, was woking, CS251, hardware failure, motherboard or CPU.
+|CSC315A|||||||no-tag|AMD64/4000-2048||ACS05237||NA|retired||||5||447aea93-1c39-4de6-9b38-5e88f50150b1|Surplus, was carrot-crk
+|CSC315A|||||||512173|AMD64/4000-1024||ACS05477||NA|retired||||5||afc47ee9-0d37-4cbb-bcbc-1e2a48989439|Removed from service, was stonyplain, hardware failure, motherboard or CPU.
+|CSC315A||Linux|Ubuntu 12.04|regular||||Dual AMD64/4400DC-3072||||NA|retired||||5||b2871388-6eeb-4788-ba4d-efc0cec233d5|Was adelade
+|CSC315A||||||||AMD/XP3400-2048||ACS05081||NA|retired||||5||a2b20c34-00b8-48b6-b612-b44f2f59aa37|Spare, was edgerton, Surplus, case reused for sheerness
+|CSC315A||||||||Opteron/DP244-2048||ACS04434||NA|retired||||5||b64d2194-acd5-42cb-bc73-82bb95bb1d49|Surplus, was fitzgerald
+|CSC315A|||||||469226|IBM P4H/2.8-1024||KPB1727||NA|retired||||5||6af7bbac-5f7a-4999-b7b6-3956a8a3b5d5|Surplus, was carvel
+|CSC315A|||||||482502|Dell P4/2.4-512||7XSLT41||NA|retired||||5||b3ba0070-902b-4acf-8b85-a183128f2936|Surplus, was saulteaux
+|CSC315A||||||||Compaq P4/1.4-512||6Y26JYFZL054||NA|retired||||5||fec3dd92-dbdd-4f8e-9090-1382ee174016|Surplus, was thickwood
+|CSC315A||||regular||yang||||||NA|retired||||5||47ba06b2-dec8-48b5-a7de-b48acafbf8d6|was goose-lk
+|CSC315A||||regular||jag|473438|AMD/MP2600-2048||ACS04684||NA|retired||||5||69aaf75c-e6ad-4f37-be34-f6af2d7cc513|Surpus, was rodef
+|CSC315A||Windows|XP Pro 5.1.2600|regular||wfb|450862|AMD/2100-1024||PS130471||NA|retired||||5||5a3b651c-4653-49f6-ba13-e3e0cc7da74f|Surplus, was calahoo
+|CSC315A||Windows|XP Pro 5.1.2600|regular||yang|509938|AMD/2214-4096||C600082|||retired||||5||41138a74-0116-4af4-b3f4-eb145d9e746d|was gordondale
+|CSC315A|||||||438963|AMD/MP1800-3072||ACS03321||NA|retired||||5||c4bc1fe9-f0f6-4736-9b02-492cfb6a26c0|Surplus, was chard
+|CSC315A|||||||438786|ACS-AMD/1.4GD-512||ACS03354||NA|retired||||5||085043cf-8677-48e0-a349-ef1c8ed3ed9f|Surplus, was nevis
+|CSC315A|||||||439305|AMD/1800-1024||ACS03336||NA|retired||||5||e89539ec-f033-4772-a3aa-a9150f3affdc|Sent to surplus, was nacmine
+|CSC315A|||||||439302|AMD/XP1800-1280||ACS03335|||retired||||5||b541802a-6368-420a-b094-b070aa3639b7|Sent to surplus, was noseeum
+|CSC315A||||regular||jag||ShuttleXPC P4/3.2-1024||T672K00408D04253||NA|retired||||5||3da02dd7-824e-44a5-961d-aa9cb4a77978|Surplus, was rochfort
+|CSC315A||Linux|Slackware 12.2.0|regular|dept|tst||HP dc7900||CAC91501T1||NA|retired||||5||a0e4bd38-a7e7-4959-ab14-b08977e4c488|Spare, was waskatenau
+|CSC315A||Linux|Slackware 12.2.0|regular||tst||||FW3128218|809e973e||retired||||5||0b02456b-9361-40c8-b70c-980b561d9c6b|Spare, was temp41-5
+|CSC315A|||||||469208|AMD/MP2800-2048||ACS04721||NA|retired||||5||aa7e9c9d-7933-4570-b719-8337cbb1e5df|Surplus, was mcleod, hardware failure motherboard
+|CSC315A|||||||461641|AMD/XP3200-2048||ACS04497||NA|retired||||5||05da27b0-210d-4b93-b16d-4bcd481d37c0|Surplus, was aicml-med
+|CSC315A||Linux|Scientific 5.0 (Boron)|regular||nolan,kondrak|467893|HP P6/2.8GHz-512||USC32807XF||NA|retired||||5||6204c137-84b5-4c77-9998-0f3a78d3773b|surplussed - was calmar
+|CSC315A||MacOS|10.5|regular|||516843|iMac24 Core2/2.4-2048||W87480ENX8A||CLEAN|surplus|OK|||5||98f45905-6ac1-405f-b97a-766d87353d7a|Was therien. Bad HDD.
+|CSC315A||Windows|7|regular||macg|528931|Core 2 Duo E6850@3.00GHz-3072||ACS06599||NA|retired|OK|||5||e59341e1-1900-4b6e-bd77-48f42c0c60e7|was ironwood
+|CSC315A||||printer|||401809|HP LJ4000N||USEF195651||NA|retired||||5||e0d0b970-0ca0-4266-a4f0-20b92b80a252|Surplus, was blackfalds and cs363ptr
+|CSC315A||||regular|Electronics Shop||489247|P4/3.4GHz-1024 DELL OPTIPLEX GX620||7T9RG81||NA|spare||||5||7724ca43-51a1-4563-abb8-efed815c1553|was evb23e
+|CSC315A||||regular|Electronics Shop||489338|P4/3.4GHz-1024 DELL OPTIPLEX GX620||7V9RG81||NA|spare||||5||6545b443-afd5-4ced-a2a4-c0a94ff63b26|
+|CSC315A||||regular|Electronics Shop||489404|P4/3.4GHz-1024 DELL OPTIPLEX GX620||5V9RG81||NA|spare||||5||cdc7527b-f086-4a64-8625-f16d1bde835e|was evb23m
+|CSC315A||||regular|Electronics Shop||489468|P4/3.4GHz-1024 DELL OPTIPLEX GX620||8W9RG81||NA|spare||||5||688c0e7a-d487-46c6-abb9-ba6e5a40d234|
+|CSC315A||||regular||macg|439303|AMD/1800-256||PS110090|||retired||||5||e897a265-8844-49d0-a37b-72fd842b6310|Sent to surplus, was norbuck
+|CSC315A||||||zaiane||AMD/MP2800-2048||ACS04765||NA|retired||||5||d1b9805a-86fd-4c43-ab21-efda2461f62e|Was franchere Surplus? #106047
+|CSC315A|||||||457539|AMD/Sempron/2800-1536||ACS04225|||retired||||5||82279e0c-272b-4e6a-b772-f88ef95994fb|Surplus, was worsley
+|CSC315A|||||||469358|P4/2.26G-1024||ACS03670||NA|retired||||5||9546c171-ad6a-4814-a2d7-7b892c37ce91|Surplus, was lafond
+|CSC315A|||||||469360|AMD/XP3200-2048||ACS04495||NA|retired||||5||d37482af-ec55-40bc-b08b-44621fec3b61|Surplus, was akinsdale
+|CSC315A|||||||497683|AMD64/4400DC-2048||ACS05643||NA|retired||||5||807b4283-1b44-49d1-86d7-fd7c751a7629|Surplus, was alcomdale
+|CSC315A|||||||510083|AMD AM@ X2/4600-2048||ACS06177|||surplus||||5||5b93e3f1-b01c-4e26-9548-16feb004c76e|Was kirriemuir
+|CSC315A|||||||512140|Dell Optiplex 745 Intel Core 2 Duo 6600@2.4GHz-3072||5J6TPC1|||spare||||5||0be7b56c-404e-4a46-a2be-836fb26850ea|MAC 00:19:b9:29:c4:0f IST Computer Lab Spare, was cynthia
+|CSC315A|||||||537347|Athlon64/AM2/4600-2048||ACS05894|||surplus||||5||23ed1dac-c6f8-4f6e-81a0-e5602020dc5f|Was looma
+|CSC315||MacOS|10.10.3|regular|||524173|iMac Core2Duo-2048||W87350Y3ZCT||CLEAN|spare|OK|||5||15a11c22-d43f-4e67-958f-7e7cc395ec80|Was linden.
+|CSC315||Linux|Ubuntu 14.04|regular|dept|dept|513770|Core 2 Duo 6420 @ 1.6 GHz, 2 GB RAM, 160 GB HDD||160041||CLEAN|spare|OK|||5||35e5f4ca-2d75-4afe-9519-eaf9e4e860cf|Was hyacinth.
+|CSC315||Windows|XP Pro 5.1.2600|regular|xinhua2|hasell,zaiane|497682|AMD64/4400DC-2048||ACS05642||CLEAN|spare||||5||8b35bcea-4648-4a06-9569-7895d63bc3c2|Was beauvallon.
+|CSC315||||regular||yuan,mn|537354|Opti/E8400-4096||65J2KH1||CLEAN|retired||||5||6bf04b9f-d825-4ab6-9392-a11da90c6235|Was dalehurst
+|CSC315||Linux|Ubuntu 14.04|regular||stroulia,hzhang3|513796|Core2/E6300/1.8-5120||LKCWDB0||NOP|retired||||5||821e8067-e5d5-4ef7-b616-f66ed08dba06|motherboard failed; was myria
+|CSC315||MacOS|10.5.8|regular|teri|mmueller|482526|Mac G5/2.5GD-2560||G84528XFQPM||NA|retired||||5||9e58a9bd-4fb6-4f79-9a37-face65b20b79|surplus, was mikkwa-rv (from the AI lab)
+|CSC315||MacOS|10.8|regular||bmw||iMac core2duo/2.4-2048||Serial-no||CLEAN|retired||||5||f86829f6-9a8a-4b29-812d-4ae661692d03|Was maybelle. Bad hardware; unstable.
+|CSC315||MacOS|10.10|regular|dept|dept||Mac Core2 duo/2.66-4096||qp9040mzze3||CLEAN|spare||||5||0baf30bb-b702-40e6-b389-f60a15f713a5|Was manola.
+|CSC315||MacOS||regular|||497658|Mac Mini, G4 @ 1.25 GHz, 1 GB RAM, 40 GB HDD|||||retired||||||4aa1ba66-e646-4b1d-bcaf-c57974ee647d|Was evb23c.
+|CSC315||MacOS||regular|||510358|"iMac 24"", 2.16 GHz, 1 GB RAM, 250 GB HDD"||W870701LVGN|||spare||||||8edc8518-de39-47f8-8773-b08c56e77591|
+|CSC315||MacOS||regular|||no-tag|"iMac 20"", 2.66 GHz, 2 GB RAM, 320 GB HDD"||YM8345ZCZE3|||spare||||||27dda12c-b800-49dd-a2c3-0ec79ba86e71|Was wabamun.
+|CSC315||Windows|8.1 Enterprise|regular|yang|yang|528948|Dimension 9200, Core 2 Quad Q6600 2.4 GHz, 4 GB RAM, 500 GB HDD||82JBZD1||CLEAN|retired|OK|||5||6c8993a4-188a-4d65-8c99-b187ce75a98b|Was galahad.
+|CSC329|129.128.25.211|Linux|Ubuntu 12.04|regular||yuan|510034|Dell PE 2950 Xeon/5050x2-4096||19CQWB1||CLEAN|retired|||E|5|SA1|d5fba7ec-4caf-4a34-84f0-a2bd32f374e9|Was dapp5. Decommissioned but not yet powered off (as of Dec 2016), see TASK0138977.
+|CSC329||Linux|RHEL Server 5.11|regular||denilson||Dell PE 1950 Xeon/5148@2.33GHz-4096||D6DJJD1|||retired|||C|5|SA1|d3ab1d3c-bb16-42cd-a908-8469bc873c37|Formerly dechaine. RHN# 1018217572. Decommissioned but not yet powered off. See CHG0016573.
+|CSC329||Linux|RHEL WS 3 (Taroon Update 2)|regular||paullu,duane|474741|Sun V20z Opteron/DP248-2048||XG043057935||NA|missing|||E|5||d2ab40b5-6ae6-48b7-8a27-cc6300ef354d|Powered off; Steve will move and cluster; was botha2
+|CSC329||Linux|RHEL WS 3 (Taroon Update 3)|regular||paullu,duane|474742|Sun V20z Opteron/DP248-2048||XG043057955||NA|missing|||E|5||f279f956-f481-4ccd-9e71-e1bf48f3867f|Powered off; Steve will move and cluster; was botha3
+|CSC329||Linux|RHEL WS 3 (Taroon Update 3)|regular||paullu,duane|474743|Sun V20z Opteron/DP248-2048||XG043057927||NA|missing|||E|5||7cbc5225-82ab-43fc-9340-a0bd4243a960|Powered off; Steve will move and cluster; was botha4
+|CSC329||Linux|Ubuntu 12.04|regular||denilson||SunFire X4200M2/2.8G-8192||0726BD13AB|||retired|||C|5|SA1|b4018199-afe6-477c-acf9-fc8a517b6ee6|Formerly delaney. Decommissioned but not yet powered off. See CHG0016573.
+|CSC329||Linux|Ubuntu 12.04|regular||kondrak||Xeon*2/3.4-2048||ACS04896||CLEAN|retired|||B|5|SA1|72c86c7c-d603-40a4-bca9-d890591b8566|formerly zama-lk, ssh for NLP group only
+|CSC353|129.128.25.55|Windows|XP Pro 5.1.2600|regular|zichen2|jag|448709|AMD/2000-512||ACS03834||CLEAN|retired||||5||31832616-984a-48bc-8f4b-86b3197c2843|Was byemoor
+|serv-admin-test||MacOS|10.6.5 Server|virtual|dept|tst||||||CLEAN|retired|||||SA1|a21a6664-66df-4de2-8d3b-3f07833bb5d0|formerly az-client-test, TST managed server, Admin zone client testing
+|||Windows|XP Pro 5.1.2600|regular||amaral,duane,paullu,jonathan|no-tag|Core2 E6850/3GHz-4096||ACS06598||CLEAN|surplus|OK|||5||2c2acd64-c955-42de-a094-5051ab71aeb3|Surplussed, was lymburn.
+||129.128.23.65|Windows|XP|regular||kenw|453774|IBM P4/2.4-1024||78B1773|A898|CLEAN|surplus|OK|||5||0222e3f4-94d4-48fe-8e82-b36be75b9079|Surplussed, was simonette.
+||129.128.23.90|Windows|XP Pro 5.1.2600|regular|shibani|stroulia,hoover|469218|IBM P4H/2.8-2560||KPB1723||CLEAN|surplus|OK|||5||5c510d21-8c8e-40a3-96f9-6f9fef3fef94|Surplussed, was crossfield.
+||129.128.23.96|Windows|XP Pro 5.1.2600|regular||stroulia,hoover|456684|IBM P4/2.5-1024||KCL3BVH||CLEAN|missing|OK|||5||25406fe1-db47-432d-9986-37316a7ee2f2|Was steen-riv. Probably surplussed.
+||129.128.23.98|Windows|XP|regular|cenkner|bulitko|513621|AMD64/4400DC-2048||ACS05467||CLEAN|surplus|OK|||5||b2c63f9f-e0da-4e88-943f-90ea21befcf0|Surplussed, was compeer.
+||129.128.23.205|Windows|XP Pro 5.1.2600|regular||lin,anup||P4/630-2048||ACS05736||CLEAN|surplus|OK|||5||b0d5a530-cd07-4aea-812a-36fe338e950e|Surplussed, was bretona.
+|||Windows||regular||wfb,pierreb|528109|XPS-420,Q6600-3072||J91LCG1||NOP|surplus||||5||809b3def-2ff7-45a7-9d10-5603b79cdd55|Surplussed, was gunn.
+||129.128.25.74|Windows||regular||wfb|543233|XPS Q6600/2.4-3072||BCQSZF1||NOP|surplus||||5|WPS|2f30e0b9-a5d0-4734-8a49-8b23fae4aa62|Surplussed, was genesee.
+||129.128.25.143|Linux|Ubuntu 12.04|regular||macg|483837|AMD64/4000-2048||ACS05157||CLEAN|surplus||||5||8fc39f4b-780b-4bbf-b874-6c127058a4db|Surplussed, was naughton
+||129.128.25.144|Linux|Ubuntu 12.04|regular||netgroup|482838|AMD64/4000-2048||ACS05156||CLEAN|surplus||||5||09b497bb-4fab-4bf1-a2c7-65f40ace075c|Surplussed, was nestow
+||129.128.25.145|Linux|Ubuntu 12.04|regular||netgroup|482510|AMD64/FX55-2048||ACS04977||CLEAN|surplus||||5||06f4b5a7-73fc-4ee3-9a53-59250abee397|Surplussed, was nisku
+||129.128.25.147|Linux|Ubuntu 12.04|regular||netgroup|489481|AMD64/4000-2048||ACS05373||CLEAN|surplus||||5||d48408ee-071d-440f-a3c0-405b9cf996f4|Surplussed, was nampa
+||129.128.25.150|Linux|Ubuntu 12.04|regular||netgroup|497719|AMD64/4000-2048||ACS05436||CLEAN|surplus|OK|||5||18163ef1-d2e8-413f-9f41-7235fbec15ec|Surplussed, was neerlandia
+||129.128.25.151|Windows|XP Pro 5.1.2600|regular||netgroup|497714|AMD64/4000-2048||ACS05437||CLEAN|surplus|OK|||5||99ce9f5a-9a57-4ed5-8029-01bfd7df29d1|Surplussed, was narraway
+||129.128.29.239|Linux|Ubuntu 14.04|regular||dept||MacPro/2.8G-4096||G881007CXYK||CLEAN|surplus|OK|||5||d706b0c0-f0ed-4d7a-b687-06afd2a15112|Surplussed, was lougheed
+|||Windows|XP Pro 5.1.2600|regular||zaiane|453786|AMD/XP2200-1024||ACS04068||DIRTY|missing||||5||86139d65-26bb-4b85-b449-6bd53aef7a66|formerly acadia-vly, last seen in ATH329?
+|||||regular||hayward|482518|AMD64/3700-2048||ACS04986||CLEAN|surplus||||5||8cc77dcc-e415-4ce8-89bc-94efeac64b46|Was adair-crk. Suspected hardware problems, see INC0066183.
+|||||wildwest||sutton|no-tag|AMD/4200-3072||ABA3CW82317X6||NOP|missing||||5||d244a239-e96c-4c84-8df4-a694781d8283|formerly bellman on wildwest in CSC205, users cannot find
+|||||||||Dell PE 2950 Xeon/5050x2-4096||JBK52C1|||retired||||5|SA1|6e61defd-f392-4935-86cf-647c4c6a6109|formerly foisy, Spare RHN# 1017911470
+||129.128.23.186|||network|bmw|rod||||||CLEAN|surplus|NO|||5||c75e3bef-80a5-495a-9577-c39e7e999fc8|Was shoal-lk. TST managed server, Linksys WebCam.
+||129.128.23.124|Linux|Ubuntu 14.04|regular||hayward|510070|AMD64/3700-2048||ACS04993||CLEAN|surplus||||5||51d00e8b-a67e-45ea-ab51-dc4663d01c5b|Was wabasca.
+|CSC315||Windows|10|regular|alexey|lin,anup|537351|XPS,Core 2/Q6600-3072||CH80YG1||CLEAN|spare|OK|||5||6fd43d40-3de2-4241-bf88-9db5081aba93|Was eckville.
+|ATH452A|129.128.23.126|Windows|7|regular|guana|stroulia||E7400/2.8GHz-4096||ACS07026||CLEAN|retired|OK|||5||bfd8fbd4-3e68-4006-be2e-45d7430ee802|Was theano. Missing and presumed retired.
+|CSC301|129.128.25.156|Linux|Ubuntu 14.04|regular||zhang|no-tag|E8400-4096||HRWV5J1||CLEAN|surplus|OK|||5||10542feb-1890-4178-968b-93a8123717ce|Was rimbey.
+|CSC315|129.128.25.50|Linux|Ubuntu 16.04|regular|rick|rick,rod|509923|AMD Athlon 3500@2.4GHz-4096||ACS06125||CLEAN|surplus||||5||cc3b11c8-9632-4b0d-8cb4-d2c50c6f40c8|Was Syvan-lk- dismantled for parts
+|CSC241|129.128.23.80|Linux|Ubuntu 14.04|regular|burch|jonathan|no-tag|Core2/Q9550-8196||ACS06777||CLEAN|surplus||||5||5c891b19-b9d2-47e6-a401-21191e404c05|was larkspur
+|||Linux|Ubuntu 14.04|regular|dept|dept|528931|Core 2 Duo E6850@3GHz-3072||ACS06599||CLEAN|surplus||||5||3d7c35c9-dbbd-4006-a965-682b537d14da|Was cynthia; msdos partition table
+|||Linux|Ubuntu 14.04|regular|dept|dept|510241|E6600-2048||ACS06091||CLEAN|surplus||||5||09c51ddf-8be6-40ad-8ef5-6067fa755d3f|Was stauffer; msdos partition table
+|ATH403|129.128.23.156|Linux|WPS Ubuntu 14.04|regular||mreza|528141|Dell 755 Intel Core 2 Duo-4096||8N5GWG1||CLEAN|spare||||5||a25c9fd4-a4af-416e-b0ae-de34bd165cae|Was worsley.  Now in shop, spare for cons1-4
+||129.128.29.250|Linux|Slackware 12.2.0|regular|dept|tst|522819|Dell OptiPlex 745||73JQXF1||CLEAN|surplus||T||5|SA1|03a963e4-fa9a-46b5-9c3a-4dc4b4224e00|Was listless
+|CSC315||Windows|XP Pro 5.1.2600|regular||hayward|441388|AMD/1800-768||PS130095||CLEAN|spare|OK|||5||4d6d9397-a91b-436b-816a-bd841fd5b0d3|In electronic shop
+||129.128.29.233|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||5W7TPC1||CLEAN|spare|OK|||5||4a741bc1-749f-4222-9b31-68c87ebe26a8|UGrad wetaskiwin in storage in CSC1-32
+||129.128.29.235|Linux|WPS Ubuntu 16.04|regular|dept|tst||Dell OptiPlex 745||9T7TPC1||CLEAN|surplus|OK|||5||7ce1217c-658f-41a2-9eab-9529f8f82abf|UGrad winfield in storage in CSC 1-32
+|||Linux|WPS Ubuntu 16.04|regular||dept|510083|AMD AM@ X2/4600-2048||ACS06178||CLEAN|surplus|OK|||5||fbfbcc2b-56fd-4fe0-99fa-9ffbdd43890b|Was kearl-lk. Motherboard failed.
+||129.128.23.122|||||||||438770|||surplus||||5||683154f4-39ff-4a1f-829b-66c911f01e02|Was sibbald.
+|||Linux|Ubuntu 14.04|regular||amaral,paullu|586233|||BB0637|||surplus||||5||09f7f8dc-6d36-4e10-9166-79c9b18d28cc|Was la-glace.
+||129.128.23.47|Linux|WPS Ubuntu 16.04|regular||dwishart|588272|Core2-Duo-e7500||c6fvdq1|||surplus||||5||08414d27-5414-461a-9e28-43f0953fb47d|Was coaldale.
+||129.128.23.71|Linux|WPS Ubuntu 16.04|regular||amaral,paullu|586235|||BB0655|||surplus||||5||d789d07a-319e-423b-acec-c12634263587|Was cleardale.
+||129.128.25.140|Linux|WPS Ubuntu 16.04|regular||mn,mallett,user|no-tag|Opti/E8400-4096||3NTPWH1|||surplus||||5||9db06d50-ea10-4dbc-8986-efb9ad9de101|Was decrene.
+|||Linux|WPS Ubuntu 16.04|regular||mn|no-tag|Opti/E8400-4096||8NTPWH1|||surplus||||5||da9ba0cd-3325-46a1-b20d-7c626ff79350|Was delia.
+|CSC315|129.128.4.222|Linux|WPS Ubuntu 16.04|regular||dept|545594|Lenovo M7484 Intel Core 2 Duo E8400 3.0GHz-8192||MJPNX49||CLEAN|spare|OK|||5||f625bdce-6c4b-41e2-8f2b-dd9d5f6c2816|Was visitor4a.
+|||Linux|WPS Ubuntu 16.04|regular|||543327|Q9300/2.5GHz-4096||0ACS06614|||surplus||||5||5f8e996e-ec8b-497c-b37a-3df4945d4941|Was garrington
+|CSC329||Linux|RHEL Server 5.8|regular|dwt,stroulia|stroulia||IBM Power 550 (type-model 8204-E8A)||10113F6||CLEAN|off|OK|||5||8c018814-08a8-4ac4-9cdc-0bf3c053c9fd|was jazz
+|ATH322||||network|yannis|netgroup||Win8-PC||Serial-no||CLEAN|surplus||||5||3e81beb0-bb43-4359-9bb0-0ee5c073b34f|Router. Was namur.
+|CSC353|129.128.159.97|||regular||jag||Ant Opt DC170-2048||L50151||DIRTY|retired||||5||b7a0a279-b8b9-4368-ac67-14d98df060dc|Was whitegoat.
+||129.128.159.127|SunOS|5.10|regular||kenw|467899|SunFire/1.2GHzD-2048||0345AD216D|834D260E|DIRTY|retired|||E|5||a85e0258-6c8d-4daf-bdde-29066d5f30de|Was sundance.
+|CSC329|129.128.159.10|Linux|RHEL AS 3 (Taroon Update 8)|regular||bulitko|452480|AMD/MP2400-3594||ACS03931||DIRTY|retired|||D|5||9fa92f3f-c7c0-4b7f-a5ba-f7103181ea49|Rene - please retire (Jan 31, 2012). Was forestburg.
+|ATH415||MacOS|10.2|regular|jonathan|jonathan||G5/1.8GHz-512||XB3370PXNVR||NA|surplus||||5||4ecb13b3-3fd0-4b94-8637-90dfb2ecfac4|Was maligne-lk.
+|CSC363||Windows||regular||pierreb||Xeonx2||no-serial||DIRTY|retired||||5||ce956a7e-34bd-438d-b359-d60969b1a5a9|Was ag-control.
+920test|CSC329|129.128.41.237|Linux|WPS Ubuntu 16.04|regular|IST R&D|WPS||Lenovo M920||||CLEAN|retired||||5||380382fb-ef80-49a4-bc87-97b6a33da03a|m920 test box
+|CSC243||Linux|WPS Ubuntu 16.04|regular||hasell,zaiane|543295|Q9400/2.66-8192||3FS5WK1||NA|retired||||5||d0c331f5-5265-46f2-91d1-f2adb4dfca7a|Was akinsdale
+|ATH201||Windows|10|regular||ghlin|549755|Dell OptiPlex 990||5119JS1||CLEAN|active||||5||1a9ce7eb-4d70-42c7-b700-34170b236703|Was bonnyville now mcid
