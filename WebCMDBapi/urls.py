@@ -27,4 +27,5 @@ urlpatterns = [
 	path('progress/', views.import_csv_computer, name='import_csv_computer'),
 	path('api/diff', views.diff, name='diff'),
 	path('update_database/', views.update_database, name='update_database'),
+	path('display_result/<uuid:task_id>/', views.display_result, name='display_result'),
 ]

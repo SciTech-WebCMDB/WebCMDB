@@ -1,0 +1,65 @@
+{% extends 'WebCMDBapi/base.html' %}
+{% load rest_framework %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/display_result.css' %}"/>
+<div class="container">
+	{% if not failure %}
+		<div class="row">
+			<div class="modalbox success col-sm-8 col-md-6 col-lg-5 center_v animate">
+				<div class="icon">
+					<span class="glyphicon glyphicon-ok"></span>
+				</div>
+				<!--/.icon-->
+				<h1>Success!</h1>
+				<h4>Database updated.</h4>
+				<p><strong>Result:</strong> {{result}}</p>
+				<p><strong>Duration:</strong> {{time}}</p>
+				<a href="{% url 'WebCMDBapi:index' %}"><button type="button" class="redo btn">Return to Homepage</button></a>
+				<a href="/celery-progress/{{task_id}}"><span class="change">{{task_id}}</span></a>
+			</div>
+			<!--/.success-->
+		</div>
+	<!--/.row-->
+	{% elif failure == "FAILURE" %}
+		<div class="row">
+			<div class="modalbox error col-sm-8 col-md-6 col-lg-5 center_v animate">
+				<div class="icon">
+					<span class="glyphicon glyphicon-remove"></span>
+				</div>
+				<!--/.icon-->
+				<h1>Oh no!</h1>
+				{% if not_found %}
+					<p>Task does not exist.</p>
+				{% else %}
+					<p>Oops! Something went wrong.</p>
+					<p>Please email the Admin: scitech@ualberta<br>with the following task id</br</p>
+					<a href="/celery-progress/{{task_id}}"><p><strong>{{task_id}}</strong></p></a>
+				{% endif %}		
+				<a href="{% url 'WebCMDBapi:index' %}"><button type="button" class="redo btn">Return to Homepage</button></a>
+				<span class="change">Sorry for your inconvenience.</span>
+			</div>
+			<!--/.success-->
+		</div>
+	<!--/.row-->
+	{% elif failure == "LOADING" %}
+		<div class="row">
+			<div class="modalbox warning col-sm-8 col-md-6 col-lg-5 center_v animate">
+				<div class="icon">
+					<span class="glyphicon glyphicon-refresh"></span>
+				</div>
+				<!--/.icon-->
+				<h1>Hmm...</h1>
+				<p>Task might be loading.</p>
+				<p>If you feel this is wrong,</p>
+				<p>Please email the Admin: scitech@ualberta<br>with the following task id</br</p>
+				<p><strong>{{task_id}}</strong></p>			
+				<a href="{% url 'WebCMDBapi:index' %}"><button type="button" class="redo btn">Return to Homepage</button></a>
+				<span class="change">Sorry for your inconvenience.</span>
+			</div>
+			<!--/.success-->
+	</div>
+	{% endif %}
+</div>
+<!--/.container-->
+{% endblock %}

@@ -7,7 +7,8 @@ from rest_framework.decorators import api_view, renderer_classes
 
 from .serializers import ComputerSerializer, ServerSerializer, SearchSerializer
 from .models import Computer, Server
-from .tasks import import_csv_computer_task
+from django_celery_results.models import TaskResult
+from .tasks import import_csv_computer_task, update_index_task
 
 from drf_haystack.generics import HaystackGenericAPIView
 from haystack.query import SearchQuerySet
@@ -19,6 +20,7 @@ from subprocess import Popen, PIPE, STDOUT
 from csv_diff import load_csv, compare
 
 from django.core.management import call_command
+from django.views.decorators.csrf import csrf_exempt
 
 # from celery import shared_task
 # from celery_progress.backend import ProgressRecorder
@@ -64,32 +66,38 @@ class AllSearchGeneric(HaystackGenericAPIView):
 		elif len(uuid_list) == 0 and len(queryset) == 1:
 			machine = queryset[0]
 			if machine.model_name == "computer":
-				return redirect(f"/computer_detail/{str(machine.object.id)}/")
+				if request.get(f"http://localhost:8000/api/computer_detail/{str(machine.object.id)}/").status_code == 200:
+					return redirect(f"/computer_detail/{str(machine.object.id)}/")
+				return Response({"message": "no machine found."}, status=status.HTTP_404_NOT_FOUND)
 			elif machine.model_name == "server":
-				return redirect(f"/server_detail/{str(machine.object.id)}/")
+				if request.get(f"http://localhost:8000/api/server_detail/{str(machine.object.id)}/").status_code == 200:
+					return redirect(f"/server_detail/{str(machine.object.id)}/")
+				return Response({"message": "no machine found."}, status=status.HTTP_404_NOT_FOUND)
 		elif len(uuid_list) == 0 and len(queryset) == 0:
 			return Response({"message": "no machine found."}, status=status.HTTP_404_NOT_FOUND)
-	
+
+		content = []
 		if self.request.path_info.startswith('/api/'):
-			content = []
 			for x in queryset:
-				if x.model_name == "computer":
-					content.append(
-						{
-							"type": "computer",
-							"detail": ComputerSerializer(instance=x.object).data,
-						}
-					)
-				elif x.model_name == "server":
-					content.append(
-						{
-							"type": "server",
-							"detail": ServerSerializer(instance=x.object).data,
-						}
-					)
+				if x.object:
+					if x.model_name == "computer":
+						content.append(
+							{
+								"type": "computer",
+								"detail": ComputerSerializer(instance=x.object).data,
+							}
+						)
+					elif x.model_name == "server":
+						content.append(
+							{
+								"type": "server",
+								"detail": ServerSerializer(instance=x.object).data,
+							}
+						)
 			return JsonResponse(content, safe=False)
 		else:
-			return Response({'machines': queryset, 'uuid_list': uuid_list})
+			content = [x for x in queryset if x.object]
+			return Response({'machines': content, 'uuid_list': uuid_list})
 		#return HTML render here
 
 class ComputerSearchGeneric(generics.ListAPIView):
@@ -171,13 +179,13 @@ class ComputerDetailAPIView(APIView):
 			if not serializer.is_valid():
 				return Response({'serializer': serializer, 'computer': computer})
 			serializer.save()
-			call_command('update_index', '--remove')
+			result = update_index_task.delay()
 			return redirect('WebCMDBapi:computers')
 		else:
 			serializer = ComputerSerializer(data=request.data)
 			if serializer.is_valid():
 				computer = serializer.save()
-				call_command('update_index', '--remove')
+				result = update_index_task.delay()
 				return redirect('WebCMDBapi:computer_detail', pk=computer.pk)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -204,13 +212,13 @@ class ServerDetailAPIView(APIView):
 			if not serializer.is_valid():
 				return Response({'serializer': serializer, 'server': server})
 			serializer.save()
-			call_command('update_index', '--remove')
+			result = update_index_task.delay()
 			return redirect('WebCMDBapi:servers')
 		else:
 			serializer = ServerSerializer(data=request.data)
 			if serializer.is_valid():
 				server = serializer.save()
-				call_command('update_index', '--remove')
+				result = update_index_task.delay()
 				return redirect('WebCMDBapi:server_detail', pk=server.pk)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -219,12 +227,12 @@ def delete(request, pk):
 	if 'computer' in request.path_info:
 		computer = get_object_or_404(Computer, pk=pk)
 		computer.delete()
-		call_command('update_index', '--remove')
+		result = update_index_task.delay()
 		return Response(status=status.HTTP_204_NO_CONTENT)
 	elif 'server' in request.path_info:
 		server = get_object_or_404(Server, pk=pk)
 		server.delete()
-		call_command('update_index', '--remove')
+		result = update_index_task.delay()
 		return Response(status=status.HTTP_204_NO_CONTENT)
 
 def upload(request):
@@ -273,12 +281,14 @@ def diff(request):
 			"summary": diff["summary"],
 			"diff": diff,
 		}
+		for machine in json_data["diff"]["changed"]:
+			machine["hostname"] = Computer.objects.get(id=machine["key"]).hostname
 
 		return JsonResponse(json_data, safe=False)
 
 def database_to_csv():
 	machines = Computer.objects.all()
-	with open('WebCMDBapi/data/machines.csv', 'w') as csv_file:
+	with open('WebCMDBapi/data/machines/machines.csv', 'w') as csv_file:
 		csv_writer = csv.writer(csv_file, delimiter="|")
 		csv_writer.writerow(['1 NAME', '2 ROOM', '3 IP', '4 OS', '5 OS version', '6 CATEGORY', '7 OWNER', '8 AUTHORITY', '9 BARCODE', '10 DESCRIPTION', '11 SPARE1', '12 SERIAL NUMBER', '13 HOSTID', '14 HOST STATUS', '15 INVENTORY STATUS', '16 FIREWALL', '17 TRUSTLEVEL', '18 RACKINFO', '19 POWER UP', '20 SUPPORT TEAM', '21 UUID', '22 COMMENTS'])
 		for machine in machines:
@@ -310,53 +320,42 @@ def database_to_csv():
 				temp[2] = ""
 			csv_writer.writerow(temp)
 
+@csrf_exempt
 def update_database(request):
-	pass #TODO
+	if request.method == "POST":
+		Computer.objects.all().delete()
+		with open('WebCMDBapi/bash/machines/machines_tri.csv', 'r') as csv_file:
+			data = list(csv.reader(csv_file, delimiter="|"))
+			result = import_csv_computer_task.delay(data, True)
+			return render(request, 'WebCMDBapi/display_progress.html', context={'task_id': result.task_id})
 
-#-------------------------------------------------------------------------------------------#
-#                         THIS DOESNT USE CELERY - FOR BACKUP ONLY                          #
-#-------------------------------------------------------------------------------------------#
-# def import_csv_computer(request):
-# 	# You try to get the machine, if exists, update
-# 	# Else create.
-# 	# AKA Overwrite
-# 	template = 'upload.html'
-# 	if request.method == 'GET':
-# 		return render(request, template, {})
-# 	elif request.method == 'POST':
-# 		csv_file = TextIOWrapper(request.FILES['file'].file, encoding=request.encoding)
-# 		data = csv.reader(csv_file)
-# 		for row in data:
-# 			if str(row[0]) == '':
-# 				# I do not deal with empty hostname computer right now.
-# 				pass
-# 			else:
-# 				computer, created = Computer.objects.get_or_create(
-# 					hostname = str(row[0]),
-# 				)
-# 				if 'overwrite' in request.POST:
-# 					computer.location = str(row[1])
-# 					computer.ipv4 = str(row[2])
-# 					computer.ipv6 = str(row[3])
-# 					computer.os = str(row[4])
-# 					computer.physical_virtual = str(row[5])
-# 					computer.owner = str(row[6])
-# 					computer.administrator = str(row[7])
-# 					computer.uofa_tag_number = str(row[8])
-# 					computer.make_model = str(row[9])
-# 					computer.cpu = str(row[10])
-# 					computer.ram = str(row[11])
-# 					computer.storage = str(row[12])
-# 					computer.gpu = str(row[13])
-# 					computer.serial_number = str(row[14])
-# 					computer.status = str(row[15]).upper()
-# 					computer.rack = str(row[16]),
-# 					computer.scitech_access = str(row[17])
-# 					computer.power_up_priority = str(row[18])
-# 					computer.support_team = str(row[19])
-# 					computer.department = str(row[20])
-# 					computer.comments = str(row[21])
-			
-# 				computer.save()
-# 		return redirect('WebCMDBapi:computers')
-
+def display_result(request, task_id):
+	try:
+		task = TaskResult.objects.get(task_id=task_id)
+		if task.status == "SUCCESS":
+			context = {
+				'task_id': task_id,
+				'result': task.result,
+				'time': task.date_done - task.date_created,
+			}
+			return render(request, 'WebCMDBapi/display_result.html', context)
+		elif task.status == "FAILURE":
+			context = {
+				'task_id': task_id,
+				'failure': "FAILURE",
+			}
+			return render(request, 'WebCMDBapi/display_result.html', context)
+		else:
+			context = {
+				'task_id': task_id,
+				'failure': "LOADING",
+			}
+			return render(request, 'WebCMDBapi/display_result.html', context)
+	except Exception as e:
+		print(e)
+		context = {
+			'task_id': task_id,
+			'failure': "FAILURE",
+			'not_found': "NOT FOUND",
+		}
+		return render(request, 'WebCMDBapi/display_result.html', context)

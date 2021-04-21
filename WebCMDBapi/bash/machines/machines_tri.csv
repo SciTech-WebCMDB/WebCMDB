@@ -1,7 +1,7 @@
 1 NAME|2 ROOM|3 IP|4 OS|5 OS version|6 CATEGORY|7 OWNER|8 AUTHORITY|9 BARCODE|10 DESCRIPTION|11 SPARE1|12 SERIAL NUMBER|13 HOSTID|14 HOST STATUS|15 INVENTORY STATUS|16 FIREWALL|17 TRUSTLEVEL|18 RACKINFO|19 POWER UP|20 SUPPORT TEAM|21 UUID|22 COMMENTS
-3bng7x2|testagain|129.128.159.245|dual-boot|Win10 Ubuntu 18||heyeheyeh|yang||XPS 8930 i7-8700 32GB||7234862870||NOP|active|OK|||5||0bac65f7-c311-4c93-bc01-9e3fc12e9c0c|
-586239-cs|ATH413||Windows|8.1 Enterprise|laptop|yang|yang|586239|Core i7 4500U @ 1.8 GHz, 8 GB, 1 TB||QB08009497||CLEAN|active|OK|||5||55989164-a114-4fbe-894e-9555e4f3a57f|On UWS
-604047-cs|another||Windows|7 Enterprise|laptop|ackerl|ackerl|604047|ThinkPad T410i, Core i3 M370 @ 2.4 GHz, 4 GB, 250 GB||R8-B2F4M||CLEAN|active|OK|||5||18d4a46c-4ff5-4a7b-b2c9-beb9f8996b48|On UWS
+3bng7x2|CSC265|129.128.159.245|dual-boot|Win10 Ubuntu 18||yang|yang||XPS 8930 i7-8700 32GB||7234862870||NOP|active|OK|||5||0bac65f7-c311-4c93-bc01-9e3fc12e9c0c|
+586239-cs|idk||Windows|8.1 Enterprise|laptop|yang|yang|586239|Core i7 4500U @ 1.8 GHz, 8 GB, 1 TB||QB08009497||CLEAN|active|OK|||5||55989164-a114-4fbe-894e-9555e4f3a57f|On UWS
+604047-cs|CSC247||Windows|7 Enterprise|laptop|ackerl|ackerl|604047|ThinkPad T410i, Core i3 M370 @ 2.4 GHz, 4 GB, 250 GB||R8-B2F4M||CLEAN|active|OK|||5||18d4a46c-4ff5-4a7b-b2c9-beb9f8996b48|On UWS
 abyssus|CSC351|129.128.184.23|Linux|Ubuntu 14.04|regular||athess||||||NOP|active||||5||5bcd3f17-f85c-4d68-b899-baba1cc065cd|
 acme|CSC205||Linux|Ubuntu 14.04|regular||hasell,zaiane|543298|Q9400/2.66-8192||1FS5WK1||NOP|active||||5||0d7a06cc-62c6-4304-80ab-23494cac630f|On NAT
 adair-crk|CSC217|129.128.184.8|Linux|Ubuntu 16.04|regular|hayward|hayward|604055|i7-6700/GTX1080,32GB RAM, 1 TB HDD||106516329701||NOP|active||||5||b3dbb0da-6b32-4e43-a628-a3b80d8a0e65|

@@ -8,7 +8,6 @@ from django.core.management import call_command
 def import_csv_computer_task(self, data, overwrite):
 	progress_recorder = ProgressRecorder(self)
 	result = 0
-	empty = 0
 	total_work = len(data)
 	log = ''
 	for i, row in enumerate(data):
@@ -75,7 +74,13 @@ def import_csv_computer_task(self, data, overwrite):
 	f.write(log)
 	f.close()
 	if overwrite:
-		call_command('rebuild_index', '--noinput')
-	else:
 		call_command('update_index', '--remove')
-	return f'{result}/{total_work-1} added; {empty} empty hostname entries; {total_work-1-result-empty} errors'
+	else:
+		call_command('update_index')
+	return f'{result}/{total_work-1} added; {total_work-1-result} errors'
+
+@shared_task(bind=True)
+def update_index_task(self):
+	progress_recorder = ProgressRecorder(self)
+	call_command('update_index', '--remove')
+	return "Index Updated"

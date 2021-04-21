@@ -12,9 +12,13 @@
 	<body>
 		<div class='webcmdb-index' id='webcmdb-index'>
 			<h1><a href="{% url 'WebCMDBapi:index' %}">SciTech WebCMDB</a></h1>
-			<h3>...deployment eta: &infin;</h3>
 		</div>
 		<div class='webcmdb-nav' id='webcmdb-nav'>
+			{% if index_id %}
+				<div class="webcmdb-index-status">
+					<p>{{index_id}}</p>
+				</div>
+			{% endif %}
 			<div class="webcmdb-search-options">
 				<select id="machine">
 					<option value="All">All</option>
@@ -49,7 +53,10 @@
 			</div>
 		</div>
 		<div id='webcmdb-git-tracker'>
-			<h3 id='git-loading'>Checking authoritative machines.csv ...</h3>
+			<div class="center">
+				<div class="loader"></div>
+				<h3 id='git-loading'>Checking authoritative machines.csv ...</h3>
+			</div>
 			<div id='git-diff-show'></div>
 		</div>
 
@@ -64,12 +71,16 @@
 						$("#webcmdb-git-tracker").append(`
 							<div class='center'>
 								<button id="button-diff" class="btn btn-info" onclick="toggleDiff()">Show Diff</button>
-								<a href="{% url 'WebCMDBapi:update_database' %}"><button class="btn btn-danger" onclick="return confirm('This will overwrite the current database. Are you sure?')">Update</button></a>
+								<form action="{% url 'WebCMDBapi:update_database' %}" method="POST">
+									<button type="submit" class="btn btn-danger" onclick="return confirm('This will overwrite the current database. Are you sure?')">Update</button>
+								</form>
 							</div>
 							<div id='git-diff-show'>
 								<table id='git-diff-table' style='width:75%; margin-top: 10px; margin-left:auto; margin-right:auto'>
 									<tr>
 										<th>ID</th>
+										<th>Status</th>
+										<th>Name</th>
 										<th>Machine UUID</th>
 										<th>Attribute</th>
 										<th>WebCMDB</th>
@@ -78,8 +89,37 @@
 								</table>
 							</div>
 						`);
+						var added = data.diff.added;
+						var removed = data.diff.removed;
 						var changed = data.diff.changed;
-						console.log(changed)
+						for (var i = 0;  i < removed.length; i++) {
+							var mod2 = i % 2;
+							if (mod2 == 0) {								
+								$("#git-diff-table").append(`
+									<tr style='background-color: LightGray'>
+										<th>${i}</th>
+										<th>Removed</th>
+										<th>${removed[i]["1 NAME"]}</th>
+										<th>${removed[i]["21 UUID"]}</th>
+										<th></th>
+										<th style='background-color: LightGreen'>${removed[i]["1 NAME"]}</th>
+										<th style='background-color: LightCoral'>${removed[i]["1 NAME"]}</th>	
+									</tr>
+								`);
+							} else {
+								$("#git-diff-table").append(`
+									<tr>
+										<th>${i}</th>
+										<th>Removed</th>
+										<th>${removed[i]["1 NAME"]}</th>
+										<th>${removed[i]["21 UUID"]}</th>
+										<th></th>
+										<th style='background-color: LightGreen'>${removed[i]["1 NAME"]}</th>
+										<th style='background-color: LightCoral'>${removed[i]["1 NAME"]}</th>	
+									</tr>
+								`);
+							};
+						};
 						for (var i = 0;  i < changed.length; i++) {
 							var changes = changed[i].changes;
 							var mod2 = i % 2;
@@ -88,6 +128,8 @@
 									$("#git-diff-table").append(`
 										<tr style='background-color: LightGray'>
 											<th>${i}</th>
+											<th>Changed</th>
+											<th>${changed[i]["hostname"]}</th>
 											<th>${changed[i].key}</th>
 											<th>${attr}</th>
 											<th style='background-color: LightGreen'>${changes[attr][0]}</th>
@@ -100,6 +142,8 @@
 									$("#git-diff-table").append(`
 										<tr>
 											<th>${i}</th>
+											<th>Changed</th>
+											<th>${changed[i]["hostname"]}</th>
 											<th>${changed[i].key}</th>
 											<th>${attr}</th>
 											<th style='background-color: LightGreen'>${changes[attr][0]}</th>
