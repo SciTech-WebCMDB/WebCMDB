@@ -92,12 +92,42 @@
 						var added = data.diff.added;
 						var removed = data.diff.removed;
 						var changed = data.diff.changed;
-						for (var i = 0;  i < removed.length; i++) {
+						var count = 0;
+						for (var i = 0;  i < added.length; i++) {
 							var mod2 = i % 2;
 							if (mod2 == 0) {								
 								$("#git-diff-table").append(`
 									<tr style='background-color: LightGray'>
 										<th>${i}</th>
+										<th>Removed</th>
+										<th>${added[i]["1 NAME"]}</th>
+										<th>${added[i]["21 UUID"]}</th>
+										<th></th>
+										<th style='background-color: LightCoral'>${added[i]["1 NAME"]}</th>
+										<th style='background-color: LightGreen'>${added[i]["1 NAME"]}</th>	
+									</tr>
+								`);
+							} else {
+								$("#git-diff-table").append(`
+									<tr>
+										<th>${i}</th>
+										<th>Removed</th>
+										<th>${added[i]["1 NAME"]}</th>
+										<th>${added[i]["21 UUID"]}</th>
+										<th></th>
+										<th style='background-color: LightCoral'>${added[i]["1 NAME"]}</th>
+										<th style='background-color: LightGreen'>${added[i]["1 NAME"]}</th>	
+									</tr>
+								`);
+							};
+							count++;
+						};
+						for (var i = 0;  i < removed.length; i++) {
+							var mod2 = (i+count) % 2;
+							if (mod2 == 0) {								
+								$("#git-diff-table").append(`
+									<tr style='background-color: LightGray'>
+										<th>${i+count}</th>
 										<th>Removed</th>
 										<th>${removed[i]["1 NAME"]}</th>
 										<th>${removed[i]["21 UUID"]}</th>
@@ -109,7 +139,7 @@
 							} else {
 								$("#git-diff-table").append(`
 									<tr>
-										<th>${i}</th>
+										<th>${i+count}</th>
 										<th>Removed</th>
 										<th>${removed[i]["1 NAME"]}</th>
 										<th>${removed[i]["21 UUID"]}</th>
@@ -119,15 +149,16 @@
 									</tr>
 								`);
 							};
+							count++;
 						};
 						for (var i = 0;  i < changed.length; i++) {
 							var changes = changed[i].changes;
-							var mod2 = i % 2;
+							var mod2 = (i+count) % 2;
 							if (mod2 == 0) {
 								for (let attr in changes) {
 									$("#git-diff-table").append(`
 										<tr style='background-color: LightGray'>
-											<th>${i}</th>
+											<th>${i+count}</th>
 											<th>Changed</th>
 											<th>${changed[i]["hostname"]}</th>
 											<th>${changed[i].key}</th>
@@ -141,7 +172,7 @@
 								for (let attr in changes) {
 									$("#git-diff-table").append(`
 										<tr>
-											<th>${i}</th>
+											<th>${i+count}</th>
 											<th>Changed</th>
 											<th>${changed[i]["hostname"]}</th>
 											<th>${changed[i].key}</th>
@@ -152,6 +183,7 @@
 									`);
 								};
 							};
+							count++;
 						};
 					};
 					$("#git-diff-show").hide();

@@ -15,6 +15,8 @@
 				<h4>Database updated.</h4>
 				<p><strong>Result:</strong> {{result}}</p>
 				<p><strong>Duration:</strong> {{time}}</p>
+				<p><strong>Note:</strong> The search indexes is being updated.<br>This will take about a minute.</br></p>
+				<p><i>Searching may behave oddly.</i></p>
 				<a href="{% url 'WebCMDBapi:index' %}"><button type="button" class="redo btn">Return to Homepage</button></a>
 				<a href="/celery-progress/{{task_id}}"><span class="change">{{task_id}}</span></a>
 			</div>

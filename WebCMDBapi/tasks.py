@@ -73,10 +73,6 @@ def import_csv_computer_task(self, data, overwrite):
 	f = open(f"log_celery/log{datetime.now()}.txt", "w")
 	f.write(log)
 	f.close()
-	if overwrite:
-		call_command('update_index', '--remove')
-	else:
-		call_command('update_index')
 	return f'{result}/{total_work-1} added; {total_work-1-result} errors'
 
 @shared_task(bind=True)

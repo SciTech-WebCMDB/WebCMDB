@@ -249,6 +249,7 @@ def import_csv_computer(request):
 		else:
 			overwrite = False
 		result = import_csv_computer_task.delay(data, overwrite)
+		update_index_task.delay()
 		return render(request, 'WebCMDBapi/display_progress.html', context={'task_id': result.task_id})
 
 def diff(request):
